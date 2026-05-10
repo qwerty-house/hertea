@@ -1,1026 +1,1019 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2869
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww25400\viewh14040\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HERNEST – ชาไหนเหมาะกับคุณ?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- ใช้ฟอนต์ Noto Sans Thai ทั้งหมด -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="th">\
-<head>\
-<meta charset="UTF-8">\
-<meta name="viewport" content="width=device-width, initial-scale=1.0">\
-<title>HERNEST \'96 \uc0\u3594 \u3634 \u3652 \u3627 \u3609 \u3648 \u3627 \u3617 \u3634 \u3632 \u3585 \u3633 \u3610 \u3588 \u3640 \u3603 ?</title>\
-<link rel="preconnect" href="https://fonts.googleapis.com">\
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\
-<!-- \uc0\u3651 \u3594 \u3657 \u3615 \u3629 \u3609 \u3605 \u3660  Noto Sans Thai \u3607 \u3633 \u3657 \u3591 \u3627 \u3617 \u3604  -->\
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">\
-<style>\
-  *, *::before, *::after \{ box-sizing: border-box; margin: 0; padding: 0; \}\
-\
-  :root \{\
-    /* Brand Colors extracted from moodboard & logo */\
-    --color-her: #8B2626;         /* Deep Red / Burgundy */\
-    --color-her-light: #F9EBEB;   /* Soft Pink/Cream for active states */\
-    --color-pops: #E85D22;        /* Vibrant Orange for Pops Tea */\
-    --color-pops-light: #FDEEE7;  /* Soft Orange/Cream */\
-    \
-    --cream: #F6F4EF;             /* Warm, elegant background */\
-    --ink: #2D2422;               /* Warm off-black */\
-    --ink-mid: #5E524F;\
-    --ink-light: #9C8F8A;\
-    --border: rgba(45,36,34,0.12);\
-    --border-hover: rgba(139,38,38,0.4);\
-    \
-    --radius: 16px; /* \uc0\u3611 \u3619 \u3633 \u3610 \u3651 \u3627 \u3657 \u3586 \u3629 \u3610 \u3650 \u3588 \u3657 \u3591 \u3617 \u3609 \u3586 \u3638 \u3657 \u3609 \u3648 \u3627 \u3617 \u3639 \u3629 \u3609 \u3651 \u3609 \u3619 \u3641 \u3611  */\
-    --radius-sm: 8px;\
-  \}\
-\
-  body \{\
-    font-family: 'Noto Sans Thai', sans-serif;\
-    background: var(--cream);\
-    color: var(--ink);\
-    min-height: 100vh;\
-    display: flex;\
-    align-items: flex-start;\
-    justify-content: center;\
-    padding: 2rem 1rem 4rem;\
-  \}\
-\
-  .quiz-wrap \{\
-    width: 100%;\
-    max-width: 560px;\
-  \}\
-\
-  /* ---- HEADER ---- */\
-  .brand-header \{\
-    text-align: center;\
-    padding: 2.5rem 0 2rem;\
-  \}\
-  .brand-logo \{\
-    font-family: 'Noto Sans Thai', sans-serif;\
-    font-size: 20px;\
-    font-weight: 700;\
-    letter-spacing: 0.15em;\
-    color: var(--color-her);\
-    margin-bottom: 16px;\
-    line-height: 1.2;\
-  \}\
-  .brand-logo-sub \{\
-    display: block;\
-    font-size: 11px;\
-    font-weight: 600;\
-    letter-spacing: 0.1em;\
-    color: var(--ink-mid);\
-    margin-top: 4px;\
-  \}\
-  .brand-title \{\
-    font-size: 30px;\
-    font-weight: 700;\
-    color: var(--ink);\
-    line-height: 1.3;\
-    margin-bottom: 12px;\
-  \}\
-  .brand-sub \{\
-    font-size: 15px;\
-    color: var(--ink-mid);\
-    line-height: 1.75;\
-    max-width: 400px;\
-    margin: 0 auto;\
-  \}\
-\
-  /* ---- PROGRESS ---- */\
-  .progress-wrap \{\
-    margin-bottom: 2.5rem;\
-  \}\
-  .progress-meta \{\
-    display: flex;\
-    justify-content: space-between;\
-    font-size: 12px;\
-    font-weight: 600;\
-    color: var(--ink-light);\
-    margin-bottom: 10px;\
-    letter-spacing: 0.05em;\
-  \}\
-  .progress-track \{\
-    height: 4px;\
-    background: var(--border);\
-    border-radius: 4px;\
-    overflow: hidden;\
-  \}\
-  .progress-fill \{\
-    height: 100%;\
-    background: linear-gradient(90deg, var(--color-her), var(--color-pops));\
-    border-radius: 4px;\
-    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);\
-  \}\
-\
-  /* ---- STEPS ---- */\
-  .step \{ display: none; \}\
-  .step.active \{\
-    display: block;\
-    animation: slideIn 0.3s ease;\
-  \}\
-  @keyframes slideIn \{\
-    from \{ opacity: 0; transform: translateY(10px); \}\
-    to \{ opacity: 1; transform: translateY(0); \}\
-  \}\
-\
-  .step-eyebrow \{\
-    font-size: 12px;\
-    font-weight: 700;\
-    letter-spacing: 0.15em;\
-    text-transform: uppercase;\
-    color: var(--ink-light);\
-    margin-bottom: 12px;\
-  \}\
-  .question \{\
-    font-size: 24px;\
-    font-weight: 700;\
-    color: var(--ink);\
-    line-height: 1.4;\
-    margin-bottom: 10px;\
-  \}\
-  .question-hint \{\
-    font-size: 15px;\
-    color: var(--ink-light);\
-    margin-bottom: 2rem;\
-    line-height: 1.6;\
-  \}\
-\
-  /* ---- OPTIONS ---- */\
-  .options-list \{\
-    display: flex;\
-    flex-direction: column;\
-    gap: 14px;\
-    margin-bottom: 2.5rem;\
-  \}\
-\
-  .opt \{\
-    display: flex;\
-    align-items: flex-start;\
-    gap: 16px;\
-    padding: 20px 22px;\
-    border: 1px solid rgba(45,36,34,0.1); /* \uc0\u3586 \u3629 \u3610 \u3610 \u3634 \u3591 \u3621 \u3591 \u3648 \u3627 \u3617 \u3639 \u3629 \u3609 \u3651 \u3609 \u3619 \u3641 \u3611  */\
-    border-radius: var(--radius);\
-    background: white;\
-    cursor: pointer;\
-    text-align: left;\
-    transition: all 0.2s ease;\
-    width: 100%;\
-    color: var(--ink);\
-    box-shadow: 0 4px 10px rgba(0,0,0,0.03); /* \uc0\u3648 \u3614 \u3636 \u3656 \u3617 \u3648 \u3591 \u3634 \u3629 \u3656 \u3629 \u3609 \u3654  */\
-    font-family: 'Noto Sans Thai', sans-serif; /* \uc0\u3610 \u3633 \u3591 \u3588 \u3633 \u3610 \u3651 \u3594 \u3657 \u3615 \u3629 \u3609 \u3605 \u3660  Noto Sans Thai \u3651 \u3609 \u3611 \u3640 \u3656 \u3617  */\
-  \}\
-  .opt:hover \{\
-    border-color: var(--border-hover);\
-    background: #FFFAFA;\
-    transform: translateY(-2px);\
-    box-shadow: 0 6px 12px rgba(139,38,38,0.06);\
-  \}\
-  .opt.selected \{\
-    border: 1px solid var(--color-her);\
-    box-shadow: 0 0 0 1px var(--color-her); /* \uc0\u3607 \u3635 \u3586 \u3629 \u3610 \u3627 \u3609 \u3634 \u3650 \u3604 \u3618 \u3652 \u3617 \u3656 \u3607 \u3635 \u3651 \u3627 \u3657 \u3648 \u3621 \u3618 \u3660 \u3648 \u3629 \u3634 \u3605 \u3660 \u3586 \u3618 \u3633 \u3610  */\
-    background: var(--color-her-light);\
-  \}\
-  .opt.selected-pops \{\
-    border: 1px solid var(--color-pops);\
-    box-shadow: 0 0 0 1px var(--color-pops);\
-    background: var(--color-pops-light);\
-  \}\
-  .opt-icon \{\
-    font-size: 24px;\
-    flex-shrink: 0;\
-    margin-top: 2px;\
-    opacity: 0.9;\
-    transition: opacity 0.2s;\
-  \}\
-  .opt.selected .opt-icon \{ opacity: 1; \}\
-  \
-  /* \uc0\u3586 \u3618 \u3634 \u3618 \u3586 \u3609 \u3634 \u3604 \u3605 \u3633 \u3623 \u3629 \u3633 \u3585 \u3625 \u3619 \u3649 \u3621 \u3632 \u3648 \u3609 \u3657 \u3609 \u3605 \u3633 \u3623 \u3627 \u3609 \u3634 \u3651 \u3609 \u3611 \u3640 \u3656 \u3617 \u3605 \u3633 \u3623 \u3648 \u3621 \u3639 \u3629 \u3585  */\
-  .opt-body strong \{\
-    display: block;\
-    font-size: 18px;\
-    font-weight: 700;\
-    color: var(--ink);\
-    margin-bottom: 6px;\
-    line-height: 1.4;\
-  \}\
-  .opt-body span \{\
-    display: block;\
-    font-size: 15px;\
-    font-weight: 400;\
-    color: var(--ink-mid);\
-    line-height: 1.5;\
-  \}\
-\
-  /* ---- NAV ---- */\
-  .nav-row \{\
-    display: flex;\
-    justify-content: space-between;\
-    align-items: center;\
-  \}\
-  .btn-back \{\
-    background: none;\
-    border: none;\
-    font-family: 'Noto Sans Thai', sans-serif;\
-    font-size: 16px;\
-    font-weight: 600;\
-    color: var(--ink-light);\
-    cursor: pointer;\
-    padding: 8px 0;\
-    display: flex;\
-    align-items: center;\
-    gap: 6px;\
-    transition: color 0.15s;\
-  \}\
-  .btn-back:hover \{ color: var(--ink-mid); \}\
-  .btn-next \{\
-    padding: 16px 40px;\
-    background: var(--ink);\
-    color: white;\
-    border: none;\
-    border-radius: var(--radius-sm);\
-    font-family: 'Noto Sans Thai', sans-serif;\
-    font-size: 16px;\
-    font-weight: 700;\
-    cursor: pointer;\
-    transition: all 0.2s ease;\
-    letter-spacing: 0.03em;\
-  \}\
-  .btn-next:hover:not(:disabled) \{\
-    background: var(--color-her);\
-    transform: translateY(-2px);\
-    box-shadow: 0 4px 12px rgba(139,38,38,0.2);\
-  \}\
-  .btn-next:disabled \{\
-    opacity: 0.3;\
-    cursor: not-allowed;\
-    transform: none;\
-    box-shadow: none;\
-    background: var(--ink);\
-  \}\
-\
-  /* ---- RESULT ---- */\
-  .result-intro \{\
-    text-align: center;\
-    padding: 0.5rem 0 2rem;\
-  \}\
-  .result-eyebrow \{\
-    font-size: 13px;\
-    font-weight: 700;\
-    letter-spacing: 0.15em;\
-    text-transform: uppercase;\
-    color: var(--color-her);\
-    margin-bottom: 8px;\
-  \}\
-  .result-headline \{\
-    font-size: 28px;\
-    font-weight: 700;\
-    color: var(--ink);\
-    margin-bottom: 12px;\
-  \}\
-  .result-tagline \{\
-    font-size: 16px;\
-    color: var(--ink-mid);\
-    line-height: 1.6;\
-  \}\
-\
-  .product-card \{\
-    border-radius: var(--radius);\
-    overflow: hidden;\
-    margin-bottom: 24px;\
-    box-shadow: 0 6px 20px rgba(0,0,0,0.06);\
-    background: white;\
-  \}\
-  \
-  /* Image 4x Larger (\uc0\u3611 \u3619 \u3632 \u3617 \u3634 \u3603  340px) \u3623 \u3634 \u3591 \u3595 \u3657 \u3629 \u3609 \u3610 \u3609 \u3626 \u3640 \u3604  */\
-  .card-head-her, .card-head-pops \{\
-    padding: 30px 24px;\
-    display: flex;\
-    flex-direction: column;\
-    align-items: center;\
-    text-align: center;\
-  \}\
-  .card-head-her \{ background: var(--color-her); \}\
-  .card-head-pops \{ background: var(--color-pops); \}\
-  \
-  .product-image-large \{\
-    width: 100%;\
-    max-width: 340px; /* \uc0\u3586 \u3609 \u3634 \u3604 \u3651 \u3627 \u3597 \u3656 \u3586 \u3638 \u3657 \u3609 \u3611 \u3619 \u3632 \u3617 \u3634 \u3603  4 \u3648 \u3607 \u3656 \u3634 \u3592 \u3634 \u3585 \u3648 \u3604 \u3636 \u3617  85px */\
-    aspect-ratio: 1 / 1;\
-    background: rgba(255,255,255,0.15);\
-    border-radius: 12px;\
-    display: flex;\
-    align-items: center;\
-    justify-content: center;\
-    color: rgba(255,255,255,0.9);\
-    font-size: 14px;\
-    font-weight: 500;\
-    text-align: center;\
-    overflow: hidden;\
-    margin-bottom: 20px;\
-    border: 1px solid rgba(255,255,255,0.2);\
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);\
-  \}\
-  .product-image-large img \{\
-    width: 100%;\
-    height: 100%;\
-    object-fit: cover;\
-  \}\
-\
-  .card-head-text \{\
-    width: 100%;\
-  \}\
-  .card-pill \{\
-    display: inline-block;\
-    font-size: 11px;\
-    font-weight: 700;\
-    letter-spacing: 0.15em;\
-    text-transform: uppercase;\
-    background: rgba(255,255,255,0.25);\
-    color: #FFF;\
-    padding: 6px 16px;\
-    border-radius: 20px;\
-    margin-bottom: 12px;\
-  \}\
-  .card-head-her h3,\
-  .card-head-pops h3 \{\
-    font-size: 26px;\
-    font-weight: 700;\
-    color: white;\
-    margin-bottom: 8px;\
-  \}\
-  .card-head-her p,\
-  .card-head-pops p \{\
-    font-size: 14px;\
-    color: rgba(255,255,255,0.9);\
-    letter-spacing: 0.02em;\
-    line-height: 1.4;\
-  \}\
-\
-  .card-body \{\
-    padding: 24px;\
-  \}\
-  .why-text \{\
-    font-size: 16px;\
-    color: var(--ink-mid);\
-    line-height: 1.8;\
-    margin-bottom: 24px;\
-  \}\
-  .benefits \{\
-    display: flex;\
-    flex-direction: column;\
-    gap: 12px;\
-    margin-bottom: 24px;\
-  \}\
-  .benefit \{\
-    display: flex;\
-    align-items: flex-start;\
-    gap: 12px;\
-    font-size: 15px;\
-    font-weight: 500;\
-    color: var(--ink);\
-    line-height: 1.5;\
-  \}\
-  .dot-her \{ width:8px; height:8px; border-radius:50%; background:var(--color-her); margin-top:6px; flex-shrink:0; \}\
-  .dot-pops \{ width:8px; height:8px; border-radius:50%; background:var(--color-pops); margin-top:6px; flex-shrink:0; \}\
-\
-  /* Big Centered Price */\
-  .price-center \{\
-    text-align: center;\
-    padding: 24px 16px;\
-    margin: 24px 0;\
-    background: var(--cream);\
-    border-radius: var(--radius-sm);\
-  \}\
-  .price-center .amt \{\
-    display: block;\
-    font-size: 42px;\
-    font-weight: 700;\
-    line-height: 1.1;\
-    margin-bottom: 6px;\
-  \}\
-  .price-center-her .amt \{ color: var(--color-her); \}\
-  .price-center-pops .amt \{ color: var(--color-pops); \}\
-  .price-center .lbl \{\
-    font-size: 15px;\
-    font-weight: 500;\
-    color: var(--ink-mid);\
-  \}\
-  .price-promo \{\
-    margin-top: 14px;\
-    padding-top: 14px;\
-    border-top: 1px dashed var(--border);\
-    font-size: 15px;\
-    font-weight: 500;\
-    color: var(--ink-mid);\
-    display: flex;\
-    justify-content: center;\
-    gap: 8px;\
-    align-items: baseline;\
-  \}\
-  .price-promo .amt-promo \{\
-    font-size: 20px;\
-    font-weight: 700;\
-    color: var(--ink);\
-  \}\
-\
-  .tip \{\
-    padding: 20px;\
-    background: var(--cream);\
-    border-radius: var(--radius-sm);\
-    border-left: 5px solid;\
-    font-size: 15px;\
-    font-weight: 500;\
-    color: var(--ink-mid);\
-    line-height: 1.7;\
-    margin-bottom: 0;\
-  \}\
-  .tip strong \{\
-    color: var(--ink);\
-    font-size: 16px;\
-  \}\
-  .tip-her \{ border-color: var(--color-her); \}\
-  .tip-pops \{ border-color: var(--color-pops); \}\
-\
-  .cta-section \{\
-    margin-top: 30px;\
-    display: flex;\
-    flex-direction: column;\
-    gap: 14px;\
-  \}\
-  .btn-cta \{\
-    width: 100%;\
-    padding: 18px;\
-    color: white;\
-    border: none;\
-    border-radius: var(--radius-sm);\
-    font-family: 'Noto Sans Thai', sans-serif;\
-    font-size: 18px;\
-    font-weight: 700;\
-    cursor: pointer;\
-    transition: all 0.2s ease;\
-    letter-spacing: 0.03em;\
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);\
-  \}\
-  .btn-cta:hover \{ opacity: 0.9; transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.15); \}\
-  .btn-cta-her \{ background: var(--color-her); \}\
-  .btn-cta-pops \{ background: var(--color-pops); \}\
-  .btn-cta-both \{ background: linear-gradient(90deg, var(--color-her) 0%, var(--color-pops) 100%); \}\
-\
-  .channel-row \{\
-    display: flex;\
-    gap: 14px;\
-  \}\
-  .btn-channel \{\
-    flex: 1;\
-    padding: 16px;\
-    border: 2px solid var(--border);\
-    border-radius: var(--radius-sm);\
-    background: white;\
-    font-family: 'Noto Sans Thai', sans-serif;\
-    font-size: 16px;\
-    font-weight: 600;\
-    color: var(--ink-mid);\
-    cursor: pointer;\
-    transition: all 0.2s ease;\
-    display: flex;\
-    align-items: center;\
-    justify-content: center;\
-    gap: 8px;\
-  \}\
-  .btn-channel:hover \{ \
-    border-color: var(--color-her); \
-    background: var(--color-her-light); \
-    color: var(--color-her); \
-  \}\
-\
-  .restart-btn \{\
-    display: inline-flex;\
-    align-items: center;\
-    gap: 6px;\
-    text-align: center;\
-    font-size: 15px;\
-    font-weight: 600;\
-    color: var(--ink-light);\
-    background: none;\
-    border: none;\
-    font-family: 'Noto Sans Thai', sans-serif;\
-    cursor: pointer;\
-    padding: 12px 20px;\
-    margin: 16px auto 0;\
-    transition: all 0.2s;\
-    border-radius: 20px;\
-  \}\
-  .restart-btn:hover \{ color: var(--color-her); background: var(--color-her-light); \}\
-\
-  /* Disclaimer Bottom */\
-  .disclaimer \{\
-    font-size: 12px;\
-    color: var(--ink-light);\
-    text-align: center;\
-    line-height: 1.6;\
-    margin-top: 40px;\
-    padding-top: 24px;\
-    border-top: 1px solid var(--border);\
-  \}\
-\
-  /* --- Mobile Responsive Rules --- */\
-  @media (max-width: 480px) \{\
-    body \{ padding: 1rem 0.75rem 3rem; \}\
-    .brand-title \{ font-size: 26px; \}\
-    .question \{ font-size: 22px; \}\
-    .question-hint \{ font-size: 14px; \}\
-    \
-    /* \uc0\u3605 \u3633 \u3623 \u3629 \u3633 \u3585 \u3625 \u3619 \u3610 \u3609 \u3617 \u3639 \u3629 \u3606 \u3639 \u3629  */\
-    .opt-body strong \{ font-size: 16.5px; \}\
-    .opt-body span \{ font-size: 14px; \}\
-    .opt-icon \{ font-size: 22px; \}\
-    .opt \{ padding: 18px 16px; gap: 14px; \}\
-    \
-    .channel-row \{ flex-direction: column; \}\
-    \
-    /* Image responsiveness on mobile */\
-    .card-head-her, .card-head-pops \{ padding: 24px 16px; \}\
-    .product-image-large \{ \
-        max-width: 100%; /* \uc0\u3651 \u3627 \u3657 \u3648 \u3605 \u3655 \u3617 \u3592 \u3629 \u3650 \u3607 \u3619 \u3624 \u3633 \u3614 \u3607 \u3660 \u3649 \u3605 \u3656 \u3652 \u3617 \u3656 \u3648 \u3585 \u3636 \u3609 \u3585 \u3619 \u3629 \u3610  */\
-        margin-bottom: 16px; \
-    \}\
-    .card-head-her h3, .card-head-pops h3 \{ font-size: 24px; \}\
-    .price-center .amt \{ font-size: 36px; \}\
-  \}\
-</style>\
-</head>\
-<body>\
-<div class="quiz-wrap">\
-\
-  <div class="brand-header">\
-    <div class="brand-logo">\
-      HERNEST.\
-      <span class="brand-logo-sub">BY NICHE</span>\
-    </div>\
-    <div class="brand-title">\uc0\u3594 \u3634 \u3652 \u3627 \u3609 \u3648 \u3627 \u3617 \u3634 \u3632 \u3585 \u3633 \u3610 \u3588 \u3640 \u3603 ?</div>\
-    <div class="brand-sub">\uc0\u3605 \u3629 \u3610  4 \u3586 \u3657 \u3629  \u3619 \u3641 \u3657 \u3648 \u3621 \u3618 \u3623 \u3656 \u3634 \u3588 \u3623 \u3619 \u3604 \u3639 \u3656 \u3617  Her Tea, Pops Tea<br>\u3627 \u3619 \u3639 \u3629 \u3607 \u3633 \u3657 \u3591 \u3588 \u3641 \u3656  \'97 \u3649 \u3609 \u3632 \u3609 \u3635 \u3605 \u3634 \u3617 \u3629 \u3634 \u3585 \u3634 \u3619 \u3592 \u3619 \u3636 \u3591 \u3586 \u3629 \u3591 \u3588 \u3640 \u3603 </div>\
-  </div>\
-\
-  <div class="progress-wrap">\
-    <div class="progress-meta">\
-      <span id="prog-label">\uc0\u3648 \u3619 \u3636 \u3656 \u3617 \u3605 \u3657 \u3609 </span>\
-      <span id="prog-pct">0 / 4</span>\
-    </div>\
-    <div class="progress-track">\
-      <div class="progress-fill" id="pbar" style="width:0%"></div>\
-    </div>\
-  </div>\
-\
-  <!-- STEP 1 -->\
-  <div id="step-1" class="step active">\
-    <div class="step-eyebrow">\uc0\u3586 \u3657 \u3629 \u3607 \u3637 \u3656  1 \u3592 \u3634 \u3585  4</div>\
-    <div class="question">\uc0\u3588 \u3640 \u3603 \u3617 \u3637 \u3629 \u3634 \u3585 \u3634 \u3619 \u3627 \u3619 \u3639 \u3629 \u3616 \u3634 \u3623 \u3632 \u3648 \u3627 \u3621 \u3656 \u3634 \u3609 \u3637 \u3657 \u3652 \u3627 \u3617 ?</div>\
-    <div class="question-hint">\uc0\u3648 \u3621 \u3639 \u3629 \u3585 \u3652 \u3604 \u3657 \u3617 \u3634 \u3585 \u3585 \u3623 \u3656 \u3634  1 \u3586 \u3657 \u3629  \'97 \u3652 \u3617 \u3656 \u3605 \u3657 \u3629 \u3591 \u3585 \u3633 \u3591 \u3623 \u3621  \u3607 \u3640 \u3585 \u3588 \u3635 \u3605 \u3629 \u3610 \u3652 \u3617 \u3656 \u3617 \u3637 \u3606 \u3641 \u3585 \u3627 \u3619 \u3639 \u3629 \u3612 \u3636 \u3604 </div>\
-    <div class="options-list">\
-      <button class="opt" data-step="1" data-val="pms" onclick="selectMulti(this)">\
-        <span class="opt-icon">\uc0\u55356 \u57113 </span>\
-        <span class="opt-body"><strong>PMS \uc0\u3627 \u3609 \u3633 \u3585  / \u3611 \u3623 \u3604 \u3607 \u3657 \u3629 \u3591 \u3611 \u3619 \u3632 \u3592 \u3635 \u3648 \u3604 \u3639 \u3629 \u3609 \u3617 \u3634 \u3585 </strong><span>\u3611 \u3623 \u3604 \u3592 \u3609 \u3605 \u3657 \u3629 \u3591 \u3585 \u3636 \u3609 \u3618 \u3634  \u3609 \u3629 \u3609 \u3614 \u3633 \u3585 \u3607 \u3633 \u3657 \u3591 \u3623 \u3633 \u3609  \u3627 \u3619 \u3639 \u3629 \u3629 \u3634 \u3619 \u3617 \u3603 \u3660 \u3604 \u3636 \u3656 \u3591 \u3585 \u3656 \u3629 \u3609 \u3617 \u3637 </span></span>\
-      </button>\
-      <button class="opt" data-step="1" data-val="acne" onclick="selectMulti(this)">\
-        <span class="opt-icon">\uc0\u10024 </span>\
-        <span class="opt-body"><strong>\uc0\u3626 \u3636 \u3623 \u3630 \u3629 \u3619 \u3660 \u3650 \u3617 \u3609  / \u3627 \u3609 \u3657 \u3634 \u3617 \u3633 \u3609 \u3591 \u3656 \u3634 \u3618 </strong><span>\u3626 \u3636 \u3623 \u3586 \u3638 \u3657 \u3609 \u3594 \u3656 \u3623 \u3591 \u3585 \u3656 \u3629 \u3609 \u3617 \u3637 \u3611 \u3619 \u3632 \u3592 \u3635 \u3648 \u3604 \u3639 \u3629 \u3609  \u3627 \u3619 \u3639 \u3629 \u3626 \u3636 \u3623 \u3595 \u3637 \u3626 \u3605 \u3660 \u3610 \u3619 \u3636 \u3648 \u3623 \u3603 \u3588 \u3634 \u3591  / \u3649 \u3585 \u3657 \u3617 </span></span>\
-      </button>\
-      <button class="opt" data-step="1" data-val="endo" onclick="selectMulti(this)">\
-        <span class="opt-icon">\uc0\u55356 \u57144 </span>\
-        <span class="opt-body"><strong>Endometriosis</strong><span>\uc0\u3648 \u3618 \u3639 \u3656 \u3629 \u3610 \u3640 \u3650 \u3614 \u3619 \u3591 \u3617 \u3604 \u3621 \u3641 \u3585 \u3648 \u3592 \u3619 \u3636 \u3597 \u3612 \u3636 \u3604 \u3607 \u3637 \u3656  \u3627 \u3619 \u3639 \u3629 \u3626 \u3591 \u3626 \u3633 \u3618 \u3623 \u3656 \u3634 \u3605 \u3633 \u3623 \u3648 \u3629 \u3591 \u3629 \u3634 \u3592 \u3617 \u3637 </span></span>\
-      </button>\
-      <button class="opt" data-step="1" data-val="pcos" onclick="selectMulti(this)">\
-        <span class="opt-icon">\uc0\u11093 </span>\
-        <span class="opt-body"><strong>PCOS / \uc0\u3606 \u3640 \u3591 \u3609 \u3657 \u3635 \u3651 \u3609 \u3619 \u3633 \u3591 \u3652 \u3586 \u3656 </strong><span>\u3649 \u3614 \u3607 \u3618 \u3660 \u3623 \u3636 \u3609 \u3636 \u3592 \u3593 \u3633 \u3618  \u3627 \u3619 \u3639 \u3629 \u3617 \u3637 \u3611 \u3619 \u3632 \u3592 \u3635 \u3648 \u3604 \u3639 \u3629 \u3609 \u3652 \u3617 \u3656 \u3626 \u3617 \u3656 \u3635 \u3648 \u3626 \u3617 \u3629  / \u3586 \u3609 \u3604 \u3585 </span></span>\
-      </button>\
-      <button class="opt" data-step="1" data-val="stress" onclick="selectMulti(this)">\
-        <span class="opt-icon">\uc0\u55358 \u56800 </span>\
-        <span class="opt-body"><strong>\uc0\u3648 \u3588 \u3619 \u3637 \u3618 \u3604 \u3591 \u3656 \u3634 \u3618  / \u3648 \u3588 \u3619 \u3637 \u3618 \u3604 \u3626 \u3632 \u3626 \u3617 </strong><span>\u3619 \u3641 \u3657 \u3626 \u3638 \u3585 \u3627 \u3633 \u3623 \u3627 \u3617 \u3640 \u3609  \u3623 \u3636 \u3605 \u3585 \u3585 \u3633 \u3591 \u3623 \u3621  \u3627 \u3619 \u3639 \u3629 \u3609 \u3629 \u3609 \u3627 \u3621 \u3633 \u3610 \u3618 \u3634 \u3585 \u3610 \u3656 \u3629 \u3618  \u3654 </span></span>\
-      </button>\
-      <button class="opt" data-step="1" data-val="none_mild" onclick="selectExclusive(this, 1)">\
-        <span class="opt-icon">\uc0\u55356 \u57151 </span>\
-        <span class="opt-body"><strong>\uc0\u3652 \u3617 \u3656 \u3617 \u3637 \u3650 \u3619 \u3588 \u3611 \u3619 \u3632 \u3592 \u3635 \u3605 \u3633 \u3623  \u3649 \u3588 \u3656 \u3629 \u3618 \u3634 \u3585 \u3604 \u3641 \u3649 \u3621 \u3605 \u3633 \u3623 \u3648 \u3629 \u3591 </strong><span>\u3619 \u3629 \u3610 \u3648 \u3604 \u3639 \u3629 \u3609 \u3588 \u3656 \u3629 \u3609 \u3586 \u3657 \u3634 \u3591 \u3611 \u3585 \u3605 \u3636  \u3649 \u3605 \u3656 \u3629 \u3618 \u3634 \u3585 \u3651 \u3627 \u3657 \u3619 \u3656 \u3634 \u3591 \u3585 \u3634 \u3618 \u3626 \u3617 \u3604 \u3640 \u3621 \u3586 \u3638 \u3657 \u3609 </span></span>\
-      </button>\
-    </div>\
-    <div class="nav-row">\
-      <span></span>\
-      <button class="btn-next" id="next1" disabled onclick="goNext(1)">\uc0\u3605 \u3656 \u3629 \u3652 \u3611  \u8594 </button>\
-    </div>\
-  </div>\
-\
-  <!-- STEP 2 -->\
-  <div id="step-2" class="step">\
-    <div class="step-eyebrow">\uc0\u3586 \u3657 \u3629 \u3607 \u3637 \u3656  2 \u3592 \u3634 \u3585  4</div>\
-    <div class="question">\uc0\u3605 \u3629 \u3609 \u3609 \u3637 \u3657 \u3588 \u3640 \u3603 \u3607 \u3634 \u3609 \u3618 \u3634 \u3588 \u3640 \u3617 \u3629 \u3618 \u3641 \u3656 \u3652 \u3627 \u3617 ?</div>\
-    <div class="question-hint">\uc0\u3605 \u3629 \u3610 \u3605 \u3619 \u3591  \u3654  \u3648 \u3614 \u3639 \u3656 \u3629 \u3651 \u3627 \u3657 \u3649 \u3609 \u3632 \u3609 \u3635 \u3652 \u3604 \u3657 \u3649 \u3617 \u3656 \u3609 \u3618 \u3635 \u3607 \u3637 \u3656 \u3626 \u3640 \u3604 </div>\
-    <div class="options-list">\
-      <button class="opt" data-step="2" data-val="on_pill" onclick="selectOne(this)">\
-        <span class="opt-icon">\uc0\u55357 \u56458 </span>\
-        <span class="opt-body"><strong>\uc0\u3607 \u3634 \u3609 \u3618 \u3634 \u3588 \u3640 \u3617 \u3629 \u3618 \u3641 \u3656 \u3605 \u3629 \u3609 \u3609 \u3637 \u3657 </strong><span>\u3619 \u3634 \u3618 \u3623 \u3633 \u3609  / \u3649 \u3612 \u3656 \u3609 \u3649 \u3611 \u3632  / \u3623 \u3591 \u3649 \u3627 \u3623 \u3609  \u3627 \u3619 \u3639 \u3629 \u3607 \u3634 \u3609 \u3648 \u3611 \u3655 \u3609 \u3594 \u3656 \u3623 \u3591  \u3654  \u3648 \u3614 \u3639 \u3656 \u3629  PCOS</span></span>\
-      </button>\
-      <button class="opt" data-step="2" data-val="stopped_pill" onclick="selectOne(this)">\
-        <span class="opt-icon">\uc0\u55357 \u57003 </span>\
-        <span class="opt-body"><strong>\uc0\u3648 \u3614 \u3636 \u3656 \u3591 \u3627 \u3618 \u3640 \u3604 \u3618 \u3634 \u3588 \u3640 \u3617 </strong><span>\u3627 \u3618 \u3640 \u3604 \u3617 \u3634 \u3652 \u3604 \u3657 \u3652 \u3617 \u3656 \u3609 \u3634 \u3609  \u3627 \u3619 \u3639 \u3629 \u3629 \u3618 \u3641 \u3656 \u3651 \u3609 \u3594 \u3656 \u3623 \u3591  detox \u3627 \u3621 \u3633 \u3591 \u3627 \u3618 \u3640 \u3604 </span></span>\
-      </button>\
-      <button class="opt" data-step="2" data-val="no_pill" onclick="selectOne(this)">\
-        <span class="opt-icon">\uc0\u55356 \u57137 </span>\
-        <span class="opt-body"><strong>\uc0\u3652 \u3617 \u3656 \u3652 \u3604 \u3657 \u3607 \u3634 \u3609 \u3618 \u3634 \u3588 \u3640 \u3617 </strong><span>\u3652 \u3617 \u3656 \u3652 \u3604 \u3657 \u3607 \u3634 \u3609  \u3627 \u3619 \u3639 \u3629 \u3651 \u3594 \u3657 \u3623 \u3636 \u3608 \u3637 \u3588 \u3640 \u3617 \u3585 \u3635 \u3648 \u3609 \u3636 \u3604 \u3649 \u3610 \u3610 \u3629 \u3639 \u3656 \u3609 </span></span>\
-      </button>\
-    </div>\
-    <div class="nav-row">\
-      <button class="btn-back" onclick="goBack(2)">\uc0\u8592  \u3618 \u3657 \u3629 \u3609 \u3585 \u3621 \u3633 \u3610 </button>\
-      <button class="btn-next" id="next2" disabled onclick="goNext(2)">\uc0\u3605 \u3656 \u3629 \u3652 \u3611  \u8594 </button>\
-    </div>\
-  </div>\
-\
-  <!-- STEP 3 -->\
-  <div id="step-3" class="step">\
-    <div class="step-eyebrow">\uc0\u3586 \u3657 \u3629 \u3607 \u3637 \u3656  3 \u3592 \u3634 \u3585  4</div>\
-    <div class="question">\uc0\u3629 \u3634 \u3585 \u3634 \u3619 \u3652 \u3627 \u3609 \u3607 \u3637 \u3656 \u3619 \u3641 \u3657 \u3626 \u3638 \u3585 \u3610 \u3656 \u3629 \u3618 \u3607 \u3637 \u3656 \u3626 \u3640 \u3604 ?</div>\
-    <div class="question-hint">\uc0\u3648 \u3621 \u3639 \u3629 \u3585 \u3652 \u3604 \u3657 \u3617 \u3634 \u3585 \u3585 \u3623 \u3656 \u3634  1 \u3586 \u3657 \u3629 </div>\
-    <div class="options-list">\
-      <button class="opt" data-step="3" data-val="bloat" onclick="selectMulti(this)">\
-        <span class="opt-icon">\uc0\u55357 \u56487 </span>\
-        <span class="opt-body"><strong>\uc0\u3610 \u3623 \u3617 \u3609 \u3657 \u3635  / \u3607 \u3657 \u3629 \u3591 \u3629 \u3639 \u3604 </strong><span>\u3650 \u3604 \u3618 \u3648 \u3593 \u3614 \u3634 \u3632 \u3594 \u3656 \u3623 \u3591 \u3585 \u3656 \u3629 \u3609 \u3617 \u3637 \u3611 \u3619 \u3632 \u3592 \u3635 \u3648 \u3604 \u3639 \u3629 \u3609  \u3627 \u3619 \u3639 \u3629 \u3627 \u3621 \u3633 \u3591 \u3585 \u3636 \u3609 \u3629 \u3634 \u3627 \u3634 \u3619 </span></span>\
-      </button>\
-      <button class="opt" data-step="3" data-val="craving" onclick="selectMulti(this)">\
-        <span class="opt-icon">\uc0\u55356 \u57195 </span>\
-        <span class="opt-body"><strong>\uc0\u3629 \u3618 \u3634 \u3585 \u3585 \u3636 \u3609 \u3586 \u3629 \u3591 \u3627 \u3623 \u3634 \u3609  / \u3588 \u3634 \u3619 \u3660 \u3610 \u3610 \u3656 \u3629 \u3618 </strong><span>\u3650 \u3604 \u3618 \u3648 \u3593 \u3614 \u3634 \u3632 \u3594 \u3656 \u3623 \u3591 \u3648 \u3588 \u3619 \u3637 \u3618 \u3604  \u3627 \u3619 \u3639 \u3629 \u3585 \u3656 \u3629 \u3609 \u3617 \u3637 \u3611 \u3619 \u3632 \u3592 \u3635 \u3648 \u3604 \u3639 \u3629 \u3609 </span></span>\
-      </button>\
-      <button class="opt" data-step="3" data-val="mood" onclick="selectMulti(this)">\
-        <span class="opt-icon">\uc0\u55356 \u57098 </span>\
-        <span class="opt-body"><strong>\uc0\u3629 \u3634 \u3619 \u3617 \u3603 \u3660 \u3649 \u3611 \u3619 \u3611 \u3619 \u3623 \u3609  / \u3619 \u3657 \u3629 \u3591 \u3652 \u3627 \u3657 \u3591 \u3656 \u3634 \u3618 </strong><span>\u3629 \u3634 \u3619 \u3617 \u3603 \u3660 \u3586 \u3638 \u3657 \u3609  \u3654  \u3621 \u3591  \u3654  \u3650 \u3604 \u3618 \u3652 \u3617 \u3656 \u3617 \u3637 \u3648 \u3627 \u3605 \u3640 \u3612 \u3621 \u3594 \u3633 \u3604 \u3648 \u3592 \u3609 </span></span>\
-      </button>\
-      <button class="opt" data-step="3" data-val="heavy" onclick="selectMulti(this)">\
-        <span class="opt-icon">\uc0\u55358 \u56952 </span>\
-        <span class="opt-body"><strong>\uc0\u3611 \u3619 \u3632 \u3592 \u3635 \u3648 \u3604 \u3639 \u3629 \u3609 \u3617 \u3634 \u3617 \u3634 \u3585  / \u3648 \u3592 \u3655 \u3610 \u3617 \u3634 \u3585 </strong><span>\u3648 \u3611 \u3621 \u3637 \u3656 \u3618 \u3609 \u3612 \u3657 \u3634 \u3629 \u3609 \u3634 \u3617 \u3633 \u3618 \u3610 \u3656 \u3629 \u3618  \u3627 \u3619 \u3639 \u3629 \u3611 \u3623 \u3604 \u3592 \u3609 \u3607 \u3635 \u3629 \u3632 \u3652 \u3619 \u3652 \u3617 \u3656 \u3652 \u3604 \u3657 </span></span>\
-      </button>\
-      <button class="opt" data-step="3" data-val="fatigue" onclick="selectMulti(this)">\
-        <span class="opt-icon">\uc0\u55357 \u56587 </span>\
-        <span class="opt-body"><strong>\uc0\u3648 \u3627 \u3609 \u3639 \u3656 \u3629 \u3618 \u3621 \u3657 \u3634  / \u3652 \u3617 \u3656 \u3617 \u3637 \u3649 \u3619 \u3591 </strong><span>\u3609 \u3629 \u3609 \u3614 \u3629 \u3649 \u3621 \u3657 \u3623 \u3649 \u3605 \u3656 \u3618 \u3633 \u3591 \u3619 \u3641 \u3657 \u3626 \u3638 \u3585 \u3648 \u3627 \u3609 \u3639 \u3656 \u3629 \u3618  \u3627 \u3619 \u3639 \u3629 \u3629 \u3618 \u3641 \u3656 \u3585 \u3633 \u3610 \u3588 \u3623 \u3634 \u3617 \u3648 \u3588 \u3619 \u3637 \u3618 \u3604 \u3609 \u3634 \u3609 </span></span>\
-      </button>\
-      <button class="opt" data-step="3" data-val="androgen" onclick="selectMulti(this)">\
-        <span class="opt-icon">\uc0\u55357 \u56520 </span>\
-        <span class="opt-body"><strong>\uc0\u3630 \u3629 \u3619 \u3660 \u3650 \u3617 \u3609 \u3648 \u3614 \u3624 \u3594 \u3634 \u3618 \u3626 \u3641 \u3591  / \u3586 \u3609 \u3604 \u3585 </strong><span>\u3649 \u3614 \u3607 \u3618 \u3660 \u3649 \u3592 \u3657 \u3591  \u3627 \u3619 \u3639 \u3629 \u3626 \u3633 \u3591 \u3648 \u3585 \u3605 \u3648 \u3629 \u3591 \u3623 \u3656 \u3634 \u3617 \u3637 \u3586 \u3609 \u3617 \u3634 \u3585 \u3585 \u3623 \u3656 \u3634 \u3611 \u3585 \u3605 \u3636 </span></span>\
-      </button>\
-    </div>\
-    <div class="nav-row">\
-      <button class="btn-back" onclick="goBack(3)">\uc0\u8592  \u3618 \u3657 \u3629 \u3609 \u3585 \u3621 \u3633 \u3610 </button>\
-      <button class="btn-next" id="next3" disabled onclick="goNext(3)">\uc0\u3605 \u3656 \u3629 \u3652 \u3611  \u8594 </button>\
-    </div>\
-  </div>\
-\
-  <!-- STEP 4 -->\
-  <div id="step-4" class="step">\
-    <div class="step-eyebrow">\uc0\u3586 \u3657 \u3629 \u3607 \u3637 \u3656  4 \u3592 \u3634 \u3585  4</div>\
-    <div class="question">\uc0\u3648 \u3611 \u3657 \u3634 \u3627 \u3617 \u3634 \u3618 \u3627 \u3621 \u3633 \u3585 \u3586 \u3629 \u3591 \u3588 \u3640 \u3603 \u3588 \u3639 \u3629 \u3629 \u3632 \u3652 \u3619 ?</div>\
-    <div class="question-hint">\uc0\u3648 \u3621 \u3639 \u3629 \u3585 \u3586 \u3657 \u3629 \u3607 \u3637 \u3656 \u3651 \u3585 \u3621 \u3657 \u3648 \u3588 \u3637 \u3618 \u3591 \u3607 \u3637 \u3656 \u3626 \u3640 \u3604 \u3626 \u3633 \u3585 \u3627 \u3609 \u3638 \u3656 \u3591 \u3586 \u3657 \u3629 </div>\
-    <div class="options-list">\
-      <button class="opt" data-step="4" data-val="period_relief" onclick="selectOne(this)">\
-        <span class="opt-icon">\uc0\u55357 \u56787 \u65039 </span>\
-        <span class="opt-body"><strong>\uc0\u3629 \u3618 \u3634 \u3585 \u3651 \u3627 \u3657 \u3619 \u3629 \u3610 \u3648 \u3604 \u3639 \u3629 \u3609 \u3626 \u3617 \u3641 \u3607 \u3586 \u3638 \u3657 \u3609 </strong><span>\u3611 \u3623 \u3604 \u3609 \u3657 \u3629 \u3618 \u3621 \u3591  \u3610 \u3623 \u3617 \u3609 \u3657 \u3629 \u3618 \u3621 \u3591  \u3629 \u3634 \u3619 \u3617 \u3603 \u3660 \u3609 \u3636 \u3656 \u3591 \u3586 \u3638 \u3657 \u3609 </span></span>\
-      </button>\
-      <button class="opt" data-step="4" data-val="hormone_balance" onclick="selectOne(this)">\
-        <span class="opt-icon">\uc0\u9775 \u65039 </span>\
-        <span class="opt-body"><strong>\uc0\u3611 \u3619 \u3633 \u3610 \u3626 \u3617 \u3604 \u3640 \u3621 \u3630 \u3629 \u3619 \u3660 \u3650 \u3617 \u3609 \u3619 \u3632 \u3618 \u3632 \u3618 \u3634 \u3623 </strong><span>\u3649 \u3585 \u3657 \u3607 \u3637 \u3656 \u3605 \u3657 \u3609 \u3648 \u3627 \u3605 \u3640  \u3652 \u3617 \u3656 \u3651 \u3594 \u3656 \u3649 \u3588 \u3656 \u3610 \u3619 \u3619 \u3648 \u3607 \u3634 \u3629 \u3634 \u3585 \u3634 \u3619 </span></span>\
-      </button>\
-      <button class="opt" data-step="4" data-val="skin_acne" onclick="selectOne(this)">\
-        <span class="opt-icon">\uc0\u55356 \u57119 </span>\
-        <span class="opt-body"><strong>\uc0\u3629 \u3618 \u3634 \u3585 \u3651 \u3627 \u3657 \u3612 \u3636 \u3623 \u3604 \u3637 \u3586 \u3638 \u3657 \u3609  / \u3621 \u3604 \u3626 \u3636 \u3623 \u3630 \u3629 \u3619 \u3660 \u3650 \u3617 \u3609 </strong><span>\u3626 \u3636 \u3623 \u3607 \u3637 \u3656 \u3586 \u3638 \u3657 \u3609 \u3592 \u3634 \u3585 \u3630 \u3629 \u3619 \u3660 \u3650 \u3617 \u3609  \u3652 \u3617 \u3656 \u3651 \u3594 \u3656 \u3592 \u3634 \u3585 \u3588 \u3623 \u3634 \u3617 \u3626 \u3632 \u3629 \u3634 \u3604 </span></span>\
-      </button>\
-      <button class="opt" data-step="4" data-val="detox" onclick="selectOne(this)">\
-        <span class="opt-icon">\uc0\u55357 \u56580 </span>\
-        <span class="opt-body"><strong>\uc0\u3621 \u3657 \u3634 \u3591 \u3630 \u3629 \u3619 \u3660 \u3650 \u3617 \u3609 \u3605 \u3585 \u3588 \u3657 \u3634 \u3591 \u3592 \u3634 \u3585 \u3618 \u3634 \u3588 \u3640 \u3617 </strong><span>\u3605 \u3657 \u3629 \u3591 \u3585 \u3634 \u3619  detox \u3627 \u3621 \u3633 \u3591 \u3627 \u3618 \u3640 \u3604 \u3618 \u3634  \u3627 \u3619 \u3639 \u3629 \u3619 \u3632 \u3627 \u3623 \u3656 \u3634 \u3591 \u3607 \u3634 \u3609 \u3629 \u3618 \u3641 \u3656 </span></span>\
-      </button>\
-    </div>\
-    <div class="nav-row">\
-      <button class="btn-back" onclick="goBack(4)">\uc0\u8592  \u3618 \u3657 \u3629 \u3609 \u3585 \u3621 \u3633 \u3610 </button>\
-      <button class="btn-next" id="next4" disabled onclick="showResult()">\uc0\u3604 \u3641 \u3612 \u3621 \u3586 \u3629 \u3591 \u3593 \u3633 \u3609  \u10022 </button>\
-    </div>\
-  </div>\
-\
-  <!-- RESULT -->\
-  <div id="step-result" class="step">\
-    <div id="result-content"></div>\
-    \
-    <div style="text-align:center; margin-top: 24px;">\
-      <button class="restart-btn" onclick="restartQuiz()">\uc0\u8634  \u3648 \u3619 \u3636 \u3656 \u3617 \u3651 \u3627 \u3617 \u3656 \u3629 \u3637 \u3585 \u3588 \u3619 \u3633 \u3657 \u3591 </button>\
-    </div>\
-\
-    <!-- \uc0\u3586 \u3657 \u3629 \u3588 \u3623 \u3634 \u3617  Disclaimer \u3629 \u3618 . -->\
-    <div class="disclaimer">\
-      *\uc0\u3586 \u3657 \u3629 \u3588 \u3623 \u3634 \u3617 \u3648 \u3627 \u3621 \u3656 \u3634 \u3609 \u3637 \u3657 \u3618 \u3633 \u3591 \u3652 \u3617 \u3656 \u3652 \u3604 \u3657 \u3619 \u3633 \u3610 \u3585 \u3634 \u3619 \u3611 \u3619 \u3632 \u3648 \u3617 \u3636 \u3609 \u3650 \u3604 \u3618 \u3626 \u3635 \u3609 \u3633 \u3585 \u3591 \u3634 \u3609 \u3588 \u3603 \u3632 \u3585 \u3619 \u3619 \u3617 \u3585 \u3634 \u3619 \u3629 \u3634 \u3627 \u3634 \u3619 \u3649 \u3621 \u3632 \u3618 \u3634  \u3612 \u3621 \u3636 \u3605 \u3616 \u3633 \u3603 \u3601 \u3660 \u3609 \u3637 \u3657 \u3652 \u3617 \u3656 \u3652 \u3604 \u3657 \u3617 \u3637 \u3623 \u3633 \u3605 \u3606 \u3640 \u3611 \u3619 \u3632 \u3626 \u3591 \u3588 \u3660 \u3648 \u3614 \u3639 \u3656 \u3629 \u3623 \u3636 \u3609 \u3636 \u3592 \u3593 \u3633 \u3618  \u3610 \u3635 \u3610 \u3633 \u3604  \u3619 \u3633 \u3585 \u3625 \u3634  \u3627 \u3619 \u3639 \u3629 \u3611 \u3657 \u3629 \u3591 \u3585 \u3633 \u3609 \u3650 \u3619 \u3588 \u3651 \u3604 \u3654 <br>\
-      "This statement has not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease."\
-    </div>\
-  </div>\
-\
-</div>\
-\
-<script>\
-  const answers = \{ 1: [], 2: null, 3: [], 4: null \};\
-\
-  function selectMulti(btn) \{\
-    const step = btn.dataset.step;\
-    const val = btn.dataset.val;\
-    document.querySelectorAll(`[data-step="$\{step\}"][data-val="none_mild"]`).forEach(b => \{\
-      b.classList.remove('selected', 'selected-pops');\
-    \});\
-    answers[step] = (answers[step] || []).filter(v => v !== 'none_mild');\
-    if (btn.classList.contains('selected')) \{\
-      btn.classList.remove('selected', 'selected-pops');\
-      answers[step] = answers[step].filter(v => v !== val);\
-    \} else \{\
-      btn.classList.add('selected');\
-      if (!Array.isArray(answers[step])) answers[step] = [];\
-      answers[step].push(val);\
-    \}\
-    document.getElementById('next' + step).disabled = answers[step].length === 0;\
-  \}\
-\
-  function selectExclusive(btn, step) \{\
-    document.querySelectorAll(`[data-step="$\{step\}"]`).forEach(b => b.classList.remove('selected', 'selected-pops'));\
-    btn.classList.add('selected');\
-    answers[step] = [btn.dataset.val];\
-    document.getElementById('next' + step).disabled = false;\
-  \}\
-\
-  function selectOne(btn) \{\
-    const step = btn.dataset.step;\
-    document.querySelectorAll(`[data-step="$\{step\}"]`).forEach(b => b.classList.remove('selected', 'selected-pops'));\
-    btn.classList.add('selected');\
-    answers[step] = btn.dataset.val;\
-    document.getElementById('next' + step).disabled = false;\
-  \}\
-\
-  function goNext(step) \{\
-    document.getElementById('step-' + step).classList.remove('active');\
-    document.getElementById('step-' + (step + 1)).classList.add('active');\
-    updateProgress(step + 1);\
-    window.scrollTo(\{ top: 0, behavior: 'smooth' \});\
-  \}\
-\
-  function goBack(step) \{\
-    document.getElementById('step-' + step).classList.remove('active');\
-    document.getElementById('step-' + (step - 1)).classList.add('active');\
-    updateProgress(step - 1);\
-    window.scrollTo(\{ top: 0, behavior: 'smooth' \});\
-  \}\
-\
-  function updateProgress(step) \{\
-    const pct = step <= 4 ? ((step - 1) / 4) * 100 : 100;\
-    document.getElementById('pbar').style.width = pct + '%';\
-    const labels = ['\uc0\u3648 \u3619 \u3636 \u3656 \u3617 \u3605 \u3657 \u3609 ', '\u3586 \u3657 \u3629 \u3607 \u3637 \u3656  1', '\u3586 \u3657 \u3629 \u3607 \u3637 \u3656  2', '\u3586 \u3657 \u3629 \u3607 \u3637 \u3656  3', '\u3612 \u3621 \u3621 \u3633 \u3614 \u3608 \u3660 '];\
-    document.getElementById('prog-label').textContent = labels[step - 1] || '\uc0\u3612 \u3621 \u3621 \u3633 \u3614 \u3608 \u3660 ';\
-    document.getElementById('prog-pct').textContent = (step <= 4 ? step - 1 : 4) + ' / 4';\
-  \}\
-\
-  function getRecommendation() \{\
-    const s1 = answers[1] || [];\
-    const pill = answers[2];\
-    const s3 = answers[3] || [];\
-    const goal = answers[4];\
-\
-    const hasPCOS  = s1.includes('pcos');\
-    const hasEndo  = s1.includes('endo');\
-    const hasPMS   = s1.includes('pms');\
-    const hasAcne  = s1.includes('acne');\
-    const hasStress = s1.includes('stress');\
-    const isNone   = s1.includes('none_mild');\
-    const isPill   = pill === 'on_pill' || pill === 'stopped_pill';\
-    const hasBloat = s3.includes('bloat');\
-    const hasCraving = s3.includes('craving');\
-    const hasMood  = s3.includes('mood');\
-    const hasHeavy = s3.includes('heavy');\
-    const hasFatigue = s3.includes('fatigue');\
-    const hasAndrogen = s3.includes('androgen');\
-\
-    const herScore  = [hasPMS, hasEndo, isPill, hasHeavy, goal==='period_relief', goal==='detox', hasBloat && !hasCraving].filter(Boolean).length;\
-    const popsScore = [hasPCOS, hasAcne, hasStress, hasCraving, hasAndrogen, goal==='skin_acne', hasPCOS && isPill].filter(Boolean).length;\
-\
-    if (isNone) \{\
-      return \{\
-        type: 'her',\
-        headline: '\uc0\u3648 \u3619 \u3636 \u3656 \u3617 \u3605 \u3657 \u3609 \u3604 \u3657 \u3623 \u3618  Her Tea',\
-        tagline: '\uc0\u3610 \u3635 \u3619 \u3640 \u3591 \u3592 \u3634 \u3585 \u3586 \u3657 \u3634 \u3591 \u3651 \u3609  \u3585 \u3656 \u3629 \u3609 \u3607 \u3637 \u3656 \u3629 \u3634 \u3585 \u3634 \u3619 \u3592 \u3632 \u3648 \u3619 \u3636 \u3656 \u3617 ',\
-        why: '\uc0\u3649 \u3617 \u3657 \u3592 \u3632 \u3618 \u3633 \u3591 \u3652 \u3617 \u3656 \u3617 \u3637 \u3629 \u3634 \u3585 \u3634 \u3619 \u3594 \u3633 \u3604 \u3648 \u3592 \u3609  \u3585 \u3634 \u3619 \u3604 \u3639 \u3656 \u3617  Her Tea \u3648 \u3611 \u3655 \u3609 \u3611 \u3619 \u3632 \u3592 \u3635 \u3594 \u3656 \u3623 \u3618 \u3651 \u3627 \u3657 \u3619 \u3629 \u3610 \u3648 \u3604 \u3639 \u3629 \u3609 \u3626 \u3617 \u3641 \u3607 \u3586 \u3638 \u3657 \u3609 \u3651 \u3609 \u3619 \u3632 \u3618 \u3632 \u3618 \u3634 \u3623  \u3648 \u3627 \u3617 \u3639 \u3629 \u3609 \u3585 \u3634 \u3619 \u3604 \u3641 \u3649 \u3621 \u3619 \u3632 \u3610 \u3610 \u3630 \u3629 \u3619 \u3660 \u3650 \u3617 \u3609 \u3585 \u3656 \u3629 \u3609 \u3607 \u3637 \u3656 \u3611 \u3633 \u3597 \u3627 \u3634 \u3592 \u3632 \u3648 \u3619 \u3636 \u3656 \u3617  \u3604 \u3637 \u3585 \u3623 \u3656 \u3634 \u3619 \u3629 \u3651 \u3627 \u3657 \u3617 \u3637 \u3629 \u3634 \u3585 \u3634 \u3619 \u3649 \u3621 \u3657 \u3623 \u3588 \u3656 \u3629 \u3618 \u3649 \u3585 \u3657 ',\
-        benefits: ['\uc0\u3619 \u3629 \u3610 \u3648 \u3604 \u3639 \u3629 \u3609 \u3626 \u3617 \u3656 \u3635 \u3648 \u3626 \u3617 \u3629 \u3586 \u3638 \u3657 \u3609  \u3629 \u3634 \u3585 \u3634 \u3619  PMS \u3648 \u3610 \u3634 \u3621 \u3591 \u3605 \u3634 \u3617 \u3608 \u3619 \u3619 \u3617 \u3594 \u3634 \u3605 \u3636 ', '\u3594 \u3656 \u3623 \u3618 \u3585 \u3635 \u3592 \u3633 \u3604 \u3626 \u3634 \u3619  xenoestrogen \u3592 \u3634 \u3585 \u3626 \u3636 \u3656 \u3591 \u3649 \u3623 \u3604 \u3621 \u3657 \u3629 \u3617 \u3607 \u3637 \u3656 \u3626 \u3632 \u3626 \u3617 \u3650 \u3604 \u3618 \u3652 \u3617 \u3656 \u3619 \u3641 \u3657 \u3605 \u3633 \u3623 ', '\u3605 \u3633 \u3610 \u3607 \u3635 \u3591 \u3634 \u3609 \u3604 \u3637 \u3586 \u3638 \u3657 \u3609  \u3630 \u3629 \u3619 \u3660 \u3650 \u3617 \u3609 \u3648 \u3612 \u3634 \u3612 \u3621 \u3634 \u3597 \u3652 \u3604 \u3657 \u3617 \u3637 \u3611 \u3619 \u3632 \u3626 \u3636 \u3607 \u3608 \u3636 \u3616 \u3634 \u3614 '],\
-        dotClass: 'dot-her', tipClass: 'tip-her',\
-        tip: '\uc0\u3604 \u3639 \u3656 \u3617 \u3594 \u3656 \u3623 \u3591 \u3648 \u3594 \u3657 \u3634  \u3627 \u3619 \u3639 \u3629 \u3585 \u3656 \u3629 \u3609 \u3609 \u3629 \u3609  \u3623 \u3633 \u3609 \u3621 \u3632  1 \u3617 \u3639 \u3657 \u3629 ',\
-        prices: [\{ amt: '\uc0\u3647 690', lbl: '1 \u3585 \u3621 \u3656 \u3629 \u3591  / 15 \u3617 \u3639 \u3657 \u3629 ' \}, \{ amt: '\u3647 1,100', lbl: '2 \u3585 \u3621 \u3656 \u3629 \u3591  + \u3626 \u3656 \u3591 \u3615 \u3619 \u3637 ' \}],\
-        btnClass: 'btn-cta-her', btnText: '\uc0\u3626 \u3633 \u3656 \u3591 \u3595 \u3639 \u3657 \u3629  Her Tea \u8594 ',\
-        btnLink: 'https://line.me/R/ti/p/@hernest'\
-      \};\
-    \}\
-\
-    if (herScore >= 2 && popsScore >= 2) \{\
-      return \{\
-        type: 'both',\
-        headline: '\uc0\u3604 \u3639 \u3656 \u3617 \u3607 \u3633 \u3657 \u3591 \u3626 \u3629 \u3591 \u3626 \u3641 \u3605 \u3619 ',\
-        tagline: '\uc0\u3629 \u3634 \u3585 \u3634 \u3619 \u3586 \u3629 \u3591 \u3588 \u3640 \u3603 \u3605 \u3657 \u3629 \u3591 \u3585 \u3634 \u3619 \u3607 \u3633 \u3657 \u3591  detox \u3630 \u3629 \u3619 \u3660 \u3650 \u3617 \u3609  \u3649 \u3621 \u3632 \u3585 \u3634 \u3619 \u3611 \u3619 \u3633 \u3610  androgen \u3614 \u3619 \u3657 \u3629 \u3617 \u3585 \u3633 \u3609 ',\
-        why: '\uc0\u3650 \u3611 \u3619 \u3652 \u3615 \u3621 \u3660 \u3586 \u3629 \u3591 \u3588 \u3640 \u3603 \u3617 \u3637 \u3626 \u3633 \u3597 \u3597 \u3634 \u3603 \u3607 \u3633 \u3657 \u3591 \u3626 \u3629 \u3591 \u3604 \u3657 \u3634 \u3609 \u3594 \u3633 \u3604 \u3648 \u3592 \u3609  Her Tea \u3592 \u3633 \u3604 \u3585 \u3634 \u3619  detox \u3630 \u3629 \u3619 \u3660 \u3650 \u3617 \u3609 \u3649 \u3621 \u3632 \u3610 \u3619 \u3619 \u3648 \u3607 \u3634  PMS \u3626 \u3656 \u3623 \u3609  Pops Tea \u3649 \u3585 \u3657 \u3607 \u3637 \u3656 \u3605 \u3657 \u3609 \u3648 \u3627 \u3605 \u3640 \u3586 \u3629 \u3591  PCOS \u3649 \u3621 \u3632 \u3630 \u3629 \u3619 \u3660 \u3650 \u3617 \u3609 \u3648 \u3614 \u3624 \u3594 \u3634 \u3618 \u3626 \u3641 \u3591  \u3607 \u3633 \u3657 \u3591 \u3626 \u3629 \u3591 \u3605 \u3633 \u3623 \u3604 \u3639 \u3656 \u3617 \u3588 \u3641 \u3656 \u3585 \u3633 \u3609 \u3652 \u3604 \u3657 \u3648 \u3621 \u3618  \u3652 \u3617 \u3656 \u3605 \u3637 \u3585 \u3633 \u3609 ',\
-        benefits_her: [isPill ? 'Detox \uc0\u3630 \u3629 \u3619 \u3660 \u3650 \u3617 \u3609 \u3626 \u3633 \u3591 \u3648 \u3588 \u3619 \u3634 \u3632 \u3627 \u3660 \u3607 \u3637 \u3656 \u3605 \u3585 \u3588 \u3657 \u3634 \u3591 \u3592 \u3634 \u3585 \u3618 \u3634 \u3588 \u3640 \u3617 ' : '\u3594 \u3656 \u3623 \u3618 \u3605 \u3633 \u3610 \u3621 \u3657 \u3634 \u3591 \u3648 \u3629 \u3626 \u3650 \u3605 \u3619 \u3648 \u3592 \u3609 \u3626 \u3656 \u3623 \u3609 \u3648 \u3585 \u3636 \u3609 \u3629 \u3629 \u3585 \u3592 \u3634 \u3585 \u3619 \u3656 \u3634 \u3591 \u3585 \u3634 \u3618 ', hasHeavy || hasPMS ? 'Raspberry Leaf \u3621 \u3604 \u3629 \u3634 \u3585 \u3634 \u3619 \u3611 \u3623 \u3604 \u3649 \u3621 \u3632 \u3610 \u3623 \u3617 \u3619 \u3632 \u3627 \u3623 \u3656 \u3634 \u3591 \u3617 \u3637 \u3611 \u3619 \u3632 \u3592 \u3635 \u3648 \u3604 \u3639 \u3629 \u3609 ' : '\u3611 \u3619 \u3633 \u3610 \u3619 \u3629 \u3610 \u3648 \u3604 \u3639 \u3629 \u3609 \u3651 \u3627 \u3657 \u3626 \u3617 \u3656 \u3635 \u3648 \u3626 \u3617 \u3629 \u3586 \u3638 \u3657 \u3609 '],\
-        benefits_pops: [hasAcne ? '\uc0\u3621 \u3604 \u3626 \u3636 \u3623 \u3630 \u3629 \u3619 \u3660 \u3650 \u3617 \u3609 \u3650 \u3604 \u3618 \u3605 \u3619 \u3591 \u3592 \u3634 \u3585  androgen \u3626 \u3641 \u3591 ' : '\u3611 \u3619 \u3633 \u3610 \u3626 \u3617 \u3604 \u3640 \u3621  androgen \u3607 \u3637 \u3656 \u3617 \u3633 \u3585 \u3619 \u3610 \u3585 \u3623 \u3609 \u3612 \u3636 \u3623 \u3649 \u3621 \u3632 \u3629 \u3634 \u3619 \u3617 \u3603 \u3660 ', hasCraving ? '\u3594 \u3656 \u3623 \u3618 \u3611 \u3619 \u3633 \u3610  blood sugar \u3621 \u3604 \u3588 \u3623 \u3634 \u3617 \u3629 \u3618 \u3634 \u3585 \u3586 \u3629 \u3591 \u3627 \u3623 \u3634 \u3609 \u3626 \u3632 \u3626 \u3617 ' : '\u3594 \u3656 \u3623 \u3618 \u3618 \u3656 \u3629 \u3618  \u3621 \u3604 \u3607 \u3657 \u3629 \u3591 \u3629 \u3639 \u3604 \u3627 \u3621 \u3633 \u3591 \u3617 \u3639 \u3657 \u3629 \u3629 \u3634 \u3627 \u3634 \u3619 '],\
-        tip: 'Her Tea: \uc0\u3604 \u3639 \u3656 \u3617 \u3648 \u3594 \u3657 \u3634 \u3627 \u3619 \u3639 \u3629 \u3585 \u3656 \u3629 \u3609 \u3609 \u3629 \u3609   |  Pops Tea: \u3604 \u3639 \u3656 \u3617 \u3627 \u3621 \u3633 \u3591 \u3617 \u3639 \u3657 \u3629 \u3629 \u3634 \u3627 \u3634 \u3619 ',\
-        prices_her: [\{ amt: '\uc0\u3647 690', lbl: '1 \u3585 \u3621 \u3656 \u3629 \u3591  / 15 \u3617 \u3639 \u3657 \u3629 ' \}, \{ amt: '\u3647 1,100', lbl: '2 \u3585 \u3621 \u3656 \u3629 \u3591  + \u3626 \u3656 \u3591 \u3615 \u3619 \u3637 ' \}],\
-        prices_pops: [\{ amt: '\uc0\u3647 590', lbl: '1 \u3585 \u3621 \u3656 \u3629 \u3591  / 15 \u3623 \u3633 \u3609 ' \}]\
-      \};\
-    \}\
-\
-    if (popsScore > herScore || hasPCOS || hasAcne || hasAndrogen || hasCraving) \{\
-      return \{\
-        type: 'pops',\
-        headline: '\uc0\u3648 \u3619 \u3636 \u3656 \u3617 \u3605 \u3657 \u3609 \u3604 \u3657 \u3623 \u3618  Pops Tea',\
-        tagline: '\uc0\u3649 \u3585 \u3657 \u3607 \u3637 \u3656 \u3605 \u3657 \u3609 \u3648 \u3627 \u3605 \u3640 \u3586 \u3629 \u3591  PCOS \u3626 \u3636 \u3623 \u3630 \u3629 \u3619 \u3660 \u3650 \u3617 \u3609  \u3649 \u3621 \u3632  androgen \u3626 \u3641 \u3591 ',\
-        why: '\uc0\u3629 \u3634 \u3585 \u3634 \u3619 \u3607 \u3637 \u3656 \u3588 \u3640 \u3603 \u3617 \u3637 \u3626 \u3656 \u3623 \u3609 \u3651 \u3627 \u3597 \u3656 \u3594 \u3637 \u3657 \u3652 \u3611 \u3607 \u3637 \u3656 \u3630 \u3629 \u3619 \u3660 \u3650 \u3617 \u3609 \u3648 \u3614 \u3624 \u3594 \u3634 \u3618 \u3626 \u3641 \u3591  (androgens) \u3595 \u3638 \u3656 \u3591 \u3648 \u3611 \u3655 \u3609 \u3619 \u3634 \u3585 \u3586 \u3629 \u3591 \u3626 \u3636 \u3623 \u3630 \u3629 \u3619 \u3660 \u3650 \u3617 \u3609  PCOS \u3649 \u3621 \u3632 \u3588 \u3623 \u3634 \u3617 \u3629 \u3618 \u3634 \u3585 \u3586 \u3629 \u3591 \u3627 \u3623 \u3634 \u3609  Pops Tea \u3629 \u3629 \u3585 \u3649 \u3610 \u3610 \u3617 \u3634 \u3649 \u3585 \u3657 \u3605 \u3619 \u3591 \u3609 \u3637 \u3657 \u3650 \u3604 \u3618 \u3605 \u3619 \u3591  \u3607 \u3635 \u3591 \u3634 \u3609 \u3652 \u3604 \u3657 \u3604 \u3637 \u3607 \u3637 \u3656 \u3626 \u3640 \u3604 \u3648 \u3617 \u3639 \u3656 \u3629 \u3604 \u3639 \u3656 \u3617 \u3627 \u3621 \u3633 \u3591 \u3617 \u3639 \u3657 \u3629 \u3629 \u3634 \u3627 \u3634 \u3619 ',\
-        benefits: [hasPCOS ? '\uc0\u3626 \u3609 \u3633 \u3610 \u3626 \u3609 \u3640 \u3609 \u3626 \u3640 \u3586 \u3616 \u3634 \u3614 \u3619 \u3633 \u3591 \u3652 \u3586 \u3656 \u3649 \u3621 \u3632 \u3611 \u3619 \u3633 \u3610  hormonal baseline \u3586 \u3629 \u3591  PCOS' : '\u3621 \u3604  androgen \u3626 \u3641 \u3591 \u3607 \u3637 \u3656 \u3619 \u3610 \u3585 \u3623 \u3609 \u3612 \u3636 \u3623 \u3649 \u3621 \u3632 \u3626 \u3617 \u3604 \u3640 \u3621 \u3630 \u3629 \u3619 \u3660 \u3650 \u3617 \u3609 ', hasAcne ? '\u3621 \u3604 \u3626 \u3636 \u3623 \u3630 \u3629 \u3619 \u3660 \u3650 \u3617 \u3609 \u3649 \u3621 \u3632 \u3612 \u3636 \u3623 \u3617 \u3633 \u3609  \u3592 \u3634 \u3585 \u3585 \u3634 \u3619 \u3592 \u3633 \u3604 \u3585 \u3634 \u3619 \u3605 \u3657 \u3609 \u3648 \u3627 \u3605 \u3640  \u3652 \u3617 \u3656 \u3651 \u3594 \u3656 \u3649 \u3588 \u3656 \u3612 \u3636 \u3623 \u3627 \u3609 \u3657 \u3634 ' : '\u3611 \u3619 \u3633 \u3610 \u3626 \u3617 \u3604 \u3640 \u3621 \u3630 \u3629 \u3619 \u3660 \u3650 \u3617 \u3609 \u3648 \u3614 \u3624 \u3594 \u3634 \u3618 \u3607 \u3637 \u3656 \u3617 \u3633 \u3585 \u3626 \u3641 \u3591 \u3648 \u3585 \u3636 \u3609 \u3651 \u3609 \u3627 \u3621 \u3634 \u3618 \u3616 \u3634 \u3623 \u3632 ', hasCraving ? '\u3594 \u3656 \u3623 \u3618 \u3611 \u3619 \u3633 \u3610  blood sugar \u3621 \u3604 \u3588 \u3623 \u3634 \u3617 \u3629 \u3618 \u3634 \u3585 \u3586 \u3629 \u3591 \u3627 \u3623 \u3634 \u3609 \u3626 \u3632 \u3626 \u3617 ' : hasStress ? '\u3594 \u3656 \u3623 \u3618 \u3611 \u3619 \u3633 \u3610  cortisol \u3621 \u3604 \u3612 \u3621 \u3648 \u3626 \u3637 \u3618 \u3592 \u3634 \u3585 \u3588 \u3623 \u3634 \u3617 \u3648 \u3588 \u3619 \u3637 \u3618 \u3604 \u3648 \u3619 \u3639 \u3657 \u3629 \u3619 \u3633 \u3591 ' : '\u3594 \u3656 \u3623 \u3618 \u3618 \u3656 \u3629 \u3618  \u3621 \u3604 \u3607 \u3657 \u3629 \u3591 \u3629 \u3639 \u3604 \u3627 \u3621 \u3633 \u3591 \u3617 \u3639 \u3657 \u3629 \u3629 \u3634 \u3627 \u3634 \u3619 '],\
-        dotClass: 'dot-pops', tipClass: 'tip-pops',\
-        tip: '\uc0\u3604 \u3639 \u3656 \u3617 \u3627 \u3621 \u3633 \u3591 \u3617 \u3639 \u3657 \u3629 \u3629 \u3634 \u3627 \u3634 \u3619  \u3623 \u3633 \u3609 \u3621 \u3632  1 \u3617 \u3639 \u3657 \u3629 ',\
-        prices: [\{ amt: '\uc0\u3647 590', lbl: '1 \u3585 \u3621 \u3656 \u3629 \u3591  / 15 \u3623 \u3633 \u3609 ' \}],\
-        btnClass: 'btn-cta-pops', btnText: '\uc0\u3626 \u3633 \u3656 \u3591 \u3595 \u3639 \u3657 \u3629  Pops Tea \u8594 ',\
-        btnLink: 'https://line.me/R/ti/p/@hernest'\
-      \};\
-    \}\
-\
-    return \{\
-      type: 'her',\
-      headline: '\uc0\u3648 \u3619 \u3636 \u3656 \u3617 \u3605 \u3657 \u3609 \u3604 \u3657 \u3623 \u3618  Her Tea',\
-      tagline: '\uc0\u3605 \u3619 \u3591 \u3585 \u3633 \u3610 \u3629 \u3634 \u3585 \u3634 \u3619 \u3607 \u3637 \u3656 \u3588 \u3640 \u3603 \u3617 \u3637 \u3617 \u3634 \u3585 \u3607 \u3637 \u3656 \u3626 \u3640 \u3604 ',\
-      why: '\uc0\u3629 \u3634 \u3585 \u3634 \u3619 \u3586 \u3629 \u3591 \u3588 \u3640 \u3603 \u3648 \u3594 \u3639 \u3656 \u3629 \u3617 \u3585 \u3633 \u3610  estrogen dominance \u3649 \u3621 \u3632  PMS \u3594 \u3633 \u3604 \u3648 \u3592 \u3609  Her Tea \u3594 \u3656 \u3623 \u3618 \u3605 \u3633 \u3610 \u3651 \u3627 \u3657 \u3648 \u3612 \u3634 \u3612 \u3621 \u3634 \u3597 \u3648 \u3629 \u3626 \u3650 \u3605 \u3619 \u3648 \u3592 \u3609 \u3626 \u3656 \u3623 \u3609 \u3648 \u3585 \u3636 \u3609  \u3621 \u3604 \u3629 \u3634 \u3585 \u3634 \u3619 \u3611 \u3623 \u3604 \u3649 \u3621 \u3632 \u3610 \u3623 \u3617  \u3649 \u3621 \u3632 \u3607 \u3635 \u3651 \u3627 \u3657 \u3619 \u3629 \u3610 \u3648 \u3604 \u3639 \u3629 \u3609 \u3626 \u3617 \u3641 \u3607 \u3586 \u3638 \u3657 \u3609  \u3627 \u3621 \u3634 \u3618 \u3588 \u3609 \u3619 \u3641 \u3657 \u3626 \u3638 \u3585 \u3605 \u3656 \u3634 \u3591 \u3605 \u3633 \u3657 \u3591 \u3649 \u3605 \u3656 \u3619 \u3629 \u3610 \u3649 \u3619 \u3585 ',\
-      benefits: [hasPMS || hasHeavy ? 'Raspberry Leaf \uc0\u3594 \u3656 \u3623 \u3618 \u3612 \u3656 \u3629 \u3609 \u3588 \u3621 \u3634 \u3618 \u3585 \u3621 \u3657 \u3634 \u3617 \u3648 \u3609 \u3639 \u3657 \u3629 \u3617 \u3604 \u3621 \u3641 \u3585  \u3621 \u3604 \u3629 \u3634 \u3585 \u3634 \u3619 \u3611 \u3623 \u3604 ' : '\u3611 \u3619 \u3633 \u3610  estrogen\u3626 \u3656 \u3623 \u3609 \u3648 \u3585 \u3636 \u3609 \u3607 \u3637 \u3656 \u3648 \u3611 \u3655 \u3609 \u3605 \u3657 \u3609 \u3648 \u3627 \u3605 \u3640 \u3586 \u3629 \u3591  PMS', hasBloat ? 'Dandelion \u3594 \u3656 \u3623 \u3618 \u3619 \u3632 \u3610 \u3634 \u3618 \u3609 \u3657 \u3635 \u3626 \u3656 \u3623 \u3609 \u3648 \u3585 \u3636 \u3609  \u3621 \u3604 \u3610 \u3623 \u3617 \u3650 \u3604 \u3618 \u3652 \u3617 \u3656 \u3648 \u3626 \u3637 \u3618  electrolytes' : 'Lemon Balm + Oatstraw \u3594 \u3656 \u3623 \u3618 \u3651 \u3627 \u3657 \u3629 \u3634 \u3619 \u3617 \u3603 \u3660 \u3609 \u3636 \u3656 \u3591  \u3621 \u3604 \u3623 \u3636 \u3605 \u3585 \u3585 \u3633 \u3591 \u3623 \u3621 ', isPill ? 'Detox \u3630 \u3629 \u3619 \u3660 \u3650 \u3617 \u3609 \u3626 \u3633 \u3591 \u3648 \u3588 \u3619 \u3634 \u3632 \u3627 \u3660 \u3607 \u3637 \u3656 \u3605 \u3585 \u3588 \u3657 \u3634 \u3591 \u3592 \u3634 \u3585 \u3618 \u3634 \u3588 \u3640 \u3617 ' : '\u3594 \u3656 \u3623 \u3618  liver detox \u3626 \u3634 \u3619  xenoestrogen \u3592 \u3634 \u3585 \u3626 \u3636 \u3656 \u3591 \u3649 \u3623 \u3604 \u3621 \u3657 \u3629 \u3617 '],\
-      dotClass: 'dot-her', tipClass: 'tip-her',\
-      tip: '\uc0\u3604 \u3639 \u3656 \u3617 \u3594 \u3656 \u3623 \u3591 \u3648 \u3594 \u3657 \u3634  \u3627 \u3619 \u3639 \u3629 \u3585 \u3656 \u3629 \u3609 \u3609 \u3629 \u3609  \u3623 \u3633 \u3609 \u3621 \u3632  1 \u3617 \u3639 \u3657 \u3629 ',\
-      prices: [\{ amt: '\uc0\u3647 690', lbl: '1 \u3585 \u3621 \u3656 \u3629 \u3591  / 15 \u3617 \u3639 \u3657 \u3629 ' \}, \{ amt: '\u3647 1,100', lbl: '2 \u3585 \u3621 \u3656 \u3629 \u3591  + \u3626 \u3656 \u3591 \u3615 \u3619 \u3637 ' \}],\
-      btnClass: 'btn-cta-her', btnText: '\uc0\u3626 \u3633 \u3656 \u3591 \u3595 \u3639 \u3657 \u3629  Her Tea \u8594 ',\
-      btnLink: 'https://line.me/R/ti/p/@hernest'\
-    \};\
-  \}\
-\
-  function renderBothResult(rec) \{\
-    const tipAddOn = `<br><br><span style="font-size: 13.5px; opacity: 0.85;">*\uc0\u3649 \u3609 \u3632 \u3609 \u3635 \u3651 \u3627 \u3657 \u3604 \u3639 \u3656 \u3617 \u3605 \u3656 \u3629 \u3648 \u3609 \u3639 \u3656 \u3629 \u3591 \u3629 \u3618 \u3656 \u3634 \u3591 \u3609 \u3657 \u3629 \u3618  3 \u3648 \u3604 \u3639 \u3629 \u3609  \u3648 \u3614 \u3619 \u3634 \u3632 \u3585 \u3634 \u3619 \u3611 \u3619 \u3633 \u3610 \u3626 \u3617 \u3604 \u3640 \u3621 \u3630 \u3629 \u3619 \u3660 \u3650 \u3617 \u3609 \u3605 \u3657 \u3629 \u3591 \u3651 \u3594 \u3657 \u3648 \u3623 \u3621 \u3634 \u3649 \u3621 \u3632 \u3588 \u3623 \u3634 \u3617 \u3626 \u3617 \u3656 \u3635 \u3648 \u3626 \u3617 \u3629 </span>`;\
-    return `\
-      <div class="result-intro">\
-        <div class="result-eyebrow">\uc0\u3649 \u3609 \u3632 \u3609 \u3635 \u3626 \u3635 \u3627 \u3619 \u3633 \u3610 \u3588 \u3640 \u3603 </div>\
-        <div class="result-headline">$\{rec.headline\}</div>\
-        <div class="result-tagline">$\{rec.tagline\}</div>\
-      </div>\
-      <div class="product-card">\
-        <div class="card-head-her">\
-          <div class="product-image-large">\
-            <!-- \uc0\u3651 \u3626 \u3656  <img src="..."> \u3621 \u3591 \u3652 \u3611 \u3649 \u3607 \u3609 \u3607 \u3637 \u3656 \u3586 \u3657 \u3629 \u3588 \u3623 \u3634 \u3617 \u3609 \u3637 \u3657  -->\
-            [\uc0\u3619 \u3641 \u3611  Her Tea 1:1]\
-          </div>\
-          <div class="card-head-text">\
-            <div class="card-pill">\uc0\u3604 \u3639 \u3656 \u3617 \u3648 \u3594 \u3657 \u3634  \u3627 \u3619 \u3639 \u3629 \u3585 \u3656 \u3629 \u3609 \u3609 \u3629 \u3609 </div>\
-            <h3>Her Tea \uc0\u55356 \u57145 </h3>\
-            <p>Hormone Detox \'b7 PMS Relief</p>\
-          </div>\
-        </div>\
-        <div class="card-body">\
-          <div class="benefits">\
-            $\{rec.benefits_her.map(b => `<div class="benefit"><div class="dot-her"></div><span>$\{b\}</span></div>`).join('')\}\
-          </div>\
-          \
-          <div class="price-center price-center-her">\
-            <span class="amt">$\{rec.prices_her[0].amt\}</span>\
-            <span class="lbl">$\{rec.prices_her[0].lbl\}</span>\
-            $\{rec.prices_her[1] ? `\
-            <div class="price-promo">\
-              <span class="amt-promo">$\{rec.prices_her[1].amt\}</span>\
-              <span>$\{rec.prices_her[1].lbl\}</span>\
-            </div>` : ''\}\
-          </div>\
-\
-        </div>\
-      </div>\
-      <div class="product-card">\
-        <div class="card-head-pops">\
-          <div class="product-image-large">\
-            <!-- \uc0\u3651 \u3626 \u3656  <img src="..."> \u3621 \u3591 \u3652 \u3611 \u3649 \u3607 \u3609 \u3607 \u3637 \u3656 \u3586 \u3657 \u3629 \u3588 \u3623 \u3634 \u3617 \u3609 \u3637 \u3657  -->\
-            [\uc0\u3619 \u3641 \u3611  Pops Tea 1:1]\
-          </div>\
-          <div class="card-head-text">\
-            <div class="card-pill">\uc0\u3604 \u3639 \u3656 \u3617 \u3627 \u3621 \u3633 \u3591 \u3617 \u3639 \u3657 \u3629 \u3629 \u3634 \u3627 \u3634 \u3619 </div>\
-            <h3>Pops Tea \uc0\u55358 \u56801 </h3>\
-            <p>Androgen Balance \'b7 Anti-Acne</p>\
-          </div>\
-        </div>\
-        <div class="card-body">\
-          <div class="benefits">\
-            $\{rec.benefits_pops.map(b => `<div class="benefit"><div class="dot-pops"></div><span>$\{b\}</span></div>`).join('')\}\
-          </div>\
-\
-          <div class="price-center price-center-pops">\
-            <span class="amt">$\{rec.prices_pops[0].amt\}</span>\
-            <span class="lbl">$\{rec.prices_pops[0].lbl\}</span>\
-          </div>\
-\
-        </div>\
-      </div>\
-      \
-      <div class="tip tip-pops" style="margin-bottom: 18px;">\
-        <strong>\uc0\u3623 \u3636 \u3608 \u3637 \u3585 \u3636 \u3609 :</strong> $\{rec.tip\}\
-        $\{tipAddOn\}\
-      </div>\
-\
-      <div class="cta-section">\
-        <button class="btn-cta btn-cta-both" onclick="window.open('https://line.me/R/ti/p/@hernest','_blank')">\uc0\u3626 \u3633 \u3656 \u3591 \u3595 \u3639 \u3657 \u3629 \u3607 \u3633 \u3657 \u3591 \u3588 \u3641 \u3656  \u8594 </button>\
-        <div class="channel-row">\
-          <button class="btn-channel" onclick="window.open('https://shopee.co.th','_blank')">\uc0\u55357 \u57042  Shopee</button>\
-          <button class="btn-channel" onclick="window.open('https://line.me/R/ti/p/@hernest','_blank')">\uc0\u55357 \u56492  LINE Chat</button>\
-        </div>\
-      </div>\
-    `;\
-  \}\
-\
-  function renderSingleResult(rec) \{\
-    const priceTheme = rec.type === 'pops' ? 'price-center-pops' : 'price-center-her';\
-    const headerClass = rec.type === 'pops' ? 'card-head-pops' : 'card-head-her';\
-    const emoji = rec.type === 'pops' ? '\uc0\u55358 \u56801 ' : '\u55356 \u57145 ';\
-    const subline = rec.type === 'pops' ? 'Androgen Balance \'b7 PCOS Support' : 'Hormone Detox \'b7 PMS Relief';\
-    const imgPlaceholder = rec.type === 'pops' ? '[\uc0\u3619 \u3641 \u3611  Pops Tea 1:1]' : '[\u3619 \u3641 \u3611  Her Tea 1:1]';\
-    \
-    // Promo / Main Price Layout\
-    const mainPrice = `<span class="amt">$\{rec.prices[0].amt\}</span><span class="lbl">$\{rec.prices[0].lbl\}</span>`;\
-    const promoPrice = rec.prices[1] ? `\
-      <div class="price-promo">\
-        <span class="amt-promo">$\{rec.prices[1].amt\}</span>\
-        <span>$\{rec.prices[1].lbl\}</span>\
-      </div>\
-    ` : '';\
-    \
-    const tipAddOn = `<br><br><span style="font-size: 13.5px; opacity: 0.85;">*\uc0\u3649 \u3609 \u3632 \u3609 \u3635 \u3651 \u3627 \u3657 \u3604 \u3639 \u3656 \u3617 \u3605 \u3656 \u3629 \u3648 \u3609 \u3639 \u3656 \u3629 \u3591 \u3629 \u3618 \u3656 \u3634 \u3591 \u3609 \u3657 \u3629 \u3618  3 \u3648 \u3604 \u3639 \u3629 \u3609  \u3648 \u3614 \u3619 \u3634 \u3632 \u3585 \u3634 \u3619 \u3611 \u3619 \u3633 \u3610 \u3626 \u3617 \u3604 \u3640 \u3621 \u3630 \u3629 \u3619 \u3660 \u3650 \u3617 \u3609 \u3605 \u3657 \u3629 \u3591 \u3651 \u3594 \u3657 \u3648 \u3623 \u3621 \u3634 \u3649 \u3621 \u3632 \u3588 \u3623 \u3634 \u3617 \u3626 \u3617 \u3656 \u3635 \u3648 \u3626 \u3617 \u3629 </span>`;\
-\
-    return `\
-      <div class="result-intro">\
-        <div class="result-eyebrow">\uc0\u3649 \u3609 \u3632 \u3609 \u3635 \u3626 \u3635 \u3627 \u3619 \u3633 \u3610 \u3588 \u3640 \u3603 </div>\
-        <div class="result-headline">$\{rec.headline\}</div>\
-        <div class="result-tagline">$\{rec.tagline\}</div>\
-      </div>\
-      <div class="product-card">\
-        <div class="$\{headerClass\}">\
-          <div class="product-image-large">\
-            <!-- \uc0\u3651 \u3626 \u3656  <img src="..."> \u3621 \u3591 \u3652 \u3611 \u3649 \u3607 \u3609 \u3607 \u3637 \u3656 \u3586 \u3657 \u3629 \u3588 \u3623 \u3634 \u3617 \u3609 \u3637 \u3657  -->\
-            $\{imgPlaceholder\}\
-          </div>\
-          <div class="card-head-text">\
-            <div class="card-pill">\uc0\u3648 \u3621 \u3639 \u3629 \u3585 \u3626 \u3635 \u3627 \u3619 \u3633 \u3610 \u3588 \u3640 \u3603 </div>\
-            <h3>$\{rec.type === 'pops' ? 'Pops Tea' : 'Her Tea'\} $\{emoji\}</h3>\
-            <p>$\{subline\}</p>\
-          </div>\
-        </div>\
-        <div class="card-body">\
-          <p class="why-text">$\{rec.why\}</p>\
-          <div class="benefits">\
-            $\{rec.benefits.map(b => `<div class="benefit"><div class="$\{rec.dotClass\}"></div><span>$\{b\}</span></div>`).join('')\}\
-          </div>\
-          \
-          <div class="price-center $\{priceTheme\}">\
-             $\{mainPrice\}\
-             $\{promoPrice\}\
-          </div>\
-\
-          <div class="tip $\{rec.tipClass\}">\
-            <strong>\uc0\u3623 \u3636 \u3608 \u3637 \u3585 \u3636 \u3609 :</strong> $\{rec.tip\}\
-            $\{tipAddOn\}\
-          </div>\
-        </div>\
-      </div>\
-      <div class="cta-section">\
-        <button class="btn-cta $\{rec.btnClass\}" onclick="window.open('$\{rec.btnLink\}','_blank')">$\{rec.btnText\}</button>\
-        <div class="channel-row">\
-          <button class="btn-channel" onclick="window.open('https://shopee.co.th','_blank')">\uc0\u55357 \u57042  Shopee</button>\
-          <button class="btn-channel" onclick="window.open('https://line.me/R/ti/p/@hernest','_blank')">\uc0\u55357 \u56492  LINE Chat</button>\
-        </div>\
-      </div>\
-    `;\
-  \}\
-\
-  function showResult() \{\
-    document.getElementById('step-4').classList.remove('active');\
-    document.getElementById('step-result').classList.add('active');\
-    document.getElementById('pbar').style.width = '100%';\
-    document.getElementById('prog-label').textContent = '\uc0\u3612 \u3621 \u3621 \u3633 \u3614 \u3608 \u3660 ';\
-    document.getElementById('prog-pct').textContent = '4 / 4';\
-    const rec = getRecommendation();\
-    const html = rec.type === 'both' ? renderBothResult(rec) : renderSingleResult(rec);\
-    document.getElementById('result-content').innerHTML = html;\
-    window.scrollTo(\{ top: 0, behavior: 'smooth' \});\
-  \}\
-\
-  function restartQuiz() \{\
-    answers[1] = []; answers[2] = null; answers[3] = []; answers[4] = null;\
-    document.querySelectorAll('.opt').forEach(b => b.classList.remove('selected', 'selected-pops'));\
-    ['next1','next2','next3','next4'].forEach(id => document.getElementById(id).disabled = true);\
-    document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));\
-    document.getElementById('step-1').classList.add('active');\
-    document.getElementById('pbar').style.width = '0%';\
-    document.getElementById('prog-label').textContent = '\uc0\u3648 \u3619 \u3636 \u3656 \u3617 \u3605 \u3657 \u3609 ';\
-    document.getElementById('prog-pct').textContent = '0 / 4';\
-    window.scrollTo(\{ top: 0, behavior: 'smooth' \});\
-  \}\
-</script>\
-</body>\
-</html>}
+  :root {
+    /* Brand Colors extracted from moodboard & logo */
+    --color-her: #8B2626;         /* Deep Red / Burgundy */
+    --color-her-light: #F9EBEB;   /* Soft Pink/Cream for active states */
+    --color-pops: #E85D22;        /* Vibrant Orange for Pops Tea */
+    --color-pops-light: #FDEEE7;  /* Soft Orange/Cream */
+    
+    --cream: #F6F4EF;             /* Warm, elegant background */
+    --ink: #2D2422;               /* Warm off-black */
+    --ink-mid: #5E524F;
+    --ink-light: #9C8F8A;
+    --border: rgba(45,36,34,0.12);
+    --border-hover: rgba(139,38,38,0.4);
+    
+    --radius: 16px; /* ปรับให้ขอบโค้งมนขึ้นเหมือนในรูป */
+    --radius-sm: 8px;
+  }
+
+  body {
+    font-family: 'Noto Sans Thai', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2rem 1rem 4rem;
+  }
+
+  .quiz-wrap {
+    width: 100%;
+    max-width: 560px;
+  }
+
+  /* ---- HEADER ---- */
+  .brand-header {
+    text-align: center;
+    padding: 2.5rem 0 2rem;
+  }
+  .brand-logo {
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: var(--color-her);
+    margin-bottom: 16px;
+    line-height: 1.2;
+  }
+  .brand-logo-sub {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: var(--ink-mid);
+    margin-top: 4px;
+  }
+  .brand-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.3;
+    margin-bottom: 12px;
+  }
+  .brand-sub {
+    font-size: 15px;
+    color: var(--ink-mid);
+    line-height: 1.75;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  /* ---- PROGRESS ---- */
+  .progress-wrap {
+    margin-bottom: 2.5rem;
+  }
+  .progress-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--ink-light);
+    margin-bottom: 10px;
+    letter-spacing: 0.05em;
+  }
+  .progress-track {
+    height: 4px;
+    background: var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-her), var(--color-pops));
+    border-radius: 4px;
+    transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* ---- STEPS ---- */
+  .step { display: none; }
+  .step.active {
+    display: block;
+    animation: slideIn 0.3s ease;
+  }
+  @keyframes slideIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .step-eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    margin-bottom: 12px;
+  }
+  .question {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+  .question-hint {
+    font-size: 15px;
+    color: var(--ink-light);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+
+  /* ---- OPTIONS ---- */
+  .options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 2.5rem;
+  }
+
+  .opt {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px 22px;
+    border: 1px solid rgba(45,36,34,0.1); /* ขอบบางลงเหมือนในรูป */
+    border-radius: var(--radius);
+    background: white;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s ease;
+    width: 100%;
+    color: var(--ink);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03); /* เพิ่มเงาอ่อนๆ */
+    font-family: 'Noto Sans Thai', sans-serif; /* บังคับใช้ฟอนต์ Noto Sans Thai ในปุ่ม */
+  }
+  .opt:hover {
+    border-color: var(--border-hover);
+    background: #FFFAFA;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(139,38,38,0.06);
+  }
+  .opt.selected {
+    border: 1px solid var(--color-her);
+    box-shadow: 0 0 0 1px var(--color-her); /* ทำขอบหนาโดยไม่ทำให้เลย์เอาต์ขยับ */
+    background: var(--color-her-light);
+  }
+  .opt.selected-pops {
+    border: 1px solid var(--color-pops);
+    box-shadow: 0 0 0 1px var(--color-pops);
+    background: var(--color-pops-light);
+  }
+  .opt-icon {
+    font-size: 24px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    opacity: 0.9;
+    transition: opacity 0.2s;
+  }
+  .opt.selected .opt-icon { opacity: 1; }
+  
+  /* ขยายขนาดตัวอักษรและเน้นตัวหนาในปุ่มตัวเลือก */
+  .opt-body strong {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 6px;
+    line-height: 1.4;
+  }
+  .opt-body span {
+    display: block;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--ink-mid);
+    line-height: 1.5;
+  }
+
+  /* ---- NAV ---- */
+  .nav-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .btn-back {
+    background: none;
+    border: none;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--ink-light);
+    cursor: pointer;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color 0.15s;
+  }
+  .btn-back:hover { color: var(--ink-mid); }
+  .btn-next {
+    padding: 16px 40px;
+    background: var(--ink);
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    letter-spacing: 0.03em;
+  }
+  .btn-next:hover:not(:disabled) {
+    background: var(--color-her);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(139,38,38,0.2);
+  }
+  .btn-next:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+    background: var(--ink);
+  }
+
+  /* ---- RESULT ---- */
+  .result-intro {
+    text-align: center;
+    padding: 0.5rem 0 2rem;
+  }
+  .result-eyebrow {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-her);
+    margin-bottom: 8px;
+  }
+  .result-headline {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+  .result-tagline {
+    font-size: 16px;
+    color: var(--ink-mid);
+    line-height: 1.6;
+  }
+
+  .product-card {
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 24px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    background: white;
+  }
+  
+  /* Image 4x Larger (ประมาณ 340px) วางซ้อนบนสุด */
+  .card-head-her, .card-head-pops {
+    padding: 30px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .card-head-her { background: var(--color-her); }
+  .card-head-pops { background: var(--color-pops); }
+  
+  .product-image-large {
+    width: 100%;
+    max-width: 340px; /* ขนาดใหญ่ขึ้นประมาณ 4 เท่าจากเดิม 85px */
+    aspect-ratio: 1 / 1;
+    background: rgba(255,255,255,0.15);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,0.9);
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  .product-image-large img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .card-head-text {
+    width: 100%;
+  }
+  .card-pill {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    background: rgba(255,255,255,0.25);
+    color: #FFF;
+    padding: 6px 16px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+  }
+  .card-head-her h3,
+  .card-head-pops h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 8px;
+  }
+  .card-head-her p,
+  .card-head-pops p {
+    font-size: 14px;
+    color: rgba(255,255,255,0.9);
+    letter-spacing: 0.02em;
+    line-height: 1.4;
+  }
+
+  .card-body {
+    padding: 24px;
+  }
+  .why-text {
+    font-size: 16px;
+    color: var(--ink-mid);
+    line-height: 1.8;
+    margin-bottom: 24px;
+  }
+  .benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .benefit {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.5;
+  }
+  .dot-her { width:8px; height:8px; border-radius:50%; background:var(--color-her); margin-top:6px; flex-shrink:0; }
+  .dot-pops { width:8px; height:8px; border-radius:50%; background:var(--color-pops); margin-top:6px; flex-shrink:0; }
+
+  /* Big Centered Price */
+  .price-center {
+    text-align: center;
+    padding: 24px 16px;
+    margin: 24px 0;
+    background: var(--cream);
+    border-radius: var(--radius-sm);
+  }
+  .price-center .amt {
+    display: block;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 6px;
+  }
+  .price-center-her .amt { color: var(--color-her); }
+  .price-center-pops .amt { color: var(--color-pops); }
+  .price-center .lbl {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--ink-mid);
+  }
+  .price-promo {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px dashed var(--border);
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--ink-mid);
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    align-items: baseline;
+  }
+  .price-promo .amt-promo {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+
+  .tip {
+    padding: 20px;
+    background: var(--cream);
+    border-radius: var(--radius-sm);
+    border-left: 5px solid;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--ink-mid);
+    line-height: 1.7;
+    margin-bottom: 0;
+  }
+  .tip strong {
+    color: var(--ink);
+    font-size: 16px;
+  }
+  .tip-her { border-color: var(--color-her); }
+  .tip-pops { border-color: var(--color-pops); }
+
+  .cta-section {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .btn-cta {
+    width: 100%;
+    padding: 18px;
+    color: white;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    letter-spacing: 0.03em;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  .btn-cta:hover { opacity: 0.9; transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.15); }
+  .btn-cta-her { background: var(--color-her); }
+  .btn-cta-pops { background: var(--color-pops); }
+  .btn-cta-both { background: linear-gradient(90deg, var(--color-her) 0%, var(--color-pops) 100%); }
+
+  .channel-row {
+    display: flex;
+    gap: 14px;
+  }
+  .btn-channel {
+    flex: 1;
+    padding: 16px;
+    border: 2px solid var(--border);
+    border-radius: var(--radius-sm);
+    background: white;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--ink-mid);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .btn-channel:hover { 
+    border-color: var(--color-her); 
+    background: var(--color-her-light); 
+    color: var(--color-her); 
+  }
+
+  .restart-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--ink-light);
+    background: none;
+    border: none;
+    font-family: 'Noto Sans Thai', sans-serif;
+    cursor: pointer;
+    padding: 12px 20px;
+    margin: 16px auto 0;
+    transition: all 0.2s;
+    border-radius: 20px;
+  }
+  .restart-btn:hover { color: var(--color-her); background: var(--color-her-light); }
+
+  /* Disclaimer Bottom */
+  .disclaimer {
+    font-size: 12px;
+    color: var(--ink-light);
+    text-align: center;
+    line-height: 1.6;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+  }
+
+  /* --- Mobile Responsive Rules --- */
+  @media (max-width: 480px) {
+    body { padding: 1rem 0.75rem 3rem; }
+    .brand-title { font-size: 26px; }
+    .question { font-size: 22px; }
+    .question-hint { font-size: 14px; }
+    
+    /* ตัวอักษรบนมือถือ */
+    .opt-body strong { font-size: 16.5px; }
+    .opt-body span { font-size: 14px; }
+    .opt-icon { font-size: 22px; }
+    .opt { padding: 18px 16px; gap: 14px; }
+    
+    .channel-row { flex-direction: column; }
+    
+    /* Image responsiveness on mobile */
+    .card-head-her, .card-head-pops { padding: 24px 16px; }
+    .product-image-large { 
+        max-width: 100%; /* ให้เต็มจอโทรศัพท์แต่ไม่เกินกรอบ */
+        margin-bottom: 16px; 
+    }
+    .card-head-her h3, .card-head-pops h3 { font-size: 24px; }
+    .price-center .amt { font-size: 36px; }
+  }
+</style>
+</head>
+<body>
+<div class="quiz-wrap">
+
+  <div class="brand-header">
+    <div class="brand-logo">
+      HERNEST.
+      <span class="brand-logo-sub">BY NICHE</span>
+    </div>
+    <div class="brand-title">ชาไหนเหมาะกับคุณ?</div>
+    <div class="brand-sub">ตอบ 4 ข้อ รู้เลยว่าควรดื่ม Her Tea, Pops Tea<br>หรือทั้งคู่ — แนะนำตามอาการจริงของคุณ</div>
+  </div>
+
+  <div class="progress-wrap">
+    <div class="progress-meta">
+      <span id="prog-label">เริ่มต้น</span>
+      <span id="prog-pct">0 / 4</span>
+    </div>
+    <div class="progress-track">
+      <div class="progress-fill" id="pbar" style="width:0%"></div>
+    </div>
+  </div>
+
+  <!-- STEP 1 -->
+  <div id="step-1" class="step active">
+    <div class="step-eyebrow">ข้อที่ 1 จาก 4</div>
+    <div class="question">คุณมีอาการหรือภาวะเหล่านี้ไหม?</div>
+    <div class="question-hint">เลือกได้มากกว่า 1 ข้อ — ไม่ต้องกังวล ทุกคำตอบไม่มีถูกหรือผิด</div>
+    <div class="options-list">
+      <button class="opt" data-step="1" data-val="pms" onclick="selectMulti(this)">
+        <span class="opt-icon">🌙</span>
+        <span class="opt-body"><strong>PMS หนัก / ปวดท้องประจำเดือนมาก</strong><span>ปวดจนต้องกินยา นอนพักทั้งวัน หรืออารมณ์ดิ่งก่อนมี</span></span>
+      </button>
+      <button class="opt" data-step="1" data-val="acne" onclick="selectMulti(this)">
+        <span class="opt-icon">✨</span>
+        <span class="opt-body"><strong>สิวฮอร์โมน / หน้ามันง่าย</strong><span>สิวขึ้นช่วงก่อนมีประจำเดือน หรือสิวซีสต์บริเวณคาง / แก้ม</span></span>
+      </button>
+      <button class="opt" data-step="1" data-val="endo" onclick="selectMulti(this)">
+        <span class="opt-icon">🌸</span>
+        <span class="opt-body"><strong>Endometriosis</strong><span>เยื่อบุโพรงมดลูกเจริญผิดที่ หรือสงสัยว่าตัวเองอาจมี</span></span>
+      </button>
+      <button class="opt" data-step="1" data-val="pcos" onclick="selectMulti(this)">
+        <span class="opt-icon">⭕</span>
+        <span class="opt-body"><strong>PCOS / ถุงน้ำในรังไข่</strong><span>แพทย์วินิจฉัย หรือมีประจำเดือนไม่สม่ำเสมอ / ขนดก</span></span>
+      </button>
+      <button class="opt" data-step="1" data-val="stress" onclick="selectMulti(this)">
+        <span class="opt-icon">🧠</span>
+        <span class="opt-body"><strong>เครียดง่าย / เครียดสะสม</strong><span>รู้สึกหัวหมุน วิตกกังวล หรือนอนหลับยากบ่อย ๆ</span></span>
+      </button>
+      <button class="opt" data-step="1" data-val="none_mild" onclick="selectExclusive(this, 1)">
+        <span class="opt-icon">🌿</span>
+        <span class="opt-body"><strong>ไม่มีโรคประจำตัว แค่อยากดูแลตัวเอง</strong><span>รอบเดือนค่อนข้างปกติ แต่อยากให้ร่างกายสมดุลขึ้น</span></span>
+      </button>
+    </div>
+    <div class="nav-row">
+      <span></span>
+      <button class="btn-next" id="next1" disabled onclick="goNext(1)">ต่อไป →</button>
+    </div>
+  </div>
+
+  <!-- STEP 2 -->
+  <div id="step-2" class="step">
+    <div class="step-eyebrow">ข้อที่ 2 จาก 4</div>
+    <div class="question">ตอนนี้คุณทานยาคุมอยู่ไหม?</div>
+    <div class="question-hint">ตอบตรง ๆ เพื่อให้แนะนำได้แม่นยำที่สุด</div>
+    <div class="options-list">
+      <button class="opt" data-step="2" data-val="on_pill" onclick="selectOne(this)">
+        <span class="opt-icon">💊</span>
+        <span class="opt-body"><strong>ทานยาคุมอยู่ตอนนี้</strong><span>รายวัน / แผ่นแปะ / วงแหวน หรือทานเป็นช่วง ๆ เพื่อ PCOS</span></span>
+      </button>
+      <button class="opt" data-step="2" data-val="stopped_pill" onclick="selectOne(this)">
+        <span class="opt-icon">🚫</span>
+        <span class="opt-body"><strong>เพิ่งหยุดยาคุม</strong><span>หยุดมาได้ไม่นาน หรืออยู่ในช่วง detox หลังหยุด</span></span>
+      </button>
+      <button class="opt" data-step="2" data-val="no_pill" onclick="selectOne(this)">
+        <span class="opt-icon">🌱</span>
+        <span class="opt-body"><strong>ไม่ได้ทานยาคุม</strong><span>ไม่ได้ทาน หรือใช้วิธีคุมกำเนิดแบบอื่น</span></span>
+      </button>
+    </div>
+    <div class="nav-row">
+      <button class="btn-back" onclick="goBack(2)">← ย้อนกลับ</button>
+      <button class="btn-next" id="next2" disabled onclick="goNext(2)">ต่อไป →</button>
+    </div>
+  </div>
+
+  <!-- STEP 3 -->
+  <div id="step-3" class="step">
+    <div class="step-eyebrow">ข้อที่ 3 จาก 4</div>
+    <div class="question">อาการไหนที่รู้สึกบ่อยที่สุด?</div>
+    <div class="question-hint">เลือกได้มากกว่า 1 ข้อ</div>
+    <div class="options-list">
+      <button class="opt" data-step="3" data-val="bloat" onclick="selectMulti(this)">
+        <span class="opt-icon">💧</span>
+        <span class="opt-body"><strong>บวมน้ำ / ท้องอืด</strong><span>โดยเฉพาะช่วงก่อนมีประจำเดือน หรือหลังกินอาหาร</span></span>
+      </button>
+      <button class="opt" data-step="3" data-val="craving" onclick="selectMulti(this)">
+        <span class="opt-icon">🍫</span>
+        <span class="opt-body"><strong>อยากกินของหวาน / คาร์บบ่อย</strong><span>โดยเฉพาะช่วงเครียด หรือก่อนมีประจำเดือน</span></span>
+      </button>
+      <button class="opt" data-step="3" data-val="mood" onclick="selectMulti(this)">
+        <span class="opt-icon">🌊</span>
+        <span class="opt-body"><strong>อารมณ์แปรปรวน / ร้องไห้ง่าย</strong><span>อารมณ์ขึ้น ๆ ลง ๆ โดยไม่มีเหตุผลชัดเจน</span></span>
+      </button>
+      <button class="opt" data-step="3" data-val="heavy" onclick="selectMulti(this)">
+        <span class="opt-icon">🩸</span>
+        <span class="opt-body"><strong>ประจำเดือนมามาก / เจ็บมาก</strong><span>เปลี่ยนผ้าอนามัยบ่อย หรือปวดจนทำอะไรไม่ได้</span></span>
+      </button>
+      <button class="opt" data-step="3" data-val="fatigue" onclick="selectMulti(this)">
+        <span class="opt-icon">🔋</span>
+        <span class="opt-body"><strong>เหนื่อยล้า / ไม่มีแรง</strong><span>นอนพอแล้วแต่ยังรู้สึกเหนื่อย หรืออยู่กับความเครียดนาน</span></span>
+      </button>
+      <button class="opt" data-step="3" data-val="androgen" onclick="selectMulti(this)">
+        <span class="opt-icon">📈</span>
+        <span class="opt-body"><strong>ฮอร์โมนเพศชายสูง / ขนดก</strong><span>แพทย์แจ้ง หรือสังเกตเองว่ามีขนมากกว่าปกติ</span></span>
+      </button>
+    </div>
+    <div class="nav-row">
+      <button class="btn-back" onclick="goBack(3)">← ย้อนกลับ</button>
+      <button class="btn-next" id="next3" disabled onclick="goNext(3)">ต่อไป →</button>
+    </div>
+  </div>
+
+  <!-- STEP 4 -->
+  <div id="step-4" class="step">
+    <div class="step-eyebrow">ข้อที่ 4 จาก 4</div>
+    <div class="question">เป้าหมายหลักของคุณคืออะไร?</div>
+    <div class="question-hint">เลือกข้อที่ใกล้เคียงที่สุดสักหนึ่งข้อ</div>
+    <div class="options-list">
+      <button class="opt" data-step="4" data-val="period_relief" onclick="selectOne(this)">
+        <span class="opt-icon">🗓️</span>
+        <span class="opt-body"><strong>อยากให้รอบเดือนสมูทขึ้น</strong><span>ปวดน้อยลง บวมน้อยลง อารมณ์นิ่งขึ้น</span></span>
+      </button>
+      <button class="opt" data-step="4" data-val="hormone_balance" onclick="selectOne(this)">
+        <span class="opt-icon">☯️</span>
+        <span class="opt-body"><strong>ปรับสมดุลฮอร์โมนระยะยาว</strong><span>แก้ที่ต้นเหตุ ไม่ใช่แค่บรรเทาอาการ</span></span>
+      </button>
+      <button class="opt" data-step="4" data-val="skin_acne" onclick="selectOne(this)">
+        <span class="opt-icon">🌟</span>
+        <span class="opt-body"><strong>อยากให้ผิวดีขึ้น / ลดสิวฮอร์โมน</strong><span>สิวที่ขึ้นจากฮอร์โมน ไม่ใช่จากความสะอาด</span></span>
+      </button>
+      <button class="opt" data-step="4" data-val="detox" onclick="selectOne(this)">
+        <span class="opt-icon">🔄</span>
+        <span class="opt-body"><strong>ล้างฮอร์โมนตกค้างจากยาคุม</strong><span>ต้องการ detox หลังหยุดยา หรือระหว่างทานอยู่</span></span>
+      </button>
+    </div>
+    <div class="nav-row">
+      <button class="btn-back" onclick="goBack(4)">← ย้อนกลับ</button>
+      <button class="btn-next" id="next4" disabled onclick="showResult()">ดูผลของฉัน ✦</button>
+    </div>
+  </div>
+
+  <!-- RESULT -->
+  <div id="step-result" class="step">
+    <div id="result-content"></div>
+    
+    <div style="text-align:center; margin-top: 24px;">
+      <button class="restart-btn" onclick="restartQuiz()">↺ เริ่มใหม่อีกครั้ง</button>
+    </div>
+
+    <!-- ข้อความ Disclaimer อย. -->
+    <div class="disclaimer">
+      *ข้อความเหล่านี้ยังไม่ได้รับการประเมินโดยสำนักงานคณะกรรมการอาหารและยา ผลิตภัณฑ์นี้ไม่ได้มีวัตถุประสงค์เพื่อวินิจฉัย บำบัด รักษา หรือป้องกันโรคใดๆ<br>
+      "This statement has not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease."
+    </div>
+  </div>
+
+</div>
+
+<script>
+  const answers = { 1: [], 2: null, 3: [], 4: null };
+
+  function selectMulti(btn) {
+    const step = btn.dataset.step;
+    const val = btn.dataset.val;
+    document.querySelectorAll(`[data-step="${step}"][data-val="none_mild"]`).forEach(b => {
+      b.classList.remove('selected', 'selected-pops');
+    });
+    answers[step] = (answers[step] || []).filter(v => v !== 'none_mild');
+    if (btn.classList.contains('selected')) {
+      btn.classList.remove('selected', 'selected-pops');
+      answers[step] = answers[step].filter(v => v !== val);
+    } else {
+      btn.classList.add('selected');
+      if (!Array.isArray(answers[step])) answers[step] = [];
+      answers[step].push(val);
+    }
+    document.getElementById('next' + step).disabled = answers[step].length === 0;
+  }
+
+  function selectExclusive(btn, step) {
+    document.querySelectorAll(`[data-step="${step}"]`).forEach(b => b.classList.remove('selected', 'selected-pops'));
+    btn.classList.add('selected');
+    answers[step] = [btn.dataset.val];
+    document.getElementById('next' + step).disabled = false;
+  }
+
+  function selectOne(btn) {
+    const step = btn.dataset.step;
+    document.querySelectorAll(`[data-step="${step}"]`).forEach(b => b.classList.remove('selected', 'selected-pops'));
+    btn.classList.add('selected');
+    answers[step] = btn.dataset.val;
+    document.getElementById('next' + step).disabled = false;
+  }
+
+  function goNext(step) {
+    document.getElementById('step-' + step).classList.remove('active');
+    document.getElementById('step-' + (step + 1)).classList.add('active');
+    updateProgress(step + 1);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function goBack(step) {
+    document.getElementById('step-' + step).classList.remove('active');
+    document.getElementById('step-' + (step - 1)).classList.add('active');
+    updateProgress(step - 1);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function updateProgress(step) {
+    const pct = step <= 4 ? ((step - 1) / 4) * 100 : 100;
+    document.getElementById('pbar').style.width = pct + '%';
+    const labels = ['เริ่มต้น', 'ข้อที่ 1', 'ข้อที่ 2', 'ข้อที่ 3', 'ผลลัพธ์'];
+    document.getElementById('prog-label').textContent = labels[step - 1] || 'ผลลัพธ์';
+    document.getElementById('prog-pct').textContent = (step <= 4 ? step - 1 : 4) + ' / 4';
+  }
+
+  function getRecommendation() {
+    const s1 = answers[1] || [];
+    const pill = answers[2];
+    const s3 = answers[3] || [];
+    const goal = answers[4];
+
+    const hasPCOS  = s1.includes('pcos');
+    const hasEndo  = s1.includes('endo');
+    const hasPMS   = s1.includes('pms');
+    const hasAcne  = s1.includes('acne');
+    const hasStress = s1.includes('stress');
+    const isNone   = s1.includes('none_mild');
+    const isPill   = pill === 'on_pill' || pill === 'stopped_pill';
+    const hasBloat = s3.includes('bloat');
+    const hasCraving = s3.includes('craving');
+    const hasMood  = s3.includes('mood');
+    const hasHeavy = s3.includes('heavy');
+    const hasFatigue = s3.includes('fatigue');
+    const hasAndrogen = s3.includes('androgen');
+
+    const herScore  = [hasPMS, hasEndo, isPill, hasHeavy, goal==='period_relief', goal==='detox', hasBloat && !hasCraving].filter(Boolean).length;
+    const popsScore = [hasPCOS, hasAcne, hasStress, hasCraving, hasAndrogen, goal==='skin_acne', hasPCOS && isPill].filter(Boolean).length;
+
+    if (isNone) {
+      return {
+        type: 'her',
+        headline: 'เริ่มต้นด้วย Her Tea',
+        tagline: 'บำรุงจากข้างใน ก่อนที่อาการจะเริ่ม',
+        why: 'แม้จะยังไม่มีอาการชัดเจน การดื่ม Her Tea เป็นประจำช่วยให้รอบเดือนสมูทขึ้นในระยะยาว เหมือนการดูแลระบบฮอร์โมนก่อนที่ปัญหาจะเริ่ม ดีกว่ารอให้มีอาการแล้วค่อยแก้',
+        benefits: ['รอบเดือนสม่ำเสมอขึ้น อาการ PMS เบาลงตามธรรมชาติ', 'ช่วยกำจัดสาร xenoestrogen จากสิ่งแวดล้อมที่สะสมโดยไม่รู้ตัว', 'ตับทำงานดีขึ้น ฮอร์โมนเผาผลาญได้มีประสิทธิภาพ'],
+        dotClass: 'dot-her', tipClass: 'tip-her',
+        tip: 'ดื่มช่วงเช้า หรือก่อนนอน วันละ 1 มื้อ',
+        prices: [{ amt: '฿690', lbl: '1 กล่อง / 15 มื้อ' }, { amt: '฿1,100', lbl: '2 กล่อง + ส่งฟรี' }],
+        btnClass: 'btn-cta-her', btnText: 'สั่งซื้อ Her Tea →',
+        btnLink: 'https://line.me/R/ti/p/@hernest'
+      };
+    }
+
+    if (herScore >= 2 && popsScore >= 2) {
+      return {
+        type: 'both',
+        headline: 'ดื่มทั้งสองสูตร',
+        tagline: 'อาการของคุณต้องการทั้ง detox ฮอร์โมน และการปรับ androgen พร้อมกัน',
+        why: 'โปรไฟล์ของคุณมีสัญญาณทั้งสองด้านชัดเจน Her Tea จัดการ detox ฮอร์โมนและบรรเทา PMS ส่วน Pops Tea แก้ที่ต้นเหตุของ PCOS และฮอร์โมนเพศชายสูง ทั้งสองตัวดื่มคู่กันได้เลย ไม่ตีกัน',
+        benefits_her: [isPill ? 'Detox ฮอร์โมนสังเคราะห์ที่ตกค้างจากยาคุม' : 'ช่วยตับล้างเอสโตรเจนส่วนเกินออกจากร่างกาย', hasHeavy || hasPMS ? 'Raspberry Leaf ลดอาการปวดและบวมระหว่างมีประจำเดือน' : 'ปรับรอบเดือนให้สม่ำเสมอขึ้น'],
+        benefits_pops: [hasAcne ? 'ลดสิวฮอร์โมนโดยตรงจาก androgen สูง' : 'ปรับสมดุล androgen ที่มักรบกวนผิวและอารมณ์', hasCraving ? 'ช่วยปรับ blood sugar ลดความอยากของหวานสะสม' : 'ช่วยย่อย ลดท้องอืดหลังมื้ออาหาร'],
+        tip: 'Her Tea: ดื่มเช้าหรือก่อนนอน  |  Pops Tea: ดื่มหลังมื้ออาหาร',
+        prices_her: [{ amt: '฿690', lbl: '1 กล่อง / 15 มื้อ' }, { amt: '฿1,100', lbl: '2 กล่อง + ส่งฟรี' }],
+        prices_pops: [{ amt: '฿590', lbl: '1 กล่อง / 15 วัน' }]
+      };
+    }
+
+    if (popsScore > herScore || hasPCOS || hasAcne || hasAndrogen || hasCraving) {
+      return {
+        type: 'pops',
+        headline: 'เริ่มต้นด้วย Pops Tea',
+        tagline: 'แก้ที่ต้นเหตุของ PCOS สิวฮอร์โมน และ androgen สูง',
+        why: 'อาการที่คุณมีส่วนใหญ่ชี้ไปที่ฮอร์โมนเพศชายสูง (androgens) ซึ่งเป็นรากของสิวฮอร์โมน PCOS และความอยากของหวาน Pops Tea ออกแบบมาแก้ตรงนี้โดยตรง ทำงานได้ดีที่สุดเมื่อดื่มหลังมื้ออาหาร',
+        benefits: [hasPCOS ? 'สนับสนุนสุขภาพรังไข่และปรับ hormonal baseline ของ PCOS' : 'ลด androgen สูงที่รบกวนผิวและสมดุลฮอร์โมน', hasAcne ? 'ลดสิวฮอร์โมนและผิวมัน จากการจัดการต้นเหตุ ไม่ใช่แค่ผิวหน้า' : 'ปรับสมดุลฮอร์โมนเพศชายที่มักสูงเกินในหลายภาวะ', hasCraving ? 'ช่วยปรับ blood sugar ลดความอยากของหวานสะสม' : hasStress ? 'ช่วยปรับ cortisol ลดผลเสียจากความเครียดเรื้อรัง' : 'ช่วยย่อย ลดท้องอืดหลังมื้ออาหาร'],
+        dotClass: 'dot-pops', tipClass: 'tip-pops',
+        tip: 'ดื่มหลังมื้ออาหาร วันละ 1 มื้อ',
+        prices: [{ amt: '฿590', lbl: '1 กล่อง / 15 วัน' }],
+        btnClass: 'btn-cta-pops', btnText: 'สั่งซื้อ Pops Tea →',
+        btnLink: 'https://line.me/R/ti/p/@hernest'
+      };
+    }
+
+    return {
+      type: 'her',
+      headline: 'เริ่มต้นด้วย Her Tea',
+      tagline: 'ตรงกับอาการที่คุณมีมากที่สุด',
+      why: 'อาการของคุณเชื่อมกับ estrogen dominance และ PMS ชัดเจน Her Tea ช่วยตับให้เผาผลาญเอสโตรเจนส่วนเกิน ลดอาการปวดและบวม และทำให้รอบเดือนสมูทขึ้น หลายคนรู้สึกต่างตั้งแต่รอบแรก',
+      benefits: [hasPMS || hasHeavy ? 'Raspberry Leaf ช่วยผ่อนคลายกล้ามเนื้อมดลูก ลดอาการปวด' : 'ปรับ estrogenส่วนเกินที่เป็นต้นเหตุของ PMS', hasBloat ? 'Dandelion ช่วยระบายน้ำส่วนเกิน ลดบวมโดยไม่เสีย electrolytes' : 'Lemon Balm + Oatstraw ช่วยให้อารมณ์นิ่ง ลดวิตกกังวล', isPill ? 'Detox ฮอร์โมนสังเคราะห์ที่ตกค้างจากยาคุม' : 'ช่วย liver detox สาร xenoestrogen จากสิ่งแวดล้อม'],
+      dotClass: 'dot-her', tipClass: 'tip-her',
+      tip: 'ดื่มช่วงเช้า หรือก่อนนอน วันละ 1 มื้อ',
+      prices: [{ amt: '฿690', lbl: '1 กล่อง / 15 มื้อ' }, { amt: '฿1,100', lbl: '2 กล่อง + ส่งฟรี' }],
+      btnClass: 'btn-cta-her', btnText: 'สั่งซื้อ Her Tea →',
+      btnLink: 'https://line.me/R/ti/p/@hernest'
+    };
+  }
+
+  function renderBothResult(rec) {
+    const tipAddOn = `<br><br><span style="font-size: 13.5px; opacity: 0.85;">*แนะนำให้ดื่มต่อเนื่องอย่างน้อย 3 เดือน เพราะการปรับสมดุลฮอร์โมนต้องใช้เวลาและความสม่ำเสมอ</span>`;
+    return `
+      <div class="result-intro">
+        <div class="result-eyebrow">แนะนำสำหรับคุณ</div>
+        <div class="result-headline">${rec.headline}</div>
+        <div class="result-tagline">${rec.tagline}</div>
+      </div>
+      <div class="product-card">
+        <div class="card-head-her">
+          <div class="product-image-large">
+            <!-- ใส่ <img src="..."> ลงไปแทนที่ข้อความนี้ -->
+            [รูป Her Tea 1:1]
+          </div>
+          <div class="card-head-text">
+            <div class="card-pill">ดื่มเช้า หรือก่อนนอน</div>
+            <h3>Her Tea 🌹</h3>
+            <p>Hormone Detox · PMS Relief</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="benefits">
+            ${rec.benefits_her.map(b => `<div class="benefit"><div class="dot-her"></div><span>${b}</span></div>`).join('')}
+          </div>
+          
+          <div class="price-center price-center-her">
+            <span class="amt">${rec.prices_her[0].amt}</span>
+            <span class="lbl">${rec.prices_her[0].lbl}</span>
+            ${rec.prices_her[1] ? `
+            <div class="price-promo">
+              <span class="amt-promo">${rec.prices_her[1].amt}</span>
+              <span>${rec.prices_her[1].lbl}</span>
+            </div>` : ''}
+          </div>
+
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="card-head-pops">
+          <div class="product-image-large">
+            <!-- ใส่ <img src="..."> ลงไปแทนที่ข้อความนี้ -->
+            [รูป Pops Tea 1:1]
+          </div>
+          <div class="card-head-text">
+            <div class="card-pill">ดื่มหลังมื้ออาหาร</div>
+            <h3>Pops Tea 🧡</h3>
+            <p>Androgen Balance · Anti-Acne</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="benefits">
+            ${rec.benefits_pops.map(b => `<div class="benefit"><div class="dot-pops"></div><span>${b}</span></div>`).join('')}
+          </div>
+
+          <div class="price-center price-center-pops">
+            <span class="amt">${rec.prices_pops[0].amt}</span>
+            <span class="lbl">${rec.prices_pops[0].lbl}</span>
+          </div>
+
+        </div>
+      </div>
+      
+      <div class="tip tip-pops" style="margin-bottom: 18px;">
+        <strong>วิธีกิน:</strong> ${rec.tip}
+        ${tipAddOn}
+      </div>
+
+      <div class="cta-section">
+        <button class="btn-cta btn-cta-both" onclick="window.open('https://line.me/R/ti/p/@hernest','_blank')">สั่งซื้อทั้งคู่ →</button>
+        <div class="channel-row">
+          <button class="btn-channel" onclick="window.open('https://shopee.co.th','_blank')">🛒 Shopee</button>
+          <button class="btn-channel" onclick="window.open('https://line.me/R/ti/p/@hernest','_blank')">💬 LINE Chat</button>
+        </div>
+      </div>
+    `;
+  }
+
+  function renderSingleResult(rec) {
+    const priceTheme = rec.type === 'pops' ? 'price-center-pops' : 'price-center-her';
+    const headerClass = rec.type === 'pops' ? 'card-head-pops' : 'card-head-her';
+    const emoji = rec.type === 'pops' ? '🧡' : '🌹';
+    const subline = rec.type === 'pops' ? 'Androgen Balance · PCOS Support' : 'Hormone Detox · PMS Relief';
+    const imgPlaceholder = rec.type === 'pops' ? '[รูป Pops Tea 1:1]' : '[รูป Her Tea 1:1]';
+    
+    // Promo / Main Price Layout
+    const mainPrice = `<span class="amt">${rec.prices[0].amt}</span><span class="lbl">${rec.prices[0].lbl}</span>`;
+    const promoPrice = rec.prices[1] ? `
+      <div class="price-promo">
+        <span class="amt-promo">${rec.prices[1].amt}</span>
+        <span>${rec.prices[1].lbl}</span>
+      </div>
+    ` : '';
+    
+    const tipAddOn = `<br><br><span style="font-size: 13.5px; opacity: 0.85;">*แนะนำให้ดื่มต่อเนื่องอย่างน้อย 3 เดือน เพราะการปรับสมดุลฮอร์โมนต้องใช้เวลาและความสม่ำเสมอ</span>`;
+
+    return `
+      <div class="result-intro">
+        <div class="result-eyebrow">แนะนำสำหรับคุณ</div>
+        <div class="result-headline">${rec.headline}</div>
+        <div class="result-tagline">${rec.tagline}</div>
+      </div>
+      <div class="product-card">
+        <div class="${headerClass}">
+          <div class="product-image-large">
+            <!-- ใส่ <img src="..."> ลงไปแทนที่ข้อความนี้ -->
+            ${imgPlaceholder}
+          </div>
+          <div class="card-head-text">
+            <div class="card-pill">เลือกสำหรับคุณ</div>
+            <h3>${rec.type === 'pops' ? 'Pops Tea' : 'Her Tea'} ${emoji}</h3>
+            <p>${subline}</p>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="why-text">${rec.why}</p>
+          <div class="benefits">
+            ${rec.benefits.map(b => `<div class="benefit"><div class="${rec.dotClass}"></div><span>${b}</span></div>`).join('')}
+          </div>
+          
+          <div class="price-center ${priceTheme}">
+             ${mainPrice}
+             ${promoPrice}
+          </div>
+
+          <div class="tip ${rec.tipClass}">
+            <strong>วิธีกิน:</strong> ${rec.tip}
+            ${tipAddOn}
+          </div>
+        </div>
+      </div>
+      <div class="cta-section">
+        <button class="btn-cta ${rec.btnClass}" onclick="window.open('${rec.btnLink}','_blank')">${rec.btnText}</button>
+        <div class="channel-row">
+          <button class="btn-channel" onclick="window.open('https://shopee.co.th','_blank')">🛒 Shopee</button>
+          <button class="btn-channel" onclick="window.open('https://line.me/R/ti/p/@hernest','_blank')">💬 LINE Chat</button>
+        </div>
+      </div>
+    `;
+  }
+
+  function showResult() {
+    document.getElementById('step-4').classList.remove('active');
+    document.getElementById('step-result').classList.add('active');
+    document.getElementById('pbar').style.width = '100%';
+    document.getElementById('prog-label').textContent = 'ผลลัพธ์';
+    document.getElementById('prog-pct').textContent = '4 / 4';
+    const rec = getRecommendation();
+    const html = rec.type === 'both' ? renderBothResult(rec) : renderSingleResult(rec);
+    document.getElementById('result-content').innerHTML = html;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function restartQuiz() {
+    answers[1] = []; answers[2] = null; answers[3] = []; answers[4] = null;
+    document.querySelectorAll('.opt').forEach(b => b.classList.remove('selected', 'selected-pops'));
+    ['next1','next2','next3','next4'].forEach(id => document.getElementById(id).disabled = true);
+    document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+    document.getElementById('step-1').classList.add('active');
+    document.getElementById('pbar').style.width = '0%';
+    document.getElementById('prog-label').textContent = 'เริ่มต้น';
+    document.getElementById('prog-pct').textContent = '0 / 4';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+</body>
+</html>
