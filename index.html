@@ -154,7 +154,7 @@
     align-items: flex-start;
     gap: 16px;
     padding: 20px 22px;
-    border: 1px solid rgba(45,36,34,0.1); /* ขอบบางลงเหมือนในรูป */
+    border: 1px solid rgba(45,36,34,0.1);
     border-radius: var(--radius);
     background: white;
     cursor: pointer;
@@ -162,8 +162,8 @@
     transition: all 0.2s ease;
     width: 100%;
     color: var(--ink);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.03); /* เพิ่มเงาอ่อนๆ */
-    font-family: 'Noto Sans Thai', sans-serif; /* บังคับใช้ฟอนต์ Noto Sans Thai ในปุ่ม */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    font-family: 'Noto Sans Thai', sans-serif;
   }
   .opt:hover {
     border-color: var(--border-hover);
@@ -173,7 +173,7 @@
   }
   .opt.selected {
     border: 1px solid var(--color-her);
-    box-shadow: 0 0 0 1px var(--color-her); /* ทำขอบหนาโดยไม่ทำให้เลย์เอาต์ขยับ */
+    box-shadow: 0 0 0 1px var(--color-her);
     background: var(--color-her-light);
   }
   .opt.selected-pops {
@@ -190,7 +190,6 @@
   }
   .opt.selected .opt-icon { opacity: 1; }
   
-  /* ขยายขนาดตัวอักษรและเน้นตัวหนาในปุ่มตัวเลือก */
   .opt-body strong {
     display: block;
     font-size: 18px;
@@ -257,7 +256,7 @@
   /* ---- RESULT ---- */
   .result-intro {
     text-align: center;
-    padding: 0.5rem 0 2rem;
+    padding: 0.5rem 0 1.5rem;
   }
   .result-eyebrow {
     font-size: 13px;
@@ -279,6 +278,19 @@
     line-height: 1.6;
   }
 
+  .both-why-box {
+    background: white;
+    padding: 24px;
+    border-radius: var(--radius);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    margin-bottom: 24px;
+    font-size: 15px;
+    color: var(--ink-mid);
+    line-height: 1.7;
+    border: 1px solid rgba(45,36,34,0.05);
+  }
+  .both-why-box strong { color: var(--ink); font-weight: 700; }
+
   .product-card {
     border-radius: var(--radius);
     overflow: hidden;
@@ -287,7 +299,6 @@
     background: white;
   }
   
-  /* Image 4x Larger (ประมาณ 340px) วางซ้อนบนสุด */
   .card-head-her, .card-head-pops {
     padding: 30px 24px;
     display: flex;
@@ -300,7 +311,7 @@
   
   .product-image-large {
     width: 100%;
-    max-width: 340px; /* ขนาดใหญ่ขึ้นประมาณ 4 เท่าจากเดิม 85px */
+    max-width: 340px; 
     aspect-ratio: 1 / 1;
     background: rgba(255,255,255,0.15);
     border-radius: 12px;
@@ -322,9 +333,7 @@
     object-fit: cover;
   }
 
-  .card-head-text {
-    width: 100%;
-  }
+  .card-head-text { width: 100%; }
   .card-pill {
     display: inline-block;
     font-size: 11px;
@@ -337,24 +346,20 @@
     border-radius: 20px;
     margin-bottom: 12px;
   }
-  .card-head-her h3,
-  .card-head-pops h3 {
+  .card-head-her h3, .card-head-pops h3 {
     font-size: 26px;
     font-weight: 700;
     color: white;
     margin-bottom: 8px;
   }
-  .card-head-her p,
-  .card-head-pops p {
+  .card-head-her p, .card-head-pops p {
     font-size: 14px;
     color: rgba(255,255,255,0.9);
     letter-spacing: 0.02em;
     line-height: 1.4;
   }
 
-  .card-body {
-    padding: 24px;
-  }
+  .card-body { padding: 24px; }
   .why-text {
     font-size: 16px;
     color: var(--ink-mid);
@@ -526,7 +531,6 @@
     .question { font-size: 22px; }
     .question-hint { font-size: 14px; }
     
-    /* ตัวอักษรบนมือถือ */
     .opt-body strong { font-size: 16.5px; }
     .opt-body span { font-size: 14px; }
     .opt-icon { font-size: 22px; }
@@ -534,10 +538,9 @@
     
     .channel-row { flex-direction: column; }
     
-    /* Image responsiveness on mobile */
     .card-head-her, .card-head-pops { padding: 24px 16px; }
     .product-image-large { 
-        max-width: 100%; /* ให้เต็มจอโทรศัพท์แต่ไม่เกินกรอบ */
+        max-width: 100%; 
         margin-bottom: 16px; 
     }
     .card-head-her h3, .card-head-pops h3 { font-size: 24px; }
@@ -776,30 +779,31 @@
     const s3 = answers[3] || [];
     const goal = answers[4];
 
+    // ตีความคำตอบ
     const hasPCOS  = s1.includes('pcos');
-    const hasEndo  = s1.includes('endo');
-    const hasPMS   = s1.includes('pms');
     const hasAcne  = s1.includes('acne');
-    const hasStress = s1.includes('stress');
-    const isNone   = s1.includes('none_mild');
-    const isPill   = pill === 'on_pill' || pill === 'stopped_pill';
-    const hasBloat = s3.includes('bloat');
-    const hasCraving = s3.includes('craving');
-    const hasMood  = s3.includes('mood');
-    const hasHeavy = s3.includes('heavy');
-    const hasFatigue = s3.includes('fatigue');
     const hasAndrogen = s3.includes('androgen');
+    
+    const isPill   = pill === 'on_pill' || pill === 'stopped_pill';
+    const isNone   = s1.includes('none_mild');
+    const wantsDetox = goal === 'detox';
 
-    const herScore  = [hasPMS, hasEndo, isPill, hasHeavy, goal==='period_relief', goal==='detox', hasBloat && !hasCraving].filter(Boolean).length;
-    const popsScore = [hasPCOS, hasAcne, hasStress, hasCraving, hasAndrogen, goal==='skin_acne', hasPCOS && isPill].filter(Boolean).length;
+    // นับคะแนนคร่าวๆ เพื่อใช้ประกอบการพิจารณาในกรณีอื่นๆ
+    const herScore  = [s1.includes('pms'), s1.includes('endo'), isPill, s3.includes('heavy'), goal==='period_relief', wantsDetox, (s3.includes('bloat') && !s3.includes('craving'))].filter(Boolean).length;
+    const popsScore = [hasPCOS, hasAcne, s3.includes('stress'), s3.includes('craving'), hasAndrogen, goal==='skin_acne'].filter(Boolean).length;
+
+    // LOGIC ตามคลิปเสียง: 
+    // 1. ถ้ามี PCOS แล้วกินยาคุมอยู่/เพิ่งเลิกยาคุม หรือ มีคะแนนความต้องการทั้ง 2 ด้านสูง = แนะนำทั้ง 2 ตัว
+    const needsBoth = (hasPCOS && isPill) || (herScore >= 2 && popsScore >= 2);
 
     if (isNone) {
+      // ผู้หญิงทั่วไป กว้างๆ อยากดูแลตัวเอง
       return {
         type: 'her',
         headline: 'เริ่มต้นด้วย Her Tea',
-        tagline: 'บำรุงจากข้างใน ก่อนที่อาการจะเริ่ม',
-        why: 'แม้จะยังไม่มีอาการชัดเจน การดื่ม Her Tea เป็นประจำช่วยให้รอบเดือนสมูทขึ้นในระยะยาว เหมือนการดูแลระบบฮอร์โมนก่อนที่ปัญหาจะเริ่ม ดีกว่ารอให้มีอาการแล้วค่อยแก้',
-        benefits: ['รอบเดือนสม่ำเสมอขึ้น อาการ PMS เบาลงตามธรรมชาติ', 'ช่วยกำจัดสาร xenoestrogen จากสิ่งแวดล้อมที่สะสมโดยไม่รู้ตัว', 'ตับทำงานดีขึ้น ฮอร์โมนเผาผลาญได้มีประสิทธิภาพ'],
+        tagline: 'บำรุงจากข้างใน เหมาะสำหรับผู้หญิงทั่วไป',
+        why: 'อาการของคุณอยู่ในเกณฑ์ปกติ การดื่ม Her Tea เป็นประจำจะช่วยขับสารพิษในตับ (Detox) ปรับสมดุลรอบเดือนให้มาปกติ และดูแลสุขภาพภายในของผู้หญิงแบบองค์รวม',
+        benefits: ['รอบเดือนสม่ำเสมอขึ้น อาการ PMS เบาลงตามธรรมชาติ', 'ช่วยกำจัดสารพิษและสิ่งตกค้างจากสิ่งแวดล้อม', 'ตับทำงานดีขึ้น ฮอร์โมนเผาผลาญได้มีประสิทธิภาพ'],
         dotClass: 'dot-her', tipClass: 'tip-her',
         tip: 'ดื่มช่วงเช้า หรือก่อนนอน วันละ 1 มื้อ',
         prices: [{ amt: '฿690', lbl: '1 กล่อง / 15 มื้อ' }, { amt: '฿1,100', lbl: '2 กล่อง + ส่งฟรี' }],
@@ -808,27 +812,29 @@
       };
     }
 
-    if (herScore >= 2 && popsScore >= 2) {
+    if (needsBoth) {
+      // แนะนำ 2 สูตรคู่กัน
       return {
         type: 'both',
-        headline: 'ดื่มทั้งสองสูตร',
-        tagline: 'อาการของคุณต้องการทั้ง detox ฮอร์โมน และการปรับ androgen พร้อมกัน',
-        why: 'โปรไฟล์ของคุณมีสัญญาณทั้งสองด้านชัดเจน Her Tea จัดการ detox ฮอร์โมนและบรรเทา PMS ส่วน Pops Tea แก้ที่ต้นเหตุของ PCOS และฮอร์โมนเพศชายสูง ทั้งสองตัวดื่มคู่กันได้เลย ไม่ตีกัน',
-        benefits_her: [isPill ? 'Detox ฮอร์โมนสังเคราะห์ที่ตกค้างจากยาคุม' : 'ช่วยตับล้างเอสโตรเจนส่วนเกินออกจากร่างกาย', hasHeavy || hasPMS ? 'Raspberry Leaf ลดอาการปวดและบวมระหว่างมีประจำเดือน' : 'ปรับรอบเดือนให้สม่ำเสมอขึ้น'],
-        benefits_pops: [hasAcne ? 'ลดสิวฮอร์โมนโดยตรงจาก androgen สูง' : 'ปรับสมดุล androgen ที่มักรบกวนผิวและอารมณ์', hasCraving ? 'ช่วยปรับ blood sugar ลดความอยากของหวานสะสม' : 'ช่วยย่อย ลดท้องอืดหลังมื้ออาหาร'],
+        headline: 'แนะนำทั้ง 2 สูตร',
+        tagline: 'ดูแลครบทั้งปรับสมดุล PCOS และขับฮอร์โมนตกค้าง',
+        why: 'จากปัญหาของคุณ (เช่น มีภาวะ PCOS / สิว / ฮอร์โมนเพศชายสูง และมีการใช้ยาคุมร่วมด้วย) ร่างกายจึงต้องการการดูแลทั้ง 2 ด้าน:<br><br>• <strong>Pops Tea:</strong> จะช่วยแก้ปัญหาที่ต้นเหตุของ PCOS ลดสิวหน้ามัน และปรับสมดุลอินซูลิน<br>• <strong>Her Tea:</strong> จะช่วยขับสารพิษและล้างฮอร์โมนตกค้างจากยาคุมออกจากตับ<br><br>คุณสามารถเลือกซื้อ <strong>ทั้งสองสูตร</strong> เพื่อดื่มควบคู่กัน หรือหากมีงบจำกัด สามารถเลือกสูตรที่ตรงกับ <strong>ปัญหาที่คุณให้ความสำคัญที่สุดในตอนนี้</strong> ก่อนได้ค่ะ',
+        benefits_her: [isPill ? 'Detox ฮอร์โมนสังเคราะห์ที่ตกค้างจากยาคุม' : 'ช่วยตับล้างเอสโตรเจนส่วนเกินออกจากร่างกาย', 'ปรับรอบเดือนให้สม่ำเสมอ ลดอาการปวด/บวม'],
+        benefits_pops: [(hasAcne || hasPCOS) ? 'ลดสิวฮอร์โมน ลดหน้ามัน แก้ปัญหาที่ต้นเหตุ' : 'ปรับสมดุล Androgen ที่มักรบกวนผิวและอารมณ์', 'ช่วยปรับสมดุลอินซูลิน และระบบเผาผลาญ'],
         tip: 'Her Tea: ดื่มเช้าหรือก่อนนอน  |  Pops Tea: ดื่มหลังมื้ออาหาร',
         prices_her: [{ amt: '฿690', lbl: '1 กล่อง / 15 มื้อ' }, { amt: '฿1,100', lbl: '2 กล่อง + ส่งฟรี' }],
         prices_pops: [{ amt: '฿590', lbl: '1 กล่อง / 15 วัน' }]
       };
     }
 
-    if (popsScore > herScore || hasPCOS || hasAcne || hasAndrogen || hasCraving) {
+    if (popsScore > herScore || hasPCOS || hasAcne || hasAndrogen) {
+      // เน้นคนเป็นสิว PCOS หน้ามัน ดื้ออินซูลิน
       return {
         type: 'pops',
         headline: 'เริ่มต้นด้วย Pops Tea',
-        tagline: 'แก้ที่ต้นเหตุของ PCOS สิวฮอร์โมน และ androgen สูง',
-        why: 'อาการที่คุณมีส่วนใหญ่ชี้ไปที่ฮอร์โมนเพศชายสูง (androgens) ซึ่งเป็นรากของสิวฮอร์โมน PCOS และความอยากของหวาน Pops Tea ออกแบบมาแก้ตรงนี้โดยตรง ทำงานได้ดีที่สุดเมื่อดื่มหลังมื้ออาหาร',
-        benefits: [hasPCOS ? 'สนับสนุนสุขภาพรังไข่และปรับ hormonal baseline ของ PCOS' : 'ลด androgen สูงที่รบกวนผิวและสมดุลฮอร์โมน', hasAcne ? 'ลดสิวฮอร์โมนและผิวมัน จากการจัดการต้นเหตุ ไม่ใช่แค่ผิวหน้า' : 'ปรับสมดุลฮอร์โมนเพศชายที่มักสูงเกินในหลายภาวะ', hasCraving ? 'ช่วยปรับ blood sugar ลดความอยากของหวานสะสม' : hasStress ? 'ช่วยปรับ cortisol ลดผลเสียจากความเครียดเรื้อรัง' : 'ช่วยย่อย ลดท้องอืดหลังมื้ออาหาร'],
+        tagline: 'ตอบโจทย์คนเป็นสิว หน้ามัน PCOS และดื้ออินซูลิน',
+        why: 'อาการของคุณชี้ชัดไปที่ภาวะฮอร์โมนเพศชายสูง (Androgen) ซึ่งเป็นต้นเหตุหลักของสิวฮอร์โมน อาการหน้ามัน ภาวะ PCOS หรือปัญหาเรื่องการเผาผลาญ/ดื้ออินซูลิน Pops Tea ถูกออกแบบมาเพื่อแก้ปัญหานี้ที่ต้นเหตุโดยตรง',
+        benefits: [hasPCOS ? 'สนับสนุนสุขภาพรังไข่และปรับสมดุลของ PCOS' : 'ลดฮอร์โมนเพศชาย (Androgen) สูง', hasAcne ? 'ลดสิวฮอร์โมนและผิวมัน แก้ที่ต้นเหตุจากภายใน' : 'ปรับสมดุลระบบเผาผลาญ ลดการดื้ออินซูลิน', 'ช่วยลดความอยากของหวาน และช่วยย่อยหลังมื้ออาหาร'],
         dotClass: 'dot-pops', tipClass: 'tip-pops',
         tip: 'ดื่มหลังมื้ออาหาร วันละ 1 มื้อ',
         prices: [{ amt: '฿590', lbl: '1 กล่อง / 15 วัน' }],
@@ -837,12 +843,13 @@
       };
     }
 
+    // เน้นอยากเลิกยาคุม ขับสารพิษ PMS
     return {
       type: 'her',
       headline: 'เริ่มต้นด้วย Her Tea',
-      tagline: 'ตรงกับอาการที่คุณมีมากที่สุด',
-      why: 'อาการของคุณเชื่อมกับ estrogen dominance และ PMS ชัดเจน Her Tea ช่วยตับให้เผาผลาญเอสโตรเจนส่วนเกิน ลดอาการปวดและบวม และทำให้รอบเดือนสมูทขึ้น หลายคนรู้สึกต่างตั้งแต่รอบแรก',
-      benefits: [hasPMS || hasHeavy ? 'Raspberry Leaf ช่วยผ่อนคลายกล้ามเนื้อมดลูก ลดอาการปวด' : 'ปรับ estrogenส่วนเกินที่เป็นต้นเหตุของ PMS', hasBloat ? 'Dandelion ช่วยระบายน้ำส่วนเกิน ลดบวมโดยไม่เสีย electrolytes' : 'Lemon Balm + Oatstraw ช่วยให้อารมณ์นิ่ง ลดวิตกกังวล', isPill ? 'Detox ฮอร์โมนสังเคราะห์ที่ตกค้างจากยาคุม' : 'ช่วย liver detox สาร xenoestrogen จากสิ่งแวดล้อม'],
+      tagline: 'ปรับรอบเดือน ขับสารพิษ และลดฮอร์โมนตกค้าง',
+      why: 'อาการของคุณเน้นไปที่เรื่องรอบเดือน อาการปวด/บวม (PMS) หรือการอยากเลิกยาคุม Her Tea จะช่วยบำรุงสุขภาพผู้หญิงแบบองค์รวม ช่วยตับในการขับสารพิษและล้างฮอร์โมนสังเคราะห์ (Detox) เพื่อให้ร่างกายกลับมามีสมดุลตามธรรมชาติ',
+      benefits: [ 'ผ่อนคลายกล้ามเนื้อมดลูก ลดอาการปวดและบวม (PMS)', isPill || wantsDetox ? 'ขับฮอร์โมนสังเคราะห์ตกค้างจากการกินยาคุม' : 'ช่วยให้ตับล้างสารพิษ (Detox) ได้อย่างมีประสิทธิภาพ', 'ปรับสมดุลเอสโตรเจนส่วนเกิน ทำให้อารมณ์นิ่งขึ้น'],
       dotClass: 'dot-her', tipClass: 'tip-her',
       tip: 'ดื่มช่วงเช้า หรือก่อนนอน วันละ 1 มื้อ',
       prices: [{ amt: '฿690', lbl: '1 กล่อง / 15 มื้อ' }, { amt: '฿1,100', lbl: '2 กล่อง + ส่งฟรี' }],
@@ -859,6 +866,12 @@
         <div class="result-headline">${rec.headline}</div>
         <div class="result-tagline">${rec.tagline}</div>
       </div>
+      
+      <!-- เพิ่มกล่องข้อความอธิบายเหตุผลกรณีได้ 2 สูตร -->
+      <div class="both-why-box">
+        ${rec.why}
+      </div>
+
       <div class="product-card">
         <div class="card-head-her">
           <div class="product-image-large">
