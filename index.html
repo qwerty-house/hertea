@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HERNEST – ชาไหนเหมาะกับคุณ?</title>
+<title>HERNEST – ชาที่ใช่สำหรับคุณ</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!-- ใช้ฟอนต์ Noto Sans Thai ทั้งหมด -->
@@ -25,7 +25,7 @@
     --border: rgba(45,36,34,0.12);
     --border-hover: rgba(139,38,38,0.4);
     
-    --radius: 16px; /* ปรับให้ขอบโค้งมนขึ้นเหมือนในรูป */
+    --radius: 16px; 
     --radius-sm: 8px;
   }
 
@@ -50,25 +50,14 @@
     text-align: center;
     padding: 2.5rem 0 2rem;
   }
-  .brand-logo {
-    font-family: 'Noto Sans Thai', sans-serif;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 0.15em;
-    color: var(--color-her);
-    margin-bottom: 16px;
-    line-height: 1.2;
-  }
-  .brand-logo-sub {
+  .brand-logo img {
+    max-width: 160px;
+    height: auto;
+    margin: 0 auto 16px;
     display: block;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    color: var(--ink-mid);
-    margin-top: 4px;
   }
   .brand-title {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 700;
     color: var(--ink);
     line-height: 1.3;
@@ -78,7 +67,7 @@
     font-size: 15px;
     color: var(--ink-mid);
     line-height: 1.75;
-    max-width: 400px;
+    max-width: 420px;
     margin: 0 auto;
   }
 
@@ -553,11 +542,10 @@
 
   <div class="brand-header">
     <div class="brand-logo">
-      HERNEST.
-      <span class="brand-logo-sub">BY NICHE</span>
+      <img src="./LOGO Hernest Red Transparent.png" alt="HERNEST by NICHE">
     </div>
     <div class="brand-title">ชาไหนเหมาะกับคุณ?</div>
-    <div class="brand-sub">ตอบ 4 ข้อ รู้เลยว่าควรดื่ม Her Tea, Pops Tea<br>หรือทั้งคู่ — แนะนำตามอาการจริงของคุณ</div>
+    <div class="brand-sub">ทำควิซสั้นๆ 4 ข้อ เพื่อหาชาที่ตอบโจทย์คุณที่สุด แนะนำเจาะลึกจากอาการจริงเลยค่ะ</div>
   </div>
 
   <div class="progress-wrap">
@@ -572,129 +560,125 @@
 
   <!-- STEP 1 -->
   <div id="step-1" class="step active">
-    <div class="step-eyebrow">ข้อที่ 1 จาก 4</div>
-    <div class="question">คุณมีอาการหรือภาวะเหล่านี้ไหม?</div>
-    <div class="question-hint">เลือกได้มากกว่า 1 ข้อ — ไม่ต้องกังวล ทุกคำตอบไม่มีถูกหรือผิด</div>
+    <div class="step-eyebrow">คำถามที่ 1 จาก 4</div>
+    <div class="question">ช่วงนี้มีอาการหรือภาวะเหล่านี้บ้างไหมคะ?</div>
     <div class="options-list">
       <button class="opt" data-step="1" data-val="pms" onclick="selectMulti(this)">
         <span class="opt-icon">🌙</span>
-        <span class="opt-body"><strong>PMS หนัก / ปวดท้องประจำเดือนมาก</strong><span>ปวดจนต้องกินยา นอนพักทั้งวัน หรืออารมณ์ดิ่งก่อนมี</span></span>
+        <span class="opt-body"><strong>PMS หนัก ปวดประจำเดือนมาก</strong><span>ปวดจนต้องพึ่งยา ลุกไม่ไหว หรืออารมณ์สวิงดิ่งสุดๆ ก่อนเมนส์มา</span></span>
       </button>
       <button class="opt" data-step="1" data-val="acne" onclick="selectMulti(this)">
         <span class="opt-icon">✨</span>
-        <span class="opt-body"><strong>สิวฮอร์โมน / หน้ามันง่าย</strong><span>สิวขึ้นช่วงก่อนมีประจำเดือน หรือสิวซีสต์บริเวณคาง / แก้ม</span></span>
+        <span class="opt-body"><strong>สิวฮอร์โมน หน้ามันง่าย</strong><span>สิวชอบบุกช่วงก่อนเมนส์มา หรือเป็นสิวอักเสบ สิวซีสต์แถวคางกับแก้มบ่อยๆ</span></span>
       </button>
       <button class="opt" data-step="1" data-val="endo" onclick="selectMulti(this)">
         <span class="opt-icon">🌸</span>
-        <span class="opt-body"><strong>Endometriosis</strong><span>เยื่อบุโพรงมดลูกเจริญผิดที่ หรือสงสัยว่าตัวเองอาจมี</span></span>
+        <span class="opt-body"><strong>Endometriosis (เยื่อบุโพรงมดลูกเจริญผิดที่)</strong><span>เคยไปตรวจเจอ หรือสงสัยว่าตัวเองน่าจะเป็นภาวะนี้อยู่</span></span>
       </button>
       <button class="opt" data-step="1" data-val="pcos" onclick="selectMulti(this)">
         <span class="opt-icon">⭕</span>
-        <span class="opt-body"><strong>PCOS / ถุงน้ำในรังไข่</strong><span>แพทย์วินิจฉัย หรือมีประจำเดือนไม่สม่ำเสมอ / ขนดก</span></span>
+        <span class="opt-body"><strong>PCOS (ภาวะถุงน้ำรังไข่หลายใบ)</strong><span>หมอเคยบอกว่าเป็น หรือเมนส์มาไม่ปกติ ขนดก สิวเยอะ</span></span>
       </button>
       <button class="opt" data-step="1" data-val="stress" onclick="selectMulti(this)">
         <span class="opt-icon">🧠</span>
-        <span class="opt-body"><strong>เครียดง่าย / เครียดสะสม</strong><span>รู้สึกหัวหมุน วิตกกังวล หรือนอนหลับยากบ่อย ๆ</span></span>
+        <span class="opt-body"><strong>เครียดง่าย เครียดสะสม</strong><span>รู้สึกสมองล้า หัวหมุน กังวลไปหมด หรือหลับยากบ่อยๆ</span></span>
       </button>
       <button class="opt" data-step="1" data-val="none_mild" onclick="selectExclusive(this, 1)">
         <span class="opt-icon">🌿</span>
-        <span class="opt-body"><strong>ไม่มีโรคประจำตัว แค่อยากดูแลตัวเอง</strong><span>รอบเดือนค่อนข้างปกติ แต่อยากให้ร่างกายสมดุลขึ้น</span></span>
+        <span class="opt-body"><strong>ไม่ได้มีอาการอะไรเป็นพิเศษ แค่อยากดูแลตัวเอง</strong><span>เมนส์มาปกติ แต่อยากปรับสมดุลร่างกายให้ดีขึ้นไปอีก</span></span>
       </button>
     </div>
     <div class="nav-row">
       <span></span>
-      <button class="btn-next" id="next1" disabled onclick="goNext(1)">ต่อไป →</button>
+      <button class="btn-next" id="next1" disabled onclick="goNext(1)">ถัดไป →</button>
     </div>
   </div>
 
   <!-- STEP 2 -->
   <div id="step-2" class="step">
-    <div class="step-eyebrow">ข้อที่ 2 จาก 4</div>
-    <div class="question">ตอนนี้คุณทานยาคุมอยู่ไหม?</div>
-    <div class="question-hint">ตอบตรง ๆ เพื่อให้แนะนำได้แม่นยำที่สุด</div>
+    <div class="step-eyebrow">คำถามที่ 2 จาก 4</div>
+    <div class="question" style="margin-bottom: 2rem;">ตอนนี้กินยาคุมอยู่ไหมคะ?</div>
     <div class="options-list">
       <button class="opt" data-step="2" data-val="on_pill" onclick="selectOne(this)">
         <span class="opt-icon">💊</span>
-        <span class="opt-body"><strong>ทานยาคุมอยู่ตอนนี้</strong><span>รายวัน / แผ่นแปะ / วงแหวน หรือทานเป็นช่วง ๆ เพื่อ PCOS</span></span>
+        <span class="opt-body"><strong>กินอยู่ค่ะ</strong><span>กินแบบรายวัน แปะแผ่น ใส่ห่วง หรือกินๆ หยุดๆ เพื่อรักษา PCOS</span></span>
       </button>
       <button class="opt" data-step="2" data-val="stopped_pill" onclick="selectOne(this)">
         <span class="opt-icon">🚫</span>
-        <span class="opt-body"><strong>เพิ่งหยุดยาคุม</strong><span>หยุดมาได้ไม่นาน หรืออยู่ในช่วง detox หลังหยุด</span></span>
+        <span class="opt-body"><strong>เพิ่งเลิกกินไปไม่นาน</strong><span>หยุดกินมาสักพัก หรือกำลังอยู่ในช่วงอยากคลีนร่างกาย</span></span>
       </button>
       <button class="opt" data-step="2" data-val="no_pill" onclick="selectOne(this)">
         <span class="opt-icon">🌱</span>
-        <span class="opt-body"><strong>ไม่ได้ทานยาคุม</strong><span>ไม่ได้ทาน หรือใช้วิธีคุมกำเนิดแบบอื่น</span></span>
+        <span class="opt-body"><strong>ไม่ได้กินเลย</strong><span>ไม่ได้กินยาคุม หรือใช้วิธีคุมกำเนิดแบบอื่นอยู่</span></span>
       </button>
     </div>
     <div class="nav-row">
       <button class="btn-back" onclick="goBack(2)">← ย้อนกลับ</button>
-      <button class="btn-next" id="next2" disabled onclick="goNext(2)">ต่อไป →</button>
+      <button class="btn-next" id="next2" disabled onclick="goNext(2)">ถัดไป →</button>
     </div>
   </div>
 
   <!-- STEP 3 -->
   <div id="step-3" class="step">
-    <div class="step-eyebrow">ข้อที่ 3 จาก 4</div>
-    <div class="question">อาการไหนที่รู้สึกบ่อยที่สุด?</div>
-    <div class="question-hint">เลือกได้มากกว่า 1 ข้อ</div>
+    <div class="step-eyebrow">คำถามที่ 3 จาก 4</div>
+    <div class="question" style="margin-bottom: 2rem;">อาการไหนกวนใจบ่อยที่สุด?</div>
     <div class="options-list">
       <button class="opt" data-step="3" data-val="bloat" onclick="selectMulti(this)">
         <span class="opt-icon">💧</span>
-        <span class="opt-body"><strong>บวมน้ำ / ท้องอืด</strong><span>โดยเฉพาะช่วงก่อนมีประจำเดือน หรือหลังกินอาหาร</span></span>
+        <span class="opt-body"><strong>ตัวบวม ท้องอืด</strong><span>รู้สึกตัวพองๆ อึดอัด โดยเฉพาะก่อนเมนส์มา หรือหลังกินข้าวเสร็จ</span></span>
       </button>
       <button class="opt" data-step="3" data-val="craving" onclick="selectMulti(this)">
         <span class="opt-icon">🍫</span>
-        <span class="opt-body"><strong>อยากกินของหวาน / คาร์บบ่อย</strong><span>โดยเฉพาะช่วงเครียด หรือก่อนมีประจำเดือน</span></span>
+        <span class="opt-body"><strong>ติดหวาน หิวแป้งตลอด</strong><span>เครียดทีไร หรือก่อนเมนส์มา ต้องหาของหวานกินตลอด</span></span>
       </button>
       <button class="opt" data-step="3" data-val="mood" onclick="selectMulti(this)">
         <span class="opt-icon">🌊</span>
-        <span class="opt-body"><strong>อารมณ์แปรปรวน / ร้องไห้ง่าย</strong><span>อารมณ์ขึ้น ๆ ลง ๆ โดยไม่มีเหตุผลชัดเจน</span></span>
+        <span class="opt-body"><strong>อารมณ์สวิง ร้องไห้ง่าย</strong><span>เดี๋ยวดีเดี๋ยวร้าย อารมณ์ขึ้นลงแบบไม่มีสาเหตุ</span></span>
       </button>
       <button class="opt" data-step="3" data-val="heavy" onclick="selectMulti(this)">
         <span class="opt-icon">🩸</span>
-        <span class="opt-body"><strong>ประจำเดือนมามาก / เจ็บมาก</strong><span>เปลี่ยนผ้าอนามัยบ่อย หรือปวดจนทำอะไรไม่ได้</span></span>
+        <span class="opt-body"><strong>เมนส์มาเยอะ ปวดท้องหนัก</strong><span>ต้องเปลี่ยนผ้าอนามัยบ่อยมาก หรือปวดจนทำอะไรไม่ไหว</span></span>
       </button>
       <button class="opt" data-step="3" data-val="fatigue" onclick="selectMulti(this)">
         <span class="opt-icon">🔋</span>
-        <span class="opt-body"><strong>เหนื่อยล้า / ไม่มีแรง</strong><span>นอนพอแล้วแต่ยังรู้สึกเหนื่อย หรืออยู่กับความเครียดนาน</span></span>
+        <span class="opt-body"><strong>อ่อนล้า ไม่มีแรง</strong><span>นอนเยอะแค่ไหนก็ยังตื่นมาเพลีย หรือเครียดจนหมดพลัง</span></span>
       </button>
       <button class="opt" data-step="3" data-val="androgen" onclick="selectMulti(this)">
         <span class="opt-icon">📈</span>
-        <span class="opt-body"><strong>ฮอร์โมนเพศชายสูง / ขนดก</strong><span>แพทย์แจ้ง หรือสังเกตเองว่ามีขนมากกว่าปกติ</span></span>
+        <span class="opt-body"><strong>ฮอร์โมนเพศชายสูง ขนดก</strong><span>หมอเคยบอก หรือสังเกตเห็นว่าตัวเองขนเยอะขึ้น หน้ามัน สิวขึ้นง่าย</span></span>
       </button>
     </div>
     <div class="nav-row">
       <button class="btn-back" onclick="goBack(3)">← ย้อนกลับ</button>
-      <button class="btn-next" id="next3" disabled onclick="goNext(3)">ต่อไป →</button>
+      <button class="btn-next" id="next3" disabled onclick="goNext(3)">ถัดไป →</button>
     </div>
   </div>
 
   <!-- STEP 4 -->
   <div id="step-4" class="step">
-    <div class="step-eyebrow">ข้อที่ 4 จาก 4</div>
-    <div class="question">เป้าหมายหลักของคุณคืออะไร?</div>
-    <div class="question-hint">เลือกข้อที่ใกล้เคียงที่สุดสักหนึ่งข้อ</div>
+    <div class="step-eyebrow">คำถามที่ 4 จาก 4</div>
+    <div class="question" style="margin-bottom: 2rem;">ผลลัพธ์ที่อยากได้มากที่สุดคืออะไร?</div>
     <div class="options-list">
-      <button class="opt" data-step="4" data-val="period_relief" onclick="selectOne(this)">
+      <button class="opt" data-step="4" data-val="period_relief" onclick="selectMulti(this)">
         <span class="opt-icon">🗓️</span>
-        <span class="opt-body"><strong>อยากให้รอบเดือนสมูทขึ้น</strong><span>ปวดน้อยลง บวมน้อยลง อารมณ์นิ่งขึ้น</span></span>
+        <span class="opt-body"><strong>อยากให้ช่วงเมนส์มาผ่านไปแบบชิลๆ</strong><span>ปวดท้องน้อยลง ตัวไม่บวม อารมณ์ไม่สวิง</span></span>
       </button>
-      <button class="opt" data-step="4" data-val="hormone_balance" onclick="selectOne(this)">
+      <button class="opt" data-step="4" data-val="hormone_balance" onclick="selectMulti(this)">
         <span class="opt-icon">☯️</span>
-        <span class="opt-body"><strong>ปรับสมดุลฮอร์โมนระยะยาว</strong><span>แก้ที่ต้นเหตุ ไม่ใช่แค่บรรเทาอาการ</span></span>
+        <span class="opt-body"><strong>ปรับสมดุลฮอร์โมนแบบยั่งยืน</strong><span>แก้ปัญหาที่ต้นเหตุ ไม่ใช่แค่กินยาบรรเทาอาการชั่วคราว</span></span>
       </button>
-      <button class="opt" data-step="4" data-val="skin_acne" onclick="selectOne(this)">
+      <button class="opt" data-step="4" data-val="skin_acne" onclick="selectMulti(this)">
         <span class="opt-icon">🌟</span>
-        <span class="opt-body"><strong>อยากให้ผิวดีขึ้น / ลดสิวฮอร์โมน</strong><span>สิวที่ขึ้นจากฮอร์โมน ไม่ใช่จากความสะอาด</span></span>
+        <span class="opt-body"><strong>อยากผิวใส ลาสิวฮอร์โมน</strong><span>จัดการสิวที่ขึ้นซ้ำซากจากข้างใน ไม่ใช่สิวที่เกิดจากความสกปรก</span></span>
       </button>
-      <button class="opt" data-step="4" data-val="detox" onclick="selectOne(this)">
+      <button class="opt" data-step="4" data-val="detox" onclick="selectMulti(this)">
         <span class="opt-icon">🔄</span>
-        <span class="opt-body"><strong>ล้างฮอร์โมนตกค้างจากยาคุม</strong><span>ต้องการ detox หลังหยุดยา หรือระหว่างทานอยู่</span></span>
+        <span class="opt-body"><strong>ดีท็อกซ์ฮอร์โมนตกค้างจากยาคุม</strong><span>อยากคลีนร่างกายหลังหยุดยา หรือปรับสมดุลระหว่างที่ยังกินยาอยู่</span></span>
       </button>
     </div>
     <div class="nav-row">
       <button class="btn-back" onclick="goBack(4)">← ย้อนกลับ</button>
-      <button class="btn-next" id="next4" disabled onclick="showResult()">ดูผลของฉัน ✦</button>
+      <button class="btn-next" id="next4" disabled onclick="showResult()">ดูผลลัพธ์เลย ✨</button>
     </div>
   </div>
 
@@ -703,7 +687,7 @@
     <div id="result-content"></div>
     
     <div style="text-align:center; margin-top: 24px;">
-      <button class="restart-btn" onclick="restartQuiz()">↺ เริ่มใหม่อีกครั้ง</button>
+      <button class="restart-btn" onclick="restartQuiz()">↺ ทำใหม่อีกครั้ง</button>
     </div>
 
     <!-- ข้อความ Disclaimer อย. -->
@@ -716,15 +700,19 @@
 </div>
 
 <script>
-  const answers = { 1: [], 2: null, 3: [], 4: null };
+  const answers = { 1: [], 2: null, 3: [], 4: [] };
 
   function selectMulti(btn) {
     const step = btn.dataset.step;
     const val = btn.dataset.val;
-    document.querySelectorAll(`[data-step="${step}"][data-val="none_mild"]`).forEach(b => {
-      b.classList.remove('selected', 'selected-pops');
-    });
-    answers[step] = (answers[step] || []).filter(v => v !== 'none_mild');
+    
+    if (step == "1") {
+        document.querySelectorAll(`[data-step="${step}"][data-val="none_mild"]`).forEach(b => {
+          b.classList.remove('selected', 'selected-pops');
+        });
+        answers[step] = (answers[step] || []).filter(v => v !== 'none_mild');
+    }
+
     if (btn.classList.contains('selected')) {
       btn.classList.remove('selected', 'selected-pops');
       answers[step] = answers[step].filter(v => v !== val);
@@ -768,7 +756,7 @@
   function updateProgress(step) {
     const pct = step <= 4 ? ((step - 1) / 4) * 100 : 100;
     document.getElementById('pbar').style.width = pct + '%';
-    const labels = ['เริ่มต้น', 'ข้อที่ 1', 'ข้อที่ 2', 'ข้อที่ 3', 'ผลลัพธ์'];
+    const labels = ['เริ่มต้น', 'คำถาม 1', 'คำถาม 2', 'คำถาม 3', 'ผลลัพธ์'];
     document.getElementById('prog-label').textContent = labels[step - 1] || 'ผลลัพธ์';
     document.getElementById('prog-pct').textContent = (step <= 4 ? step - 1 : 4) + ' / 4';
   }
@@ -777,7 +765,7 @@
     const s1 = answers[1] || [];
     const pill = answers[2];
     const s3 = answers[3] || [];
-    const goal = answers[4];
+    const goals = answers[4] || [];
 
     // ตีความคำตอบ
     const hasPCOS  = s1.includes('pcos');
@@ -786,11 +774,14 @@
     
     const isPill   = pill === 'on_pill' || pill === 'stopped_pill';
     const isNone   = s1.includes('none_mild');
-    const wantsDetox = goal === 'detox';
+    
+    const wantsDetox = goals.includes('detox');
+    const wantsPeriodRelief = goals.includes('period_relief');
+    const wantsSkinAcne = goals.includes('skin_acne');
 
     // นับคะแนนคร่าวๆ เพื่อใช้ประกอบการพิจารณาในกรณีอื่นๆ
-    const herScore  = [s1.includes('pms'), s1.includes('endo'), isPill, s3.includes('heavy'), goal==='period_relief', wantsDetox, (s3.includes('bloat') && !s3.includes('craving'))].filter(Boolean).length;
-    const popsScore = [hasPCOS, hasAcne, s3.includes('stress'), s3.includes('craving'), hasAndrogen, goal==='skin_acne'].filter(Boolean).length;
+    const herScore  = [s1.includes('pms'), s1.includes('endo'), isPill, s3.includes('heavy'), wantsPeriodRelief, wantsDetox, (s3.includes('bloat') && !s3.includes('craving'))].filter(Boolean).length;
+    const popsScore = [hasPCOS, hasAcne, s3.includes('stress'), s3.includes('craving'), hasAndrogen, wantsSkinAcne].filter(Boolean).length;
 
     // LOGIC ตามคลิปเสียง: 
     // 1. ถ้ามี PCOS แล้วกินยาคุมอยู่/เพิ่งเลิกยาคุม หรือ มีคะแนนความต้องการทั้ง 2 ด้านสูง = แนะนำทั้ง 2 ตัว
@@ -800,10 +791,10 @@
       // ผู้หญิงทั่วไป กว้างๆ อยากดูแลตัวเอง
       return {
         type: 'her',
-        headline: 'เริ่มต้นด้วย Her Tea',
-        tagline: 'บำรุงจากข้างใน เหมาะสำหรับผู้หญิงทั่วไป',
-        why: 'อาการของคุณอยู่ในเกณฑ์ปกติ การดื่ม Her Tea เป็นประจำจะช่วยขับสารพิษในตับ (Detox) ปรับสมดุลรอบเดือนให้มาปกติ และดูแลสุขภาพภายในของผู้หญิงแบบองค์รวม',
-        benefits: ['รอบเดือนสม่ำเสมอขึ้น อาการ PMS เบาลงตามธรรมชาติ', 'ช่วยกำจัดสารพิษและสิ่งตกค้างจากสิ่งแวดล้อม', 'ตับทำงานดีขึ้น ฮอร์โมนเผาผลาญได้มีประสิทธิภาพ'],
+        headline: 'สูตรนี้เลย Her Tea',
+        tagline: 'บำรุงจากภายใน รีเซ็ตระบบผู้หญิงให้สมดุล',
+        why: 'ร่างกายโดยรวมปกติดีค่ะ การจิบ Her Tea เป็นประจำจะช่วยดีท็อกซ์ตับ ล้างสารพิษตกค้าง ปรับรอบเดือนให้เป๊ะขึ้น แถมยังดูแลสุขภาพภายในแบบครบจบในตัวเดียว',
+        benefits: ['รอบเดือนมาตรงเวลา อาการเหวี่ยงวีนก่อนเมนส์หายไป', 'ช่วยร่างกายเคลียร์สารพิษและสิ่งตกค้างรอบตัว', 'ฟื้นฟูการทำงานของตับ ให้เผาผลาญฮอร์โมนได้ดีขึ้น'],
         dotClass: 'dot-her', tipClass: 'tip-her',
         tip: 'ดื่มช่วงเช้า หรือก่อนนอน วันละ 1 มื้อ',
         prices: [{ amt: '฿690', lbl: '1 กล่อง / 15 มื้อ' }, { amt: '฿1,100', lbl: '2 กล่อง + ส่งฟรี' }],
@@ -816,11 +807,11 @@
       // แนะนำ 2 สูตรคู่กัน
       return {
         type: 'both',
-        headline: 'แนะนำทั้ง 2 สูตร',
-        tagline: 'ดูแลครบทั้งปรับสมดุล PCOS และขับฮอร์โมนตกค้าง',
-        why: 'จากปัญหาของคุณ (เช่น มีภาวะ PCOS / สิว / ฮอร์โมนเพศชายสูง และมีการใช้ยาคุมร่วมด้วย) ร่างกายจึงต้องการการดูแลทั้ง 2 ด้าน:<br><br>• <strong>Pops Tea:</strong> จะช่วยแก้ปัญหาที่ต้นเหตุของ PCOS ลดสิวหน้ามัน และปรับสมดุลอินซูลิน<br>• <strong>Her Tea:</strong> จะช่วยขับสารพิษและล้างฮอร์โมนตกค้างจากยาคุมออกจากตับ<br><br>คุณสามารถเลือกซื้อ <strong>ทั้งสองสูตร</strong> เพื่อดื่มควบคู่กัน หรือหากมีงบจำกัด สามารถเลือกสูตรที่ตรงกับ <strong>ปัญหาที่คุณให้ความสำคัญที่สุดในตอนนี้</strong> ก่อนได้ค่ะ',
-        benefits_her: [isPill ? 'Detox ฮอร์โมนสังเคราะห์ที่ตกค้างจากยาคุม' : 'ช่วยตับล้างเอสโตรเจนส่วนเกินออกจากร่างกาย', 'ปรับรอบเดือนให้สม่ำเสมอ ลดอาการปวด/บวม'],
-        benefits_pops: [(hasAcne || hasPCOS) ? 'ลดสิวฮอร์โมน ลดหน้ามัน แก้ปัญหาที่ต้นเหตุ' : 'ปรับสมดุล Androgen ที่มักรบกวนผิวและอารมณ์', 'ช่วยปรับสมดุลอินซูลิน และระบบเผาผลาญ'],
+        headline: 'จัดคู่ไปเลย จบทุกปัญหา',
+        tagline: 'ดูแลครบมิติ ทั้งแก้ PCOS และดีท็อกซ์ฮอร์โมนตกค้าง',
+        why: 'จากอาการทั้งหมด ร่างกายกำลังฟ้องว่าต้องการการดูแลทั้ง 2 ด้านเลยค่ะ:<br><br>• <strong>Pops Tea:</strong> จะเข้าไปจัดการต้นตอของ PCOS ดับสิวฮอร์โมน และเคลียร์ระบบอินซูลิน<br>• <strong>Her Tea:</strong> จะรับหน้าที่ดีท็อกซ์ตับ กวาดล้างสารพิษและฮอร์โมนตกค้างจากยาคุม<br><br>แนะนำให้ดื่ม <strong>แพ็คคู่</strong> เพื่อผลลัพธ์ที่ชัดเจนที่สุด แต่ถ้ามีงบจำกัด สามารถเลือกสูตรที่ตอบโจทย์ <strong>ปัญหาที่กวนใจที่สุดตอนนี้</strong> ไปลองก่อนได้เลยค่ะ',
+        benefits_her: [isPill ? 'ดีท็อกซ์ล้างบางฮอร์โมนตกค้างจากยาคุม' : 'ให้ตับได้เคลียร์เอสโตรเจนส่วนเกินทิ้งไป', 'เสกให้เมนส์มาตรงเวลา บอกลาอาการปวดและตัวบวม'],
+        benefits_pops: [(hasAcne || hasPCOS) ? 'จัดการสิวฮอร์โมนและหน้ามันจากต้นตอ' : 'ลดความเกรี้ยวกราดของฮอร์โมน Androgen', 'ปรับสมดุลอินซูลิน กู้คืนระบบเผาผลาญให้กลับมาทำงานปกติ'],
         tip: 'Her Tea: ดื่มเช้าหรือก่อนนอน  |  Pops Tea: ดื่มหลังมื้ออาหาร',
         prices_her: [{ amt: '฿690', lbl: '1 กล่อง / 15 มื้อ' }, { amt: '฿1,100', lbl: '2 กล่อง + ส่งฟรี' }],
         prices_pops: [{ amt: '฿590', lbl: '1 กล่อง / 15 วัน' }]
@@ -831,10 +822,10 @@
       // เน้นคนเป็นสิว PCOS หน้ามัน ดื้ออินซูลิน
       return {
         type: 'pops',
-        headline: 'เริ่มต้นด้วย Pops Tea',
-        tagline: 'ตอบโจทย์คนเป็นสิว หน้ามัน PCOS และดื้ออินซูลิน',
-        why: 'อาการของคุณชี้ชัดไปที่ภาวะฮอร์โมนเพศชายสูง (Androgen) ซึ่งเป็นต้นเหตุหลักของสิวฮอร์โมน อาการหน้ามัน ภาวะ PCOS หรือปัญหาเรื่องการเผาผลาญ/ดื้ออินซูลิน Pops Tea ถูกออกแบบมาเพื่อแก้ปัญหานี้ที่ต้นเหตุโดยตรง',
-        benefits: [hasPCOS ? 'สนับสนุนสุขภาพรังไข่และปรับสมดุลของ PCOS' : 'ลดฮอร์โมนเพศชาย (Androgen) สูง', hasAcne ? 'ลดสิวฮอร์โมนและผิวมัน แก้ที่ต้นเหตุจากภายใน' : 'ปรับสมดุลระบบเผาผลาญ ลดการดื้ออินซูลิน', 'ช่วยลดความอยากของหวาน และช่วยย่อยหลังมื้ออาหาร'],
+        headline: 'ต้องตัวนี้เลย Pops Tea',
+        tagline: 'เกิดมาเพื่อคนเป็นสิว หน้ามัน PCOS และมีปัญหาดื้ออินซูลิน',
+        why: 'อาการที่เล่ามาพุ่งเป้าไปที่เรื่องฮอร์โมนเพศชาย (Androgen) สูงปรี๊ด ซึ่งเป็นตัวการของสิวฮอร์โมน หน้าเยิ้ม ภาวะ PCOS หรือแม้แต่ระบบเผาผลาญรวนๆ Pops Tea สูตรนี้เบลนด์มาเพื่อแก้ปัญหานี้จากต้นตอเลยค่ะ',
+        benefits: [hasPCOS ? 'ฟื้นฟูสุขภาพรังไข่ ปรับสมดุลให้คนเป็น PCOS' : 'ลดระดับฮอร์โมนเพศชาย (Androgen) ที่พุ่งสูงปรี๊ด', hasAcne ? 'เคลียร์สิวฮอร์โมน หน้ามันเยิ้ม จากต้นเหตุข้างใน' : 'รีเซ็ตระบบเผาผลาญ ลดภาวะดื้ออินซูลิน', 'ลดอาการติดหวาน หิวจุกจิก และช่วยย่อยหลังมื้ออาหาร'],
         dotClass: 'dot-pops', tipClass: 'tip-pops',
         tip: 'ดื่มหลังมื้ออาหาร วันละ 1 มื้อ',
         prices: [{ amt: '฿590', lbl: '1 กล่อง / 15 วัน' }],
@@ -846,10 +837,10 @@
     // เน้นอยากเลิกยาคุม ขับสารพิษ PMS
     return {
       type: 'her',
-      headline: 'เริ่มต้นด้วย Her Tea',
-      tagline: 'ปรับรอบเดือน ขับสารพิษ และลดฮอร์โมนตกค้าง',
-      why: 'อาการของคุณเน้นไปที่เรื่องรอบเดือน อาการปวด/บวม (PMS) หรือการอยากเลิกยาคุม Her Tea จะช่วยบำรุงสุขภาพผู้หญิงแบบองค์รวม ช่วยตับในการขับสารพิษและล้างฮอร์โมนสังเคราะห์ (Detox) เพื่อให้ร่างกายกลับมามีสมดุลตามธรรมชาติ',
-      benefits: [ 'ผ่อนคลายกล้ามเนื้อมดลูก ลดอาการปวดและบวม (PMS)', isPill || wantsDetox ? 'ขับฮอร์โมนสังเคราะห์ตกค้างจากการกินยาคุม' : 'ช่วยให้ตับล้างสารพิษ (Detox) ได้อย่างมีประสิทธิภาพ', 'ปรับสมดุลเอสโตรเจนส่วนเกิน ทำให้อารมณ์นิ่งขึ้น'],
+      headline: 'สูตรนี้เลย Her Tea',
+      tagline: 'บำรุงจากภายใน รีเซ็ตระบบผู้หญิงให้สมดุล',
+      why: 'ดูจากอาการแล้ว ปัญหาหลักๆ คือเรื่องรอบเดือน อาการปวด บวม (PMS) หรือความอยากคลีนร่างกายจากยาคุม Her Tea เกิดมาเพื่อสิ่งนี้เลยค่ะ ตัวนี้จะเข้าไปช่วยตับเคลียร์ฮอร์โมนสังเคราะห์และสารพิษตกค้าง ปรับสมดุลให้ร่างกายกลับมาเฟรชและทำงานได้ตามธรรมชาติอีกครั้ง',
+      benefits: [ 'คลายกล้ามเนื้อมดลูก บอกลาอาการปวดบิดและตัวพองช่วงเมนส์', isPill || wantsDetox ? 'ช่วยเคลียร์ฮอร์โมนสังเคราะห์ที่ค้างจากการกินยาคุม' : 'ติดสปีดให้ตับขับสารพิษ (Detox) ได้ลึกขึ้น', 'จัดการเอสโตรเจนส่วนเกิน อารมณ์นิ่ง ไม่สวิง'],
       dotClass: 'dot-her', tipClass: 'tip-her',
       tip: 'ดื่มช่วงเช้า หรือก่อนนอน วันละ 1 มื้อ',
       prices: [{ amt: '฿690', lbl: '1 กล่อง / 15 มื้อ' }, { amt: '฿1,100', lbl: '2 กล่อง + ส่งฟรี' }],
@@ -859,15 +850,14 @@
   }
 
   function renderBothResult(rec) {
-    const tipAddOn = `<br><br><span style="font-size: 13.5px; opacity: 0.85;">*แนะนำให้ดื่มต่อเนื่องอย่างน้อย 3 เดือน เพราะการปรับสมดุลฮอร์โมนต้องใช้เวลาและความสม่ำเสมอ</span>`;
+    const tipAddOn = `<br><br><span style="font-size: 13.5px; opacity: 0.85;">*แนะนำให้จิบต่อเนื่องอย่างน้อย 3 เดือนนะคะ เพราะการปรับสมดุลฮอร์โมนต้องอาศัยเวลาและความสม่ำเสมอค่ะ</span>`;
     return `
       <div class="result-intro">
-        <div class="result-eyebrow">แนะนำสำหรับคุณ</div>
+        <div class="result-eyebrow">สูตรที่ใช่สำหรับคุณ</div>
         <div class="result-headline">${rec.headline}</div>
         <div class="result-tagline">${rec.tagline}</div>
       </div>
       
-      <!-- เพิ่มกล่องข้อความอธิบายเหตุผลกรณีได้ 2 สูตร -->
       <div class="both-why-box">
         ${rec.why}
       </div>
@@ -875,8 +865,7 @@
       <div class="product-card">
         <div class="card-head-her">
           <div class="product-image-large">
-            <!-- ใส่ <img src="..."> ลงไปแทนที่ข้อความนี้ -->
-            [รูป Her Tea 1:1]
+            <img src="./hertea.jpg" alt="Her Tea">
           </div>
           <div class="card-head-text">
             <div class="card-pill">ดื่มเช้า หรือก่อนนอน</div>
@@ -904,8 +893,7 @@
       <div class="product-card">
         <div class="card-head-pops">
           <div class="product-image-large">
-            <!-- ใส่ <img src="..."> ลงไปแทนที่ข้อความนี้ -->
-            [รูป Pops Tea 1:1]
+            <img src="./pop tea.jpg" alt="Pops Tea">
           </div>
           <div class="card-head-text">
             <div class="card-pill">ดื่มหลังมื้ออาหาร</div>
@@ -927,7 +915,7 @@
       </div>
       
       <div class="tip tip-pops" style="margin-bottom: 18px;">
-        <strong>วิธีกิน:</strong> ${rec.tip}
+        <strong>วิธีดื่ม:</strong> ${rec.tip}
         ${tipAddOn}
       </div>
 
@@ -946,7 +934,7 @@
     const headerClass = rec.type === 'pops' ? 'card-head-pops' : 'card-head-her';
     const emoji = rec.type === 'pops' ? '🧡' : '🌹';
     const subline = rec.type === 'pops' ? 'Androgen Balance · PCOS Support' : 'Hormone Detox · PMS Relief';
-    const imgPlaceholder = rec.type === 'pops' ? '[รูป Pops Tea 1:1]' : '[รูป Her Tea 1:1]';
+    const imgTag = rec.type === 'pops' ? '<img src="./pop tea.jpg" alt="Pops Tea">' : '<img src="./hertea.jpg" alt="Her Tea">';
     
     // Promo / Main Price Layout
     const mainPrice = `<span class="amt">${rec.prices[0].amt}</span><span class="lbl">${rec.prices[0].lbl}</span>`;
@@ -957,19 +945,18 @@
       </div>
     ` : '';
     
-    const tipAddOn = `<br><br><span style="font-size: 13.5px; opacity: 0.85;">*แนะนำให้ดื่มต่อเนื่องอย่างน้อย 3 เดือน เพราะการปรับสมดุลฮอร์โมนต้องใช้เวลาและความสม่ำเสมอ</span>`;
+    const tipAddOn = `<br><br><span style="font-size: 13.5px; opacity: 0.85;">*แนะนำให้จิบต่อเนื่องอย่างน้อย 3 เดือนนะคะ เพราะการปรับสมดุลฮอร์โมนต้องอาศัยเวลาและความสม่ำเสมอค่ะ</span>`;
 
     return `
       <div class="result-intro">
-        <div class="result-eyebrow">แนะนำสำหรับคุณ</div>
+        <div class="result-eyebrow">สูตรที่ใช่สำหรับคุณ</div>
         <div class="result-headline">${rec.headline}</div>
         <div class="result-tagline">${rec.tagline}</div>
       </div>
       <div class="product-card">
         <div class="${headerClass}">
           <div class="product-image-large">
-            <!-- ใส่ <img src="..."> ลงไปแทนที่ข้อความนี้ -->
-            ${imgPlaceholder}
+            ${imgTag}
           </div>
           <div class="card-head-text">
             <div class="card-pill">เลือกสำหรับคุณ</div>
@@ -989,7 +976,7 @@
           </div>
 
           <div class="tip ${rec.tipClass}">
-            <strong>วิธีกิน:</strong> ${rec.tip}
+            <strong>วิธีดื่ม:</strong> ${rec.tip}
             ${tipAddOn}
           </div>
         </div>
@@ -1017,7 +1004,7 @@
   }
 
   function restartQuiz() {
-    answers[1] = []; answers[2] = null; answers[3] = []; answers[4] = null;
+    answers[1] = []; answers[2] = null; answers[3] = []; answers[4] = [];
     document.querySelectorAll('.opt').forEach(b => b.classList.remove('selected', 'selected-pops'));
     ['next1','next2','next3','next4'].forEach(id => document.getElementById(id).disabled = true);
     document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
