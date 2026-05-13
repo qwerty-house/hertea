@@ -25,7 +25,7 @@
     --border: rgba(45,36,34,0.12);
     --border-hover: rgba(139,38,38,0.4);
     
-    --radius: 16px; 
+    --radius: 14px; 
     --radius-sm: 8px;
   }
 
@@ -37,7 +37,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding: 2rem 1rem 4rem;
+    padding: 1.5rem 1rem 3rem; /* ปรับให้ขอบบนบางลง */
   }
 
   .quiz-wrap {
@@ -48,41 +48,40 @@
   /* ---- HEADER ---- */
   .brand-header {
     text-align: center;
-    padding: 2.5rem 0 2rem;
+    padding: 1rem 0 1.5rem; /* ลดระยะห่าง */
   }
   .brand-logo img {
-    max-width: 160px;
+    max-width: 130px; /* ลดขนาดโลโก้ลงเล็กน้อย */
     height: auto;
-    margin: 0 auto 16px;
+    margin: 0 auto 10px;
     display: block;
   }
   .brand-title {
-    font-size: 28px;
+    font-size: 24px; /* ปรับขนาดให้พอดีจอมากขึ้น */
     font-weight: 700;
     color: var(--ink);
     line-height: 1.3;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
   }
   .brand-sub {
-    font-size: 15px;
+    font-size: 13.5px;
     color: var(--ink-mid);
-    line-height: 1.75;
+    line-height: 1.5;
     max-width: 420px;
     margin: 0 auto;
   }
 
   /* ---- PROGRESS ---- */
   .progress-wrap {
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
   }
   .progress-meta {
     display: flex;
     justify-content: space-between;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
     color: var(--ink-light);
-    margin-bottom: 10px;
-    letter-spacing: 0.05em;
+    margin-bottom: 8px;
   }
   .progress-track {
     height: 4px;
@@ -109,40 +108,38 @@
   }
 
   .step-eyebrow {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
+    letter-spacing: 0.05em;
     color: var(--ink-light);
-    margin-bottom: 12px;
+    margin-bottom: 8px;
   }
   .question {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     color: var(--ink);
-    line-height: 1.4;
-    margin-bottom: 10px;
+    line-height: 1.3;
+    margin-bottom: 6px;
   }
   .question-hint {
-    font-size: 15px;
+    font-size: 14px;
     color: var(--ink-light);
-    margin-bottom: 2rem;
-    line-height: 1.6;
+    margin-bottom: 1.25rem; /* ลดระยะห่างก่อนเริ่มตัวเลือก */
   }
 
   /* ---- OPTIONS ---- */
   .options-list {
     display: flex;
     flex-direction: column;
-    gap: 14px;
-    margin-bottom: 2.5rem;
+    gap: 10px; /* ลดช่องไฟให้ตัวเลือกชิดกันขึ้น */
+    margin-bottom: 1.5rem;
   }
 
   .opt {
     display: flex;
     align-items: flex-start;
-    gap: 16px;
-    padding: 20px 22px;
+    gap: 12px;
+    padding: 14px 16px; /* บีบกล่องให้กระทัดรัดขึ้น */
     border: 1px solid rgba(45,36,34,0.1);
     border-radius: var(--radius);
     background: white;
@@ -151,14 +148,14 @@
     transition: all 0.2s ease;
     width: 100%;
     color: var(--ink);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
     font-family: 'Noto Sans Thai', sans-serif;
   }
   .opt:hover {
     border-color: var(--border-hover);
     background: #FFFAFA;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(139,38,38,0.06);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(139,38,38,0.05);
   }
   .opt.selected {
     border: 1px solid var(--color-her);
@@ -171,9 +168,9 @@
     background: var(--color-pops-light);
   }
   .opt-icon {
-    font-size: 24px;
+    font-size: 20px;
     flex-shrink: 0;
-    margin-top: 2px;
+    margin-top: 1px;
     opacity: 0.9;
     transition: opacity 0.2s;
   }
@@ -181,18 +178,18 @@
   
   .opt-body strong {
     display: block;
-    font-size: 18px;
+    font-size: 15.5px;
     font-weight: 700;
     color: var(--ink);
-    margin-bottom: 6px;
-    line-height: 1.4;
+    margin-bottom: 4px;
+    line-height: 1.3;
   }
   .opt-body span {
     display: block;
-    font-size: 15px;
+    font-size: 13.5px;
     font-weight: 400;
     color: var(--ink-mid);
-    line-height: 1.5;
+    line-height: 1.4;
   }
 
   /* ---- NAV ---- */
@@ -205,29 +202,28 @@
     background: none;
     border: none;
     font-family: 'Noto Sans Thai', sans-serif;
-    font-size: 16px;
+    font-size: 14.5px;
     font-weight: 600;
     color: var(--ink-light);
     cursor: pointer;
     padding: 8px 0;
     display: flex;
     align-items: center;
-    gap: 6px;
+    gap: 4px;
     transition: color 0.15s;
   }
   .btn-back:hover { color: var(--ink-mid); }
   .btn-next {
-    padding: 16px 40px;
+    padding: 12px 32px;
     background: var(--ink);
     color: white;
     border: none;
     border-radius: var(--radius-sm);
     font-family: 'Noto Sans Thai', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.2s ease;
-    letter-spacing: 0.03em;
   }
   .btn-next:hover:not(:disabled) {
     background: var(--color-her);
@@ -245,37 +241,36 @@
   /* ---- RESULT ---- */
   .result-intro {
     text-align: center;
-    padding: 0.5rem 0 1.5rem;
+    padding: 0 0 1.5rem;
   }
   .result-eyebrow {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
+    letter-spacing: normal; /* เอาการห่างตัวอักษรออก */
     color: var(--color-her);
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
   .result-headline {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 700;
     color: var(--ink);
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
   .result-tagline {
-    font-size: 16px;
+    font-size: 15px;
     color: var(--ink-mid);
-    line-height: 1.6;
+    line-height: 1.5;
   }
 
   .both-why-box {
     background: white;
-    padding: 24px;
+    padding: 20px;
     border-radius: var(--radius);
     box-shadow: 0 4px 16px rgba(0,0,0,0.04);
-    margin-bottom: 24px;
-    font-size: 15px;
+    margin-bottom: 20px;
+    font-size: 14.5px;
     color: var(--ink-mid);
-    line-height: 1.7;
+    line-height: 1.6;
     border: 1px solid rgba(45,36,34,0.05);
   }
   .both-why-box strong { color: var(--ink); font-weight: 700; }
@@ -283,13 +278,13 @@
   .product-card {
     border-radius: var(--radius);
     overflow: hidden;
-    margin-bottom: 24px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    margin-bottom: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
     background: white;
   }
   
   .card-head-her, .card-head-pops {
-    padding: 30px 24px;
+    padding: 24px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -300,7 +295,7 @@
   
   .product-image-large {
     width: 100%;
-    max-width: 340px; 
+    max-width: 280px; 
     aspect-ratio: 1 / 1;
     background: rgba(255,255,255,0.15);
     border-radius: 12px;
@@ -309,10 +304,9 @@
     justify-content: center;
     color: rgba(255,255,255,0.9);
     font-size: 14px;
-    font-weight: 500;
     text-align: center;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     border: 1px solid rgba(255,255,255,0.2);
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
@@ -327,147 +321,144 @@
     display: inline-block;
     font-size: 11px;
     font-weight: 700;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
+    letter-spacing: 0.1em;
     background: rgba(255,255,255,0.25);
     color: #FFF;
-    padding: 6px 16px;
+    padding: 6px 14px;
     border-radius: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
   }
   .card-head-her h3, .card-head-pops h3 {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     color: white;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
   }
   .card-head-her p, .card-head-pops p {
-    font-size: 14px;
+    font-size: 13px;
     color: rgba(255,255,255,0.9);
-    letter-spacing: 0.02em;
-    line-height: 1.4;
+    line-height: 1.3;
   }
 
-  .card-body { padding: 24px; }
+  .card-body { padding: 20px; }
   .why-text {
-    font-size: 16px;
+    font-size: 15px;
     color: var(--ink-mid);
-    line-height: 1.8;
-    margin-bottom: 24px;
+    line-height: 1.7;
+    margin-bottom: 20px;
   }
   .benefits {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    margin-bottom: 24px;
+    gap: 10px;
+    margin-bottom: 20px;
   }
   .benefit {
     display: flex;
     align-items: flex-start;
-    gap: 12px;
-    font-size: 15px;
+    gap: 10px;
+    font-size: 14px;
     font-weight: 500;
     color: var(--ink);
     line-height: 1.5;
   }
-  .dot-her { width:8px; height:8px; border-radius:50%; background:var(--color-her); margin-top:6px; flex-shrink:0; }
-  .dot-pops { width:8px; height:8px; border-radius:50%; background:var(--color-pops); margin-top:6px; flex-shrink:0; }
+  .dot-her { width:6px; height:6px; border-radius:50%; background:var(--color-her); margin-top:7px; flex-shrink:0; }
+  .dot-pops { width:6px; height:6px; border-radius:50%; background:var(--color-pops); margin-top:7px; flex-shrink:0; }
 
   /* Big Centered Price */
   .price-center {
     text-align: center;
-    padding: 24px 16px;
-    margin: 24px 0;
+    padding: 16px 12px;
+    margin: 20px 0;
     background: var(--cream);
     border-radius: var(--radius-sm);
   }
   .price-center .amt {
     display: block;
-    font-size: 42px;
+    font-size: 36px;
     font-weight: 700;
     line-height: 1.1;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
   }
   .price-center-her .amt { color: var(--color-her); }
   .price-center-pops .amt { color: var(--color-pops); }
   .price-center .lbl {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     color: var(--ink-mid);
   }
   .price-promo {
-    margin-top: 14px;
-    padding-top: 14px;
+    margin-top: 12px;
+    padding-top: 12px;
     border-top: 1px dashed var(--border);
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
     color: var(--ink-mid);
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 6px;
     align-items: baseline;
   }
   .price-promo .amt-promo {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     color: var(--ink);
   }
 
   .tip {
-    padding: 20px;
+    padding: 16px;
     background: var(--cream);
     border-radius: var(--radius-sm);
-    border-left: 5px solid;
-    font-size: 15px;
+    border-left: 4px solid;
+    font-size: 14px;
     font-weight: 500;
     color: var(--ink-mid);
-    line-height: 1.7;
+    line-height: 1.6;
     margin-bottom: 0;
   }
   .tip strong {
     color: var(--ink);
-    font-size: 16px;
+    font-size: 14.5px;
   }
   .tip-her { border-color: var(--color-her); }
   .tip-pops { border-color: var(--color-pops); }
 
   .cta-section {
-    margin-top: 30px;
+    margin-top: 24px;
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 12px;
   }
   .btn-cta {
     width: 100%;
-    padding: 18px;
+    padding: 16px;
     color: white;
     border: none;
     border-radius: var(--radius-sm);
     font-family: 'Noto Sans Thai', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 700;
     cursor: pointer;
     transition: all 0.2s ease;
-    letter-spacing: 0.03em;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
-  .btn-cta:hover { opacity: 0.9; transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.15); }
+  .btn-cta:hover { opacity: 0.9; transform: translateY(-2px); box-shadow: 0 6px 14px rgba(0,0,0,0.15); }
   .btn-cta-her { background: var(--color-her); }
   .btn-cta-pops { background: var(--color-pops); }
   .btn-cta-both { background: linear-gradient(90deg, var(--color-her) 0%, var(--color-pops) 100%); }
 
   .channel-row {
     display: flex;
-    gap: 14px;
+    gap: 10px;
   }
   .btn-channel {
     flex: 1;
-    padding: 16px;
+    padding: 14px;
     border: 2px solid var(--border);
     border-radius: var(--radius-sm);
     background: white;
     font-family: 'Noto Sans Thai', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     color: var(--ink-mid);
     cursor: pointer;
@@ -475,7 +466,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 6px;
   }
   .btn-channel:hover { 
     border-color: var(--color-her); 
@@ -486,17 +477,17 @@
   .restart-btn {
     display: inline-flex;
     align-items: center;
-    gap: 6px;
+    gap: 4px;
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     color: var(--ink-light);
     background: none;
     border: none;
     font-family: 'Noto Sans Thai', sans-serif;
     cursor: pointer;
-    padding: 12px 20px;
-    margin: 16px auto 0;
+    padding: 10px 16px;
+    margin: 12px auto 0;
     transition: all 0.2s;
     border-radius: 20px;
   }
@@ -504,36 +495,38 @@
 
   /* Disclaimer Bottom */
   .disclaimer {
-    font-size: 12px;
+    font-size: 11px;
     color: var(--ink-light);
     text-align: center;
-    line-height: 1.6;
-    margin-top: 40px;
-    padding-top: 24px;
+    line-height: 1.5;
+    margin-top: 30px;
+    padding-top: 20px;
     border-top: 1px solid var(--border);
   }
 
   /* --- Mobile Responsive Rules --- */
   @media (max-width: 480px) {
-    body { padding: 1rem 0.75rem 3rem; }
-    .brand-title { font-size: 26px; }
-    .question { font-size: 22px; }
-    .question-hint { font-size: 14px; }
+    body { padding: 1rem 0.5rem 2rem; } /* ขอบซ้ายขวาน้อยลงเพื่อเพิ่มพื้นที่ */
+    .brand-title { font-size: 22px; margin-bottom: 6px;}
+    .brand-sub { font-size: 13px; }
+    .question { font-size: 18px; margin-bottom: 6px; }
+    .question-hint { font-size: 13.5px; margin-bottom: 1rem; }
     
-    .opt-body strong { font-size: 16.5px; }
-    .opt-body span { font-size: 14px; }
-    .opt-icon { font-size: 22px; }
-    .opt { padding: 18px 16px; gap: 14px; }
+    .options-list { gap: 8px; margin-bottom: 1rem; }
+    .opt { padding: 10px 12px; gap: 10px; }
+    .opt-icon { font-size: 20px; }
+    .opt-body strong { font-size: 15px; margin-bottom: 2px;}
+    .opt-body span { font-size: 13px; line-height: 1.3;}
     
-    .channel-row { flex-direction: column; }
+    .nav-row { margin-top: 1rem; }
+    .btn-next { padding: 12px 24px; font-size: 14.5px; }
+    .btn-back { font-size: 14px; }
     
-    .card-head-her, .card-head-pops { padding: 24px 16px; }
-    .product-image-large { 
-        max-width: 100%; 
-        margin-bottom: 16px; 
-    }
+    .channel-row { flex-direction: column; gap: 8px;}
+    .card-head-her, .card-head-pops { padding: 20px 16px; }
+    .product-image-large { max-width: 100%; margin-bottom: 12px; }
     .card-head-her h3, .card-head-pops h3 { font-size: 24px; }
-    .price-center .amt { font-size: 36px; }
+    .price-center .amt { font-size: 32px; }
   }
 </style>
 </head>
@@ -548,7 +541,7 @@
     <div class="brand-sub">ทำควิซสั้นๆ 4 ข้อ เพื่อหาชาที่ตอบโจทย์คุณที่สุด แนะนำเจาะลึกจากอาการจริงเลยค่ะ</div>
   </div>
 
-  <div class="progress-wrap">
+  <div class="progress-wrap" id="progress-container">
     <div class="progress-meta">
       <span id="prog-label">เริ่มต้น</span>
       <span id="prog-pct">0 / 4</span>
@@ -597,7 +590,7 @@
   <!-- STEP 2 -->
   <div id="step-2" class="step">
     <div class="step-eyebrow">คำถามที่ 2 จาก 4</div>
-    <div class="question" style="margin-bottom: 2rem;">ตอนนี้กินยาคุมอยู่ไหมคะ?</div>
+    <div class="question" style="margin-bottom: 1.5rem;">ตอนนี้กินยาคุมอยู่ไหมคะ?</div>
     <div class="options-list">
       <button class="opt" data-step="2" data-val="on_pill" onclick="selectOne(this)">
         <span class="opt-icon">💊</span>
@@ -621,7 +614,7 @@
   <!-- STEP 3 -->
   <div id="step-3" class="step">
     <div class="step-eyebrow">คำถามที่ 3 จาก 4</div>
-    <div class="question" style="margin-bottom: 2rem;">อาการไหนกวนใจบ่อยที่สุด?</div>
+    <div class="question" style="margin-bottom: 1.5rem;">อาการไหนกวนใจบ่อยที่สุด?</div>
     <div class="options-list">
       <button class="opt" data-step="3" data-val="bloat" onclick="selectMulti(this)">
         <span class="opt-icon">💧</span>
@@ -657,7 +650,7 @@
   <!-- STEP 4 -->
   <div id="step-4" class="step">
     <div class="step-eyebrow">คำถามที่ 4 จาก 4</div>
-    <div class="question" style="margin-bottom: 2rem;">ผลลัพธ์ที่อยากได้มากที่สุดคืออะไร?</div>
+    <div class="question" style="margin-bottom: 1.5rem;">ผลลัพธ์ที่อยากได้มากที่สุดคืออะไร?</div>
     <div class="options-list">
       <button class="opt" data-step="4" data-val="period_relief" onclick="selectMulti(this)">
         <span class="opt-icon">🗓️</span>
@@ -686,7 +679,7 @@
   <div id="step-result" class="step">
     <div id="result-content"></div>
     
-    <div style="text-align:center; margin-top: 24px;">
+    <div style="text-align:center; margin-top: 20px;">
       <button class="restart-btn" onclick="restartQuiz()">↺ ทำใหม่อีกครั้ง</button>
     </div>
 
@@ -784,11 +777,9 @@
     const popsScore = [hasPCOS, hasAcne, s3.includes('stress'), s3.includes('craving'), hasAndrogen, wantsSkinAcne].filter(Boolean).length;
 
     // LOGIC ตามคลิปเสียง: 
-    // 1. ถ้ามี PCOS แล้วกินยาคุมอยู่/เพิ่งเลิกยาคุม หรือ มีคะแนนความต้องการทั้ง 2 ด้านสูง = แนะนำทั้ง 2 ตัว
     const needsBoth = (hasPCOS && isPill) || (herScore >= 2 && popsScore >= 2);
 
     if (isNone) {
-      // ผู้หญิงทั่วไป กว้างๆ อยากดูแลตัวเอง
       return {
         type: 'her',
         headline: 'สูตรนี้เลย Her Tea',
@@ -804,7 +795,6 @@
     }
 
     if (needsBoth) {
-      // แนะนำ 2 สูตรคู่กัน
       return {
         type: 'both',
         headline: 'จัดคู่ไปเลย จบทุกปัญหา',
@@ -819,13 +809,12 @@
     }
 
     if (popsScore > herScore || hasPCOS || hasAcne || hasAndrogen) {
-      // เน้นคนเป็นสิว PCOS หน้ามัน ดื้ออินซูลิน
       return {
         type: 'pops',
         headline: 'ต้องตัวนี้เลย Pops Tea',
         tagline: 'เกิดมาเพื่อคนเป็นสิว หน้ามัน PCOS และมีปัญหาดื้ออินซูลิน',
         why: 'อาการที่เล่ามาพุ่งเป้าไปที่เรื่องฮอร์โมนเพศชาย (Androgen) สูงปรี๊ด ซึ่งเป็นตัวการของสิวฮอร์โมน หน้าเยิ้ม ภาวะ PCOS หรือแม้แต่ระบบเผาผลาญรวนๆ Pops Tea สูตรนี้เบลนด์มาเพื่อแก้ปัญหานี้จากต้นตอเลยค่ะ',
-        benefits: [hasPCOS ? 'ฟื้นฟูสุขภาพรังไข่ ปรับสมดุลให้คนเป็น PCOS' : 'ลดระดับฮอร์โมนเพศชาย (Androgen) ที่พุ่งสูงปรี๊ด', hasAcne ? 'เคลียร์สิวฮอร์โมน หน้ามันเยิ้ม จากต้นเหตุข้างใน' : 'รีเซ็ตระบบเผาผลาญ ลดภาวะดื้ออินซูลิน', 'ลดอาการติดหวาน หิวจุกจิก และช่วยย่อยหลังมื้ออาหาร'],
+        benefits: [hasPCOS ? 'ฟื้นฟูสุขภาพรังไข ปรับสมดุลให้คนเป็น PCOS' : 'ลดระดับฮอร์โมนเพศชาย (Androgen) ที่พุ่งสูงปรี๊ด', hasAcne ? 'เคลียร์สิวฮอร์โมน หน้ามันเยิ้ม จากต้นเหตุข้างใน' : 'รีเซ็ตระบบเผาผลาญ ลดภาวะดื้ออินซูลิน', 'ลดอาการติดหวาน หิวจุกจิก และช่วยย่อยหลังมื้ออาหาร'],
         dotClass: 'dot-pops', tipClass: 'tip-pops',
         tip: 'ดื่มหลังมื้ออาหาร วันละ 1 มื้อ',
         prices: [{ amt: '฿590', lbl: '1 กล่อง / 15 วัน' }],
@@ -834,7 +823,6 @@
       };
     }
 
-    // เน้นอยากเลิกยาคุม ขับสารพิษ PMS
     return {
       type: 'her',
       headline: 'สูตรนี้เลย Her Tea',
@@ -994,9 +982,9 @@
   function showResult() {
     document.getElementById('step-4').classList.remove('active');
     document.getElementById('step-result').classList.add('active');
-    document.getElementById('pbar').style.width = '100%';
-    document.getElementById('prog-label').textContent = 'ผลลัพธ์';
-    document.getElementById('prog-pct').textContent = '4 / 4';
+    // ปิดการแสดงผลแถบ Progress Bar ในหน้าสุดท้าย
+    document.getElementById('progress-container').style.display = 'none';
+    
     const rec = getRecommendation();
     const html = rec.type === 'both' ? renderBothResult(rec) : renderSingleResult(rec);
     document.getElementById('result-content').innerHTML = html;
@@ -1008,6 +996,10 @@
     document.querySelectorAll('.opt').forEach(b => b.classList.remove('selected', 'selected-pops'));
     ['next1','next2','next3','next4'].forEach(id => document.getElementById(id).disabled = true);
     document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+    
+    // เปิดการแสดงผลแถบ Progress Bar กลับมา
+    document.getElementById('progress-container').style.display = 'block';
+    
     document.getElementById('step-1').classList.add('active');
     document.getElementById('pbar').style.width = '0%';
     document.getElementById('prog-label').textContent = 'เริ่มต้น';
